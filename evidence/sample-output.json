@@ -1,0 +1,208 @@
+{
+  "query": "art museum with paintings near Harvard",
+  "method": "semantic",
+  "score_type": "cosine_similarity",
+  "dataset_id": "boston-36bb6d7b74e39df3",
+  "index_id": "80e7efec48cc96a7",
+  "elapsed_ms": 82.14,
+  "results": [
+    {
+      "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+      "name": "Harvard Art Museums",
+      "city": "Cambridge",
+      "category": "culture",
+      "categories": [
+        "Art museum",
+        "Cafe",
+        "Gift shop",
+        "Tourist attraction"
+      ],
+      "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+      "latitude": 42.3740898,
+      "longitude": -71.1143582,
+      "rating": 4.7,
+      "review_count": 1177,
+      "price": null,
+      "historical_hours": null,
+      "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+      "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+      "source_snapshot": "Google Local 2021",
+      "metadata_source_line": 89957,
+      "sampled_review_count": 6,
+      "rank": 1,
+      "score": 0.81463,
+      "evidence": [
+        {
+          "citation": "1.1",
+          "chunk_id": "3a83e36a268390009a0d1ac96e7c251c",
+          "kind": "review",
+          "text": "The museum was in a convenient location by foot, anywhere in Boston when taking the T. I felt annoyed that there was no monetary break",
+          "source_file": "review-Massachusetts.json.gz",
+          "source_line": 8946844,
+          "timestamp_ms": 1606849907107
+        },
+        {
+          "citation": "1.2",
+          "chunk_id": "bcadd89b0ed6ea108b1f94ed0aab0567",
+          "kind": "review",
+          "text": "Van Gogh, Ingres, Picasso, Otto Dix, Greek classical period terracotta pottery, Etruscan art, masterpieces in the most important university museum in the United States. The",
+          "source_file": "review-Massachusetts.json.gz",
+          "source_line": 8946847,
+          "timestamp_ms": 1613958404966
+        }
+      ],
+      "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge."
+    },
+    {
+      "place_id": "0x89e37746dc6c2a43:0xe91ab7e7b2233d1c",
+      "name": "Harvard Museum of the Ancient Near East",
+      "city": "Cambridge",
+      "category": "culture",
+      "categories": [
+        "Museum",
+        "Archaeological museum",
+        "Tourist attraction"
+      ],
+      "address": "Harvard Museum of the Ancient Near East, 6 Divinity Ave, Cambridge, MA 02138",
+      "latitude": 42.378068,
+      "longitude": -71.11397,
+      "rating": 4.5,
+      "review_count": 104,
+      "price": null,
+      "historical_hours": [
+        [
+          "Tuesday",
+          "11AM–4PM"
+        ],
+        [
+          "Wednesday",
+          "11AM–4PM"
+        ],
+        [
+          "Thursday",
+          "11AM–4PM"
+        ],
+        [
+          "Friday",
+          "11AM–4PM"
+        ],
+        [
+          "Saturday",
+          "Closed"
+        ],
+        [
+          "Sunday",
+          "11AM–4PM"
+        ],
+        [
+          "Monday",
+          "11AM–4PM"
+        ]
+      ],
+      "description": "Collection of archeological finds from the Near East, including Egypt, Israel, Iraq & Syria.",
+      "source_url": "https://www.google.com/maps?cid=16796939965985668380",
+      "source_snapshot": "Google Local 2021",
+      "metadata_source_line": 73231,
+      "sampled_review_count": 6,
+      "rank": 2,
+      "score": 0.74084,
+      "evidence": [
+        {
+          "citation": "2.1",
+          "chunk_id": "34c61b483e2b43ee3e0a271901de1931",
+          "kind": "review",
+          "text": "Small place with rich history. Free entry for everyone. Great location to visit.",
+          "source_file": "review-Massachusetts.json.gz",
+          "source_line": 4170580,
+          "timestamp_ms": 1564082851849
+        },
+        {
+          "citation": "2.2",
+          "chunk_id": "e104dd1889b2cbd3c1ff7526bf4afdc9",
+          "kind": "review",
+          "text": "Great place, very interesting Egyptian and Mesopotamian collections, plus augmented reality",
+          "source_file": "review-Massachusetts.json.gz",
+          "source_line": 4170577,
+          "timestamp_ms": 1558780610649
+        }
+      ],
+      "reason": "Retrieved source material for Harvard Museum of the Ancient Near East, a culture place in Cambridge."
+    },
+    {
+      "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+      "name": "The Harvard Museum of Natural History",
+      "city": "Cambridge",
+      "category": "culture",
+      "categories": [
+        "Natural history museum"
+      ],
+      "address": "The Harvard Museum of Natural History, 26 Oxford St, Cambridge, MA 02138",
+      "latitude": 42.3784626,
+      "longitude": -71.1155576,
+      "rating": 4.7,
+      "review_count": 2903,
+      "price": null,
+      "historical_hours": [
+        [
+          "Sunday",
+          "9AM–5PM"
+        ],
+        [
+          "Monday",
+          "9AM–5PM"
+        ],
+        [
+          "Tuesday",
+          "9AM–5PM"
+        ],
+        [
+          "Wednesday",
+          "9AM–5PM"
+        ],
+        [
+          "Thursday",
+          "9AM–5PM"
+        ],
+        [
+          "Friday",
+          "9AM–5PM"
+        ],
+        [
+          "Saturday",
+          "9AM–5PM"
+        ]
+      ],
+      "description": "Extensive natural-science collections, including animals, minerals & the famous Glass Flowers.",
+      "source_url": "https://www.google.com/maps?cid=7006910828754287227",
+      "source_snapshot": "Google Local 2021",
+      "metadata_source_line": 92192,
+      "sampled_review_count": 6,
+      "rank": 3,
+      "score": 0.69665,
+      "evidence": [
+        {
+          "citation": "3.1",
+          "chunk_id": "95d722df6cb279f3bf0ac7dd4d2e9cfd",
+          "kind": "review",
+          "text": "Such a cool museum. My whole family loved it. You can easily spend several hours here. We stayed for about 2 hours. Well put together",
+          "source_file": "review-Massachusetts.json.gz",
+          "source_line": 10106072,
+          "timestamp_ms": 1581741851040
+        },
+        {
+          "citation": "3.2",
+          "chunk_id": "4c2d003fe6e8f624e7dc8fd7aac0f59b",
+          "kind": "review",
+          "text": "I went here many times, twice for a school field trip, and 5 times on my own, and I was always having a great time",
+          "source_file": "review-Massachusetts.json.gz",
+          "source_line": 10106074,
+          "timestamp_ms": 1614296731019
+        }
+      ],
+      "reason": "Retrieved source material for The Harvard Museum of Natural History, a culture place in Cambridge."
+    }
+  ],
+  "context": "[1.1] Harvard Art Museums: The museum was in a convenient location by foot, anywhere in Boston when taking the T. I felt annoyed that there was no monetary break\n\n[1.2] Harvard Art Museums: Van Gogh, Ingres, Picasso, Otto Dix, Greek classical period terracotta pottery, Etruscan art, masterpieces in the most important university museum in the United States. The\n\n[2.1] Harvard Museum of the Ancient Near East: Small place with rich history. Free entry for everyone. Great location to visit.\n\n[2.2] Harvard Museum of the Ancient Near East: Great place, very interesting Egyptian and Mesopotamian collections, plus augmented reality\n\n[3.1] The Harvard Museum of Natural History: Such a cool museum. My whole family loved it. You can easily spend several hours here. We stayed for about 2 hours. Well put together\n\n[3.2] The Harvard Museum of Natural History: I went here many times, twice for a school field trip, and 5 times on my own, and I was always having a great time",
+  "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability.",
+  "evidence_note": "Source excerpts shortened to at most 25 words for this saved example."
+}

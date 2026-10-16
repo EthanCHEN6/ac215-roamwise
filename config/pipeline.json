@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "selection_version": "boston-v1",
+  "cities": ["Boston", "Cambridge", "Somerville"],
+  "boston_neighborhoods": [
+    "Allston",
+    "Brighton",
+    "Charlestown",
+    "Dorchester",
+    "East Boston",
+    "Jamaica Plain",
+    "Roxbury",
+    "South Boston",
+    "West Roxbury",
+    "Roslindale",
+    "Hyde Park",
+    "Mattapan"
+  ],
+  "bounds": {
+    "min_lat": 42.22,
+    "max_lat": 42.43,
+    "min_lon": -71.2,
+    "max_lon": -70.98
+  },
+  "places_per_category": 125,
+  "reviews_per_place": 6,
+  "chunk_words": 100,
+  "chunk_overlap": 20,
+  "max_review_words": 400,
+  "collection": "roamwise_minilm_v1",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimensions": 384,
+  "distance": "cosine"
+}

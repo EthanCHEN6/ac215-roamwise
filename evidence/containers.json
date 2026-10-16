@@ -1,0 +1,70 @@
+[
+  {
+    "Name": "roamwise-api-1",
+    "Service": "api",
+    "Image": "roamwise-api",
+    "State": "running",
+    "Health": "healthy",
+    "ExitCode": 0,
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 8000,
+        "PublishedPort": 8000,
+        "Protocol": "tcp"
+      }
+    ]
+  },
+  {
+    "Name": "roamwise-evaluate-1",
+    "Service": "evaluate",
+    "Image": "roamwise-evaluate",
+    "State": "exited",
+    "Health": "",
+    "ExitCode": 0,
+    "Publishers": []
+  },
+  {
+    "Name": "roamwise-index-1",
+    "Service": "index",
+    "Image": "roamwise-index",
+    "State": "exited",
+    "Health": "",
+    "ExitCode": 0,
+    "Publishers": []
+  },
+  {
+    "Name": "roamwise-ingest-1",
+    "Service": "ingest",
+    "Image": "roamwise-ingest",
+    "State": "exited",
+    "Health": "",
+    "ExitCode": 0,
+    "Publishers": []
+  },
+  {
+    "Name": "roamwise-preprocess-1",
+    "Service": "preprocess",
+    "Image": "roamwise-preprocess",
+    "State": "exited",
+    "Health": "",
+    "ExitCode": 0,
+    "Publishers": []
+  },
+  {
+    "Name": "roamwise-web-1",
+    "Service": "web",
+    "Image": "sha256:8fd744e49ed0df68b8c6530ef54ad345537bc669d802857774561d77304a8396",
+    "State": "running",
+    "Health": "",
+    "ExitCode": 0,
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 80,
+        "PublishedPort": 8080,
+        "Protocol": "tcp"
+      }
+    ]
+  }
+]

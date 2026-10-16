@@ -1,0 +1,97 @@
+name: roamwise
+
+x-runtime: &runtime
+  init: true
+  environment:
+    DATA_DIR: /data
+    EVIDENCE_DIR: /evidence
+    ANONYMIZED_TELEMETRY: "False"
+    OMP_NUM_THREADS: "2"
+    TOKENIZERS_PARALLELISM: "false"
+  volumes:
+    - data:/data
+    - model-cache:/root/.cache/chroma
+    - ./evidence:/evidence
+
+services:
+  ingest:
+    <<: *runtime
+    build:
+      context: .
+      dockerfile: services/ingest/Dockerfile
+  preprocess:
+    <<: *runtime
+    build:
+      context: .
+      dockerfile: services/preprocess/Dockerfile
+    depends_on:
+      ingest:
+        condition: service_completed_successfully
+  index:
+    <<: *runtime
+    build:
+      context: .
+      dockerfile: services/index/Dockerfile
+    depends_on:
+      preprocess:
+        condition: service_completed_successfully
+  api:
+    <<: *runtime
+    build:
+      context: .
+      dockerfile: services/api/Dockerfile
+    depends_on:
+      index:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "uv",
+          "run",
+          "--frozen",
+          "--no-sync",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health', timeout=5)",
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 8
+      start_period: 60s
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8080:80"
+  evaluate:
+    <<: *runtime
+    build:
+      context: .
+      dockerfile: services/evaluate/Dockerfile
+    environment:
+      API_URL: http://api:8000
+      EVIDENCE_DIR: /evidence
+    depends_on:
+      api:
+        condition: service_healthy
+  test:
+    profiles: ["test"]
+    build:
+      context: .
+      dockerfile: services/test/Dockerfile
+    environment:
+      DATA_DIR: /tmp/roamwise-test
+      EVIDENCE_DIR: /tmp/evidence
+
+volumes:
+  data:
+    name: roamwise-data
+  model-cache:
+    name: roamwise-model-cache

@@ -1,0 +1,2064 @@
+{
+  "run_at": "2026-10-16T04:25:06.478990+00:00",
+  "query_file_sha256": "02936505c04da57a74ebad6a84630d4343ca986e8e84d335b9e787d0db1184a6",
+  "queries_per_method": 20,
+  "dataset_id": "boston-36bb6d7b74e39df3",
+  "index_id": "80e7efec48cc96a7",
+  "interpretation": "Category hits are an automatic proxy for broad type consistency, NOT human Precision@5 or itinerary quality. Queries contain category words and favor the keyword baseline. No model was tuned on these cases.",
+  "summary": {
+    "baseline": {
+      "mean_category_hits_at_5": 0.95,
+      "median_http_ms": 3.54,
+      "p95_http_ms": 4.39,
+      "duplicate_places": 0
+    },
+    "semantic": {
+      "mean_category_hits_at_5": 0.92,
+      "median_http_ms": 95.98,
+      "p95_http_ms": 122.23,
+      "duplicate_places": 0
+    }
+  },
+  "cases": [
+    {
+      "query_id": "q01",
+      "request": {
+        "query": "art museum and paintings",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 6.04,
+      "results": [
+        {
+          "place_id": "0x89e37a0de7e77a4b:0x2f033fd6c495d564",
+          "name": "Museum of Fine Arts, Boston",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+          "name": "Boston Public Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.76451
+        },
+        {
+          "place_id": "0x89e37096418c1c2f:0x57bac693677036c5",
+          "name": "Museum of Science",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69652
+        },
+        {
+          "place_id": "0x89e37a19d1d70ce9:0xdcb857f79f30eb7b",
+          "name": "Jordan Hall",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.6961
+        },
+        {
+          "place_id": "0x89e370f21ceb539b:0x4331f7947542c00d",
+          "name": "Boston National Historical Park",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69589
+        }
+      ]
+    },
+    {
+      "query_id": "q02",
+      "request": {
+        "query": "museum exhibits near Harvard",
+        "city": "Cambridge",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.85,
+      "results": [
+        {
+          "place_id": "0x89e377681efab811:0xa23191acd7421e0",
+          "name": "The Brattle Theatre",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 4.71453
+        },
+        {
+          "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+          "name": "The Harvard Museum of Natural History",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 4.68815
+        },
+        {
+          "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+          "name": "Harvard Art Museums",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 4.67148
+        },
+        {
+          "place_id": "0x89e3776937c1f5f3:0x43c94658ba8a5a07",
+          "name": "Longfellow House-Washington's Headquarters National Historic Site",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 4.65075
+        },
+        {
+          "place_id": "0x89e377440017d563:0x2cb1f205a8160d6e",
+          "name": "Sanders Theatre",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 4.64337
+        }
+      ]
+    },
+    {
+      "query_id": "q03",
+      "request": {
+        "query": "library with books and historic architecture",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.67,
+      "results": [
+        {
+          "place_id": "0x89e37a0de7e77a4b:0x2f033fd6c495d564",
+          "name": "Museum of Fine Arts, Boston",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+          "name": "Boston Public Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.76451
+        },
+        {
+          "place_id": "0x89e37096418c1c2f:0x57bac693677036c5",
+          "name": "Museum of Science",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69652
+        },
+        {
+          "place_id": "0x89e37a19d1d70ce9:0xdcb857f79f30eb7b",
+          "name": "Jordan Hall",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.6961
+        },
+        {
+          "place_id": "0x89e370f21ceb539b:0x4331f7947542c00d",
+          "name": "Boston National Historical Park",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69589
+        }
+      ]
+    },
+    {
+      "query_id": "q04",
+      "request": {
+        "query": "theater for live performances",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 4.03,
+      "results": [
+        {
+          "place_id": "0x89e37a0de7e77a4b:0x2f033fd6c495d564",
+          "name": "Museum of Fine Arts, Boston",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+          "name": "Boston Public Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.76451
+        },
+        {
+          "place_id": "0x89e37096418c1c2f:0x57bac693677036c5",
+          "name": "Museum of Science",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69652
+        },
+        {
+          "place_id": "0x89e37a19d1d70ce9:0xdcb857f79f30eb7b",
+          "name": "Jordan Hall",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.6961
+        },
+        {
+          "place_id": "0x89e370f21ceb539b:0x4331f7947542c00d",
+          "name": "Boston National Historical Park",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69589
+        }
+      ]
+    },
+    {
+      "query_id": "q05",
+      "request": {
+        "query": "art gallery and exhibitions",
+        "city": null,
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 4.33,
+      "results": [
+        {
+          "place_id": "0x89e37a0de7e77a4b:0x2f033fd6c495d564",
+          "name": "Museum of Fine Arts, Boston",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+          "name": "Boston Public Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.76451
+        },
+        {
+          "place_id": "0x89e377681efab811:0xa23191acd7421e0",
+          "name": "The Brattle Theatre",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 4.71453
+        },
+        {
+          "place_id": "0x89e37096418c1c2f:0x57bac693677036c5",
+          "name": "Museum of Science",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.69652
+        },
+        {
+          "place_id": "0x89e37a19d1d70ce9:0xdcb857f79f30eb7b",
+          "name": "Jordan Hall",
+          "category": "culture",
+          "city": "Boston",
+          "score": 4.6961
+        }
+      ]
+    },
+    {
+      "query_id": "q06",
+      "request": {
+        "query": "park for an outdoor walk",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.87,
+      "results": [
+        {
+          "place_id": "0x89e37a77d14e4c2f:0xd71ca9d80ba76f8d",
+          "name": "Trapology Boston",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.83233
+        },
+        {
+          "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+          "name": "Boston Public Garden",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e379f63f253f6f:0xa2800dcb647a5504",
+          "name": "Fenway Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37938f4f4116b:0xf445f129ae5414c8",
+          "name": "Arnold Arboretum of Harvard University",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.78635
+        },
+        {
+          "place_id": "0x89e37a0a0667d9bf:0xf01e15e2d5decf7a",
+          "name": "Charles River Esplanade",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.78371
+        }
+      ]
+    },
+    {
+      "query_id": "q07",
+      "request": {
+        "query": "garden with flowers and trees",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 4.39,
+      "results": [
+        {
+          "place_id": "0x89e37a77d14e4c2f:0xd71ca9d80ba76f8d",
+          "name": "Trapology Boston",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.83233
+        },
+        {
+          "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+          "name": "Boston Public Garden",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e379f63f253f6f:0xa2800dcb647a5504",
+          "name": "Fenway Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37938f4f4116b:0xf445f129ae5414c8",
+          "name": "Arnold Arboretum of Harvard University",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.78635
+        },
+        {
+          "place_id": "0x89e37a0a0667d9bf:0xf01e15e2d5decf7a",
+          "name": "Charles River Esplanade",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.78371
+        }
+      ]
+    },
+    {
+      "query_id": "q08",
+      "request": {
+        "query": "university campus walk",
+        "city": "Cambridge",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.5,
+      "results": [
+        {
+          "place_id": "0x89e3779e1da54629:0xaeed796e47059a88",
+          "name": "Fresh Pond Reservation",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.70719
+        },
+        {
+          "place_id": "0x89e370aa1dd093e9:0xe2242f5ee38065d0",
+          "name": "Killian Court",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.70408
+        },
+        {
+          "place_id": "0x89e370aaf51a6a87:0xd0e08ea5b308203c",
+          "name": "Massachusetts Institute of Technology",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.68907
+        },
+        {
+          "place_id": "0x89e37743fcedd3c3:0xba29e000bdf1e890",
+          "name": "Harvard Yard",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.68877
+        },
+        {
+          "place_id": "0x89e377199382bcdf:0x1ca257663eae1c4",
+          "name": "Pemberton Farms Marketplace",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.65902
+        }
+      ]
+    },
+    {
+      "query_id": "q09",
+      "request": {
+        "query": "aquarium to see fish",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.45,
+      "results": [
+        {
+          "place_id": "0x89e37a77d14e4c2f:0xd71ca9d80ba76f8d",
+          "name": "Trapology Boston",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.83233
+        },
+        {
+          "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+          "name": "Boston Public Garden",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e379f63f253f6f:0xa2800dcb647a5504",
+          "name": "Fenway Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.79602
+        },
+        {
+          "place_id": "0x89e37938f4f4116b:0xf445f129ae5414c8",
+          "name": "Arnold Arboretum of Harvard University",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.78635
+        },
+        {
+          "place_id": "0x89e37a0a0667d9bf:0xf01e15e2d5decf7a",
+          "name": "Charles River Esplanade",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 4.78371
+        }
+      ]
+    },
+    {
+      "query_id": "q10",
+      "request": {
+        "query": "park for walking outside",
+        "city": "Somerville",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.02,
+      "results": [
+        {
+          "place_id": "0x89e370ca523fb29d:0x62af7527974fdc8f",
+          "name": "Ricky's Flower Market",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 4.61379
+        },
+        {
+          "place_id": "0x89e3774a815af34f:0xb415259c98d54b61",
+          "name": "Lincoln Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 4.59914
+        },
+        {
+          "place_id": "0x89e37126e64d603f:0xa67333382a0317e3",
+          "name": "Sylvester Baxter Riverfront Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 4.53927
+        },
+        {
+          "place_id": "0x89e376df4b66c24b:0xa7a5d91fcd796ec8",
+          "name": "Nathan Tufts Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 4.47395
+        },
+        {
+          "place_id": "0x89e370d72180937f:0xf753aead0097b5eb",
+          "name": "Foss Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 4.26394
+        }
+      ]
+    },
+    {
+      "query_id": "q11",
+      "request": {
+        "query": "coffee shop for a morning coffee",
+        "city": "Cambridge",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.2,
+      "results": [
+        {
+          "place_id": "0x89e37754654e9227:0xabd328d66f8dad77",
+          "name": "Veggie Galaxy",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.6879
+        },
+        {
+          "place_id": "0x89e377548fd8bda7:0x589b9c005c670c09",
+          "name": "Toscanini's Ice Cream",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.68624
+        },
+        {
+          "place_id": "0x89e3775119ecbd2d:0x32c08dd4009dc097",
+          "name": "Life Alive Organic Cafe",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.67986
+        },
+        {
+          "place_id": "0x89e377428fa19323:0xd9bc3333eb842d0c",
+          "name": "Border Cafe",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.49018
+        },
+        {
+          "place_id": "0x405c5d42385d9621:0x5ad64dc86ab511e9",
+          "name": "Felipe's Taqueria",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.4896
+        }
+      ]
+    },
+    {
+      "query_id": "q12",
+      "request": {
+        "query": "restaurant for seafood dinner",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.57,
+      "results": [
+        {
+          "place_id": "0x89e370894b870f49:0xb5b16033eb824803",
+          "name": "Bova's Bakery",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.68187
+        },
+        {
+          "place_id": "0x89e3708eb0148c6f:0x9068102cef5e449c",
+          "name": "Regina Pizzeria",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.59267
+        },
+        {
+          "place_id": "0x89e37a7332665ff1:0xd8c0a184ba4be6a5",
+          "name": "The Friendly Toast Restaurant",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.59074
+        },
+        {
+          "place_id": "0x89e3707e40e4f63b:0xc0e6695e6179ea71",
+          "name": "James Hook & Co",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.58711
+        },
+        {
+          "place_id": "0x89e37a0ef45076f1:0x62c7217ed7b7c8fb",
+          "name": "Atlantic Fish Co",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.58704
+        }
+      ]
+    },
+    {
+      "query_id": "q13",
+      "request": {
+        "query": "bakery with fresh pastries",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.6,
+      "results": [
+        {
+          "place_id": "0x89e370894b870f49:0xb5b16033eb824803",
+          "name": "Bova's Bakery",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.68187
+        },
+        {
+          "place_id": "0x89e3708eb0148c6f:0x9068102cef5e449c",
+          "name": "Regina Pizzeria",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.59267
+        },
+        {
+          "place_id": "0x89e37a7332665ff1:0xd8c0a184ba4be6a5",
+          "name": "The Friendly Toast Restaurant",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.59074
+        },
+        {
+          "place_id": "0x89e3707e40e4f63b:0xc0e6695e6179ea71",
+          "name": "James Hook & Co",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.58711
+        },
+        {
+          "place_id": "0x89e37a0ef45076f1:0x62c7217ed7b7c8fb",
+          "name": "Atlantic Fish Co",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.58704
+        }
+      ]
+    },
+    {
+      "query_id": "q14",
+      "request": {
+        "query": "pizza restaurant for lunch",
+        "city": "Somerville",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.39,
+      "results": [
+        {
+          "place_id": "0x89e370d29469bbeb:0xb8cdac9dc9c5e8fb",
+          "name": "Sarma Restaurant",
+          "category": "food",
+          "city": "Somerville",
+          "score": 4.67432
+        },
+        {
+          "place_id": "0x89e370c8b5c64d3b:0xf95208a2b5b49968",
+          "name": "Oliveira's Steak House",
+          "category": "food",
+          "city": "Somerville",
+          "score": 4.48904
+        },
+        {
+          "place_id": "0x89e37718bd2f14a1:0x21ea1135825b5352",
+          "name": "The Burren",
+          "category": "food",
+          "city": "Somerville",
+          "score": 4.48257
+        },
+        {
+          "place_id": "0x89e3771895aeece1:0x161d9cb0dcff4fda",
+          "name": "Redbones Barbecue",
+          "category": "food",
+          "city": "Somerville",
+          "score": 4.38912
+        },
+        {
+          "place_id": "0x89e377188258d63d:0xf99656c08dd67a",
+          "name": "The Painted Burro",
+          "category": "food",
+          "city": "Somerville",
+          "score": 4.38598
+        }
+      ]
+    },
+    {
+      "query_id": "q15",
+      "request": {
+        "query": "cafe for breakfast",
+        "city": null,
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.74,
+      "results": [
+        {
+          "place_id": "0x89e37754654e9227:0xabd328d66f8dad77",
+          "name": "Veggie Galaxy",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.6879
+        },
+        {
+          "place_id": "0x89e377548fd8bda7:0x589b9c005c670c09",
+          "name": "Toscanini's Ice Cream",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.68624
+        },
+        {
+          "place_id": "0x89e370894b870f49:0xb5b16033eb824803",
+          "name": "Bova's Bakery",
+          "category": "food",
+          "city": "Boston",
+          "score": 4.68187
+        },
+        {
+          "place_id": "0x89e3775119ecbd2d:0x32c08dd4009dc097",
+          "name": "Life Alive Organic Cafe",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 4.67986
+        },
+        {
+          "place_id": "0x89e370d29469bbeb:0xb8cdac9dc9c5e8fb",
+          "name": "Sarma Restaurant",
+          "category": "food",
+          "city": "Somerville",
+          "score": 4.67432
+        }
+      ]
+    },
+    {
+      "query_id": "q16",
+      "request": {
+        "query": "hotel for an overnight stay",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.33,
+      "results": [
+        {
+          "place_id": "0x89e37a0e50b8374d:0xec3fa30f3bef22bb",
+          "name": "Mandarin Oriental, Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.64337
+        },
+        {
+          "place_id": "0x89e370865141e603:0xffc56ed7af2c7c43",
+          "name": "Marriott Vacation Club Pulse at Custom House, Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.63613
+        },
+        {
+          "place_id": "0x89e370875bdec323:0xe6463ad3304ba3cb",
+          "name": "Boston Harbor Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.58385
+        },
+        {
+          "place_id": "0x89e37a0cf459dbf7:0x8f415d969e8ede17",
+          "name": "Fairmont Copley Plaza",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.58294
+        },
+        {
+          "place_id": "0x89e37a75dbb7d74f:0x5d80a3a45a136653",
+          "name": "Four Seasons Hotel Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.57634
+        }
+      ]
+    },
+    {
+      "query_id": "q17",
+      "request": {
+        "query": "hotel accommodation in Cambridge",
+        "city": "Cambridge",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.11,
+      "results": [
+        {
+          "place_id": "0x89e370af36cb1949:0x97f0cd04f9683be2",
+          "name": "The Kendall Hotel",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 4.53852
+        },
+        {
+          "place_id": "0x89e37744a8ef4d59:0xb34446284914817a",
+          "name": "The Charles Hotel",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 4.47659
+        },
+        {
+          "place_id": "0x89e37769ce860ff5:0x7da9ccf3ac860cd0",
+          "name": "Kimpton Marlowe Hotel",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 4.4747
+        },
+        {
+          "place_id": "0x89e377a84ed83c29:0xf2ef810197806712",
+          "name": "AC Hotel by Marriott Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 4.3705
+        },
+        {
+          "place_id": "0x89e370af1cc250e7:0xef4a28b1b62d1d38",
+          "name": "Residence Inn by Marriott Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 4.37006
+        }
+      ]
+    },
+    {
+      "query_id": "q18",
+      "request": {
+        "query": "hostel for a short stay",
+        "city": "Boston",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.43,
+      "results": [
+        {
+          "place_id": "0x89e37a0e50b8374d:0xec3fa30f3bef22bb",
+          "name": "Mandarin Oriental, Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.64337
+        },
+        {
+          "place_id": "0x89e370865141e603:0xffc56ed7af2c7c43",
+          "name": "Marriott Vacation Club Pulse at Custom House, Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.63613
+        },
+        {
+          "place_id": "0x89e370875bdec323:0xe6463ad3304ba3cb",
+          "name": "Boston Harbor Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.58385
+        },
+        {
+          "place_id": "0x89e37a0cf459dbf7:0x8f415d969e8ede17",
+          "name": "Fairmont Copley Plaza",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.58294
+        },
+        {
+          "place_id": "0x89e37a75dbb7d74f:0x5d80a3a45a136653",
+          "name": "Four Seasons Hotel Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.57634
+        }
+      ]
+    },
+    {
+      "query_id": "q19",
+      "request": {
+        "query": "lodging near a university",
+        "city": "Cambridge",
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 0.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.2,
+      "results": [
+        {
+          "place_id": "0x89e3779e1da54629:0xaeed796e47059a88",
+          "name": "Fresh Pond Reservation",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.70719
+        },
+        {
+          "place_id": "0x89e370aa1dd093e9:0xe2242f5ee38065d0",
+          "name": "Killian Court",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.70408
+        },
+        {
+          "place_id": "0x89e370aaf51a6a87:0xd0e08ea5b308203c",
+          "name": "Massachusetts Institute of Technology",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.68907
+        },
+        {
+          "place_id": "0x89e37743fcedd3c3:0xba29e000bdf1e890",
+          "name": "Harvard Yard",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.68877
+        },
+        {
+          "place_id": "0x89e377199382bcdf:0x1ca257663eae1c4",
+          "name": "Pemberton Farms Marketplace",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 4.65902
+        }
+      ]
+    },
+    {
+      "query_id": "q20",
+      "request": {
+        "query": "hotel rooms for a weekend visit",
+        "city": null,
+        "method": "baseline",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 3.41,
+      "results": [
+        {
+          "place_id": "0x89e37a0e50b8374d:0xec3fa30f3bef22bb",
+          "name": "Mandarin Oriental, Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.64337
+        },
+        {
+          "place_id": "0x89e370865141e603:0xffc56ed7af2c7c43",
+          "name": "Marriott Vacation Club Pulse at Custom House, Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.63613
+        },
+        {
+          "place_id": "0x89e370875bdec323:0xe6463ad3304ba3cb",
+          "name": "Boston Harbor Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.58385
+        },
+        {
+          "place_id": "0x89e37a0cf459dbf7:0x8f415d969e8ede17",
+          "name": "Fairmont Copley Plaza",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.58294
+        },
+        {
+          "place_id": "0x89e37a75dbb7d74f:0x5d80a3a45a136653",
+          "name": "Four Seasons Hotel Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 4.57634
+        }
+      ]
+    },
+    {
+      "query_id": "q01",
+      "request": {
+        "query": "art museum and paintings",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 94.8,
+      "results": [
+        {
+          "place_id": "0x89e370793a8430c5:0x7ab1059322edd33a",
+          "name": "The Institute of Contemporary Art",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.67517
+        },
+        {
+          "place_id": "0x89e37a0de7e77a4b:0x2f033fd6c495d564",
+          "name": "Museum of Fine Arts, Boston",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.62081
+        },
+        {
+          "place_id": "0x89e37a6e4cedb66f:0xb7025d7b83293b23",
+          "name": "SoWa Art + Design District",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.55332
+        },
+        {
+          "place_id": "0x89e3785da725d4c9:0x9e8ea594d0c5e7fe",
+          "name": "McMullen Museum of Art",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.54914
+        },
+        {
+          "place_id": "0x89e37085de86a807:0xe621f13cc7f68873",
+          "name": "Bostonian Society Museum Shop",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.50596
+        }
+      ]
+    },
+    {
+      "query_id": "q02",
+      "request": {
+        "query": "museum exhibits near Harvard",
+        "city": "Cambridge",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 0.8,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 70.45,
+      "results": [
+        {
+          "place_id": "0x89e37746dc6c2a43:0xe91ab7e7b2233d1c",
+          "name": "Harvard Museum of the Ancient Near East",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 0.81978
+        },
+        {
+          "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+          "name": "Harvard Art Museums",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 0.79645
+        },
+        {
+          "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+          "name": "The Harvard Museum of Natural History",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 0.77611
+        },
+        {
+          "place_id": "0x89e37743c4edb87d:0xe268900c96a0f05d",
+          "name": "Harvard Science Center Plaza",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 0.71445
+        },
+        {
+          "place_id": "0x89e3774486d1d449:0x44bfc67a0a689093",
+          "name": "Harvard Film Archive",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 0.69567
+        }
+      ]
+    },
+    {
+      "query_id": "q03",
+      "request": {
+        "query": "library with books and historic architecture",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 104.36,
+      "results": [
+        {
+          "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+          "name": "Boston Public Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.62348
+        },
+        {
+          "place_id": "0x89e379f018d03049:0x3d2fcf7cc2aab152",
+          "name": "Mugar Memorial Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.55144
+        },
+        {
+          "place_id": "0x89e3709b541ff13b:0x1586d285058646c9",
+          "name": "Boston Athenaeum",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.49969
+        },
+        {
+          "place_id": "0x89e37a1999cf5ce1:0x46e17e056ed496c3",
+          "name": "Snell Library",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.473
+        },
+        {
+          "place_id": "0x89e37ae468290749:0x911b0e0aaf975e24",
+          "name": "John F. Kennedy Presidential Library and Museum",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.46247
+        }
+      ]
+    },
+    {
+      "query_id": "q04",
+      "request": {
+        "query": "theater for live performances",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 112.63,
+      "results": [
+        {
+          "place_id": "0x89e37a6d70073d2b:0x8c72e6ccec79ea51",
+          "name": "SpeakEasy Stage Company",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.68619
+        },
+        {
+          "place_id": "0x89e379e844b56a23:0x4e8fd5c521acb039",
+          "name": "Boston Playwrights' Theatre",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.67403
+        },
+        {
+          "place_id": "0x89e37a1b0a05286d:0xae477a2eedac1e",
+          "name": "Boston Conservatory Theater",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.67327
+        },
+        {
+          "place_id": "0x89e37a76e78b8947:0xb1103d5c2da45409",
+          "name": "Boch Center - Shubert Theatre",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.62874
+        },
+        {
+          "place_id": "0x89e3709cb51cffcf:0x6575ac76b6bcc90f",
+          "name": "Orpheum Theatre",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.62565
+        }
+      ]
+    },
+    {
+      "query_id": "q05",
+      "request": {
+        "query": "art gallery and exhibitions",
+        "city": null,
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "culture",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 85.76,
+      "results": [
+        {
+          "place_id": "0x89e370793a8430c5:0x7ab1059322edd33a",
+          "name": "The Institute of Contemporary Art",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.65941
+        },
+        {
+          "place_id": "0x89e379fe564d3833:0xb088f5563275aca8",
+          "name": "MIT List Visual Arts Center",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 0.61812
+        },
+        {
+          "place_id": "0x89e37a6e4cedb66f:0xb7025d7b83293b23",
+          "name": "SoWa Art + Design District",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.59393
+        },
+        {
+          "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+          "name": "Harvard Art Museums",
+          "category": "culture",
+          "city": "Cambridge",
+          "score": 0.58454
+        },
+        {
+          "place_id": "0x89e37a0de7e77a4b:0x2f033fd6c495d564",
+          "name": "Museum of Fine Arts, Boston",
+          "category": "culture",
+          "city": "Boston",
+          "score": 0.56599
+        }
+      ]
+    },
+    {
+      "query_id": "q06",
+      "request": {
+        "query": "park for an outdoor walk",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 114.18,
+      "results": [
+        {
+          "place_id": "0x89e37bef78f9b9b3:0x1aea05ea8116550f",
+          "name": "Harambee Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.5562
+        },
+        {
+          "place_id": "0x89e3799e7cec8f07:0x23a597f711bb181f",
+          "name": "Olmsted Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.53084
+        },
+        {
+          "place_id": "0x89e37a2a30255649:0x2e18fe57a00ca31d",
+          "name": "Southwest Corridor Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.52832
+        },
+        {
+          "place_id": "0x89e37f5c67b0a0fd:0x7f0a034068b982fc",
+          "name": "Millennium Park",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.52564
+        },
+        {
+          "place_id": "0x89e37af64b43ff4b:0x432e056e3d4a118d",
+          "name": "Carson Beach",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.51471
+        }
+      ]
+    },
+    {
+      "query_id": "q07",
+      "request": {
+        "query": "garden with flowers and trees",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 94.03,
+      "results": [
+        {
+          "place_id": "0x89e379d47da102c7:0x44031b0cea84c41a",
+          "name": "Mahoney's Garden Centers",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.4543
+        },
+        {
+          "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+          "name": "Boston Public Garden",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.44038
+        },
+        {
+          "place_id": "0x89e3708746a7913b:0x1eb96e2336910136",
+          "name": "The Trillium Garden on The Greenway",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.41822
+        },
+        {
+          "place_id": "0x89e37938f4f4116b:0xf445f129ae5414c8",
+          "name": "Arnold Arboretum of Harvard University",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.38125
+        },
+        {
+          "place_id": "0x89e37a1e29987cdd:0x6e56493aa0fbdf69",
+          "name": "Back Bay Fens",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.29754
+        }
+      ]
+    },
+    {
+      "query_id": "q08",
+      "request": {
+        "query": "university campus walk",
+        "city": "Cambridge",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 108.17,
+      "results": [
+        {
+          "place_id": "0x89e37742bc65ca79:0x59ca183286a63b76",
+          "name": "Harvard Square",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 0.51306
+        },
+        {
+          "place_id": "0x89e370aaf51a6a87:0xd0e08ea5b308203c",
+          "name": "Massachusetts Institute of Technology",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 0.50467
+        },
+        {
+          "place_id": "0x89e377427d7f0199:0x5937c65cee2427f0",
+          "name": "Harvard University",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 0.48376
+        },
+        {
+          "place_id": "0x89e37743fcedd3c3:0xba29e000bdf1e890",
+          "name": "Harvard Yard",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 0.44679
+        },
+        {
+          "place_id": "0x89e370aa1dd093e9:0xe2242f5ee38065d0",
+          "name": "Killian Court",
+          "category": "outdoors",
+          "city": "Cambridge",
+          "score": 0.41636
+        }
+      ]
+    },
+    {
+      "query_id": "q09",
+      "request": {
+        "query": "aquarium to see fish",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 0.6,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 99.03,
+      "results": [
+        {
+          "place_id": "0x89e3707d60bfd085:0xdda63d8ad6157d49",
+          "name": "New England Aquarium",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.60893
+        },
+        {
+          "place_id": "0x89e37a0ef45076f1:0x62c7217ed7b7c8fb",
+          "name": "Atlantic Fish Co",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.42485
+        },
+        {
+          "place_id": "0x89e3709fb6fddd07:0xb7b6ab43c1f5e2e0",
+          "name": "Boston Common Frog Pond",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.37092
+        },
+        {
+          "place_id": "0x89e37084936682d1:0x76a75643609a4802",
+          "name": "Boston Harbor Cruises",
+          "category": "outdoors",
+          "city": "Boston",
+          "score": 0.36622
+        },
+        {
+          "place_id": "0x89e37087bf50b88d:0x1ab6b4c662b99d78",
+          "name": "Legal Sea Foods",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.34935
+        }
+      ]
+    },
+    {
+      "query_id": "q10",
+      "request": {
+        "query": "park for walking outside",
+        "city": "Somerville",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "outdoors",
+      "category_hits_at_5": 0.8,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 84.62,
+      "results": [
+        {
+          "place_id": "0x89e3774a815af34f:0xb415259c98d54b61",
+          "name": "Lincoln Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 0.49919
+        },
+        {
+          "place_id": "0x89e37126e64d603f:0xa67333382a0317e3",
+          "name": "Sylvester Baxter Riverfront Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 0.42141
+        },
+        {
+          "place_id": "0x89e376df4b66c24b:0xa7a5d91fcd796ec8",
+          "name": "Nathan Tufts Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 0.41405
+        },
+        {
+          "place_id": "0x89e370d72180937f:0xf753aead0097b5eb",
+          "name": "Foss Park",
+          "category": "outdoors",
+          "city": "Somerville",
+          "score": 0.37245
+        },
+        {
+          "place_id": "0x89e370b82e233f2d:0x90daa0da767b9238",
+          "name": "Twin City Plaza",
+          "category": "food",
+          "city": "Somerville",
+          "score": 0.25866
+        }
+      ]
+    },
+    {
+      "query_id": "q11",
+      "request": {
+        "query": "coffee shop for a morning coffee",
+        "city": "Cambridge",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 0.4,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 97.16,
+      "results": [
+        {
+          "place_id": "0x89e3774339457a0d:0x3d269c89b22efb",
+          "name": "Tatte Bakery & Cafe",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 0.47293
+        },
+        {
+          "place_id": "0x89e377548fd8bda7:0x589b9c005c670c09",
+          "name": "Toscanini's Ice Cream",
+          "category": "food",
+          "city": "Cambridge",
+          "score": 0.43534
+        },
+        {
+          "place_id": "0x89e37788d9c0db8f:0x7857e06fe6f46917",
+          "name": "Hotel 1868",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.43156
+        },
+        {
+          "place_id": "0x89e37754f868ec05:0xd6196368d57c9de3",
+          "name": "Le Méridien Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.42814
+        },
+        {
+          "place_id": "0x89e377523f3ac3d1:0xab2badf0cb7eb871",
+          "name": "Prospect Place Bed & Breakfast",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.41996
+        }
+      ]
+    },
+    {
+      "query_id": "q12",
+      "request": {
+        "query": "restaurant for seafood dinner",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 119.5,
+      "results": [
+        {
+          "place_id": "0x89e37a80312391f7:0xb8f874bb24bfb41e",
+          "name": "Row 34",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.69703
+        },
+        {
+          "place_id": "0x89e3707d541f0ce9:0xc65e36f95e42bc28",
+          "name": "Chart House",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.69353
+        },
+        {
+          "place_id": "0x89e37078246aed17:0xb9314acad62ae211",
+          "name": "No Name Restaurant",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.68679
+        },
+        {
+          "place_id": "0x89e37a0ef45076f1:0x62c7217ed7b7c8fb",
+          "name": "Atlantic Fish Co",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.64653
+        },
+        {
+          "place_id": "0x89e37a82a704f083:0x401df052ed7a6fa2",
+          "name": "Legal Sea Foods - Harborside",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.64126
+        }
+      ]
+    },
+    {
+      "query_id": "q13",
+      "request": {
+        "query": "bakery with fresh pastries",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 122.23,
+      "results": [
+        {
+          "place_id": "0x89e3707ff1997915:0x542c089c8d7b80ff",
+          "name": "Flour Bakery + Cafe",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.63264
+        },
+        {
+          "place_id": "0x89e37a0cd10ee629:0xd68a68d546b8355a",
+          "name": "Flour Bakery & Cafe",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.6187
+        },
+        {
+          "place_id": "0x89e370894b870f49:0xb5b16033eb824803",
+          "name": "Bova's Bakery",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.56277
+        },
+        {
+          "place_id": "0x89e37a0b3e0bfbfd:0xd80ee2e10cca2159",
+          "name": "Thinking Cup",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.52702
+        },
+        {
+          "place_id": "0x89e2a8354a3149b3:0xae43e856bd3d5deb",
+          "name": "Mike's Pastry",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.5077
+        }
+      ]
+    },
+    {
+      "query_id": "q14",
+      "request": {
+        "query": "pizza restaurant for lunch",
+        "city": "Somerville",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 78.09,
+      "results": [
+        {
+          "place_id": "0x89e370d29469bbeb:0xb8cdac9dc9c5e8fb",
+          "name": "Sarma Restaurant",
+          "category": "food",
+          "city": "Somerville",
+          "score": 0.52044
+        },
+        {
+          "place_id": "0x89e37722066b7d37:0xddeb8b10281db9a6",
+          "name": "Five Horses Tavern",
+          "category": "food",
+          "city": "Somerville",
+          "score": 0.46041
+        },
+        {
+          "place_id": "0x89e3712742d15c25:0x10eb19a5ab960482",
+          "name": "Outback Steakhouse",
+          "category": "food",
+          "city": "Somerville",
+          "score": 0.42469
+        },
+        {
+          "place_id": "0x89e370df44583fcb:0xa1b0354ca00cceaa",
+          "name": "Earls Kitchen + Bar",
+          "category": "food",
+          "city": "Somerville",
+          "score": 0.41992
+        },
+        {
+          "place_id": "0x89e377188258d63d:0xf99656c08dd67a",
+          "name": "The Painted Burro",
+          "category": "food",
+          "city": "Somerville",
+          "score": 0.40864
+        }
+      ]
+    },
+    {
+      "query_id": "q15",
+      "request": {
+        "query": "cafe for breakfast",
+        "city": null,
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "food",
+      "category_hits_at_5": 0.8,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 75.61,
+      "results": [
+        {
+          "place_id": "0x89e37a0b3e0bfbfd:0xd80ee2e10cca2159",
+          "name": "Thinking Cup",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.57964
+        },
+        {
+          "place_id": "0x89e3709d7015437f:0xad6de6d1189e06ee",
+          "name": "Thinking Cup",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.55726
+        },
+        {
+          "place_id": "0x89e377523f3ac3d1:0xab2badf0cb7eb871",
+          "name": "Prospect Place Bed & Breakfast",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.55371
+        },
+        {
+          "place_id": "0x89e37a0cd10ee629:0xd68a68d546b8355a",
+          "name": "Flour Bakery & Cafe",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.54785
+        },
+        {
+          "place_id": "0x89e37a791d9edfd1:0xafd3592fb700d8fb",
+          "name": "South Street Diner",
+          "category": "food",
+          "city": "Boston",
+          "score": 0.52611
+        }
+      ]
+    },
+    {
+      "query_id": "q16",
+      "request": {
+        "query": "hotel for an overnight stay",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 101.22,
+      "results": [
+        {
+          "place_id": "0x89e37a1dfbbe4485:0x4edced0fa3dba16d",
+          "name": "The Verb Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.64279
+        },
+        {
+          "place_id": "0x89e37a0ccfeb8d5d:0x294b02d76ae3625e",
+          "name": "Hotel 140",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.6366
+        },
+        {
+          "place_id": "0x89e379b33818a925:0x8fbf1bef90d3a5a3",
+          "name": "Hotel Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.6147
+        },
+        {
+          "place_id": "0x89e379d64efa125d:0x78c4386e0e280ff0",
+          "name": "Days Hotel Boston-Harvard Fenway",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.55803
+        },
+        {
+          "place_id": "0x89e37a40c35aeaf7:0x5dacd292e4b221c0",
+          "name": "Best Western Plus Boston Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.54923
+        }
+      ]
+    },
+    {
+      "query_id": "q17",
+      "request": {
+        "query": "hotel accommodation in Cambridge",
+        "city": "Cambridge",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 91.25,
+      "results": [
+        {
+          "place_id": "0x89e37788d9c0db8f:0x7857e06fe6f46917",
+          "name": "Hotel 1868",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.80386
+        },
+        {
+          "place_id": "0x89e370af1cc250e7:0xef4a28b1b62d1d38",
+          "name": "Residence Inn by Marriott Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.78662
+        },
+        {
+          "place_id": "0x89e377a84ed83c29:0xf2ef810197806712",
+          "name": "AC Hotel by Marriott Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.7842
+        },
+        {
+          "place_id": "0x89e370af6823c2ed:0x9179247fafa0ddf8",
+          "name": "Boston Marriott Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.77466
+        },
+        {
+          "place_id": "0x89e379e3df849399:0xd38f1bf173329165",
+          "name": "Courtyard by Marriott Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.7615
+        }
+      ]
+    },
+    {
+      "query_id": "q18",
+      "request": {
+        "query": "hostel for a short stay",
+        "city": "Boston",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 128.45,
+      "results": [
+        {
+          "place_id": "0x89e3708fd22e4029:0x78bbb573e90e3617",
+          "name": "Friend Street Hostel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.59951
+        },
+        {
+          "place_id": "0x89e37a1b1a833ea1:0x82e3d529a9b89dd1",
+          "name": "HI Boston Hostel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.58622
+        },
+        {
+          "place_id": "0x89e37a0ccfeb8d5d:0x294b02d76ae3625e",
+          "name": "Hotel 140",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.53196
+        },
+        {
+          "place_id": "0x89e37b254c5629f1:0xe69cca45ab51d8c4",
+          "name": "Boston Homestel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.52839
+        },
+        {
+          "place_id": "0x89e37a72f56624eb:0xa817c67ae0156ddb",
+          "name": "40 Berkeley",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.4961
+        }
+      ]
+    },
+    {
+      "query_id": "q19",
+      "request": {
+        "query": "lodging near a university",
+        "city": "Cambridge",
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 91.17,
+      "results": [
+        {
+          "place_id": "0x89e37751dda7c2d5:0xa7a9cafcfa4ba979",
+          "name": "Harding House",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.53144
+        },
+        {
+          "place_id": "0x89e37745dc4b8c67:0xfec5580ca246f28b",
+          "name": "A Friendly Inn At Harvard",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.51444
+        },
+        {
+          "place_id": "0x89e3773e4e1f84d5:0x2d50ae4fa4f9f27e",
+          "name": "Mary Prentiss Inn, Hotel Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.49943
+        },
+        {
+          "place_id": "0x89e37744a8ef4d59:0xb34446284914817a",
+          "name": "The Charles Hotel",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.49046
+        },
+        {
+          "place_id": "0x89e377a84ed83c29:0xf2ef810197806712",
+          "name": "AC Hotel by Marriott Boston Cambridge",
+          "category": "lodging",
+          "city": "Cambridge",
+          "score": 0.48557
+        }
+      ]
+    },
+    {
+      "query_id": "q20",
+      "request": {
+        "query": "hotel rooms for a weekend visit",
+        "city": null,
+        "method": "semantic",
+        "top_k": 5
+      },
+      "expected_category": "lodging",
+      "category_hits_at_5": 1.0,
+      "returned": 5,
+      "duplicate_places": 0,
+      "http_ms": 83.48,
+      "results": [
+        {
+          "place_id": "0x89e37a1dfbbe4485:0x4edced0fa3dba16d",
+          "name": "The Verb Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.61051
+        },
+        {
+          "place_id": "0x89e37083925d8041:0x158bd8deb5df67d1",
+          "name": "Club Quarters Hotel, Boston, Faneuil Hall",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.58777
+        },
+        {
+          "place_id": "0x89e37a72ff64a49f:0x6fb5cbcc2fb9a26b",
+          "name": "The Chandler Inn Hotel",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.5738
+        },
+        {
+          "place_id": "0x89e379b33818a925:0x8fbf1bef90d3a5a3",
+          "name": "Hotel Boston",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.57128
+        },
+        {
+          "place_id": "0x89e37a11971a1f81:0x8d234cfbd3553f9c",
+          "name": "The Inn at St Botolph",
+          "category": "lodging",
+          "city": "Boston",
+          "score": 0.56101
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+NAME                    IMAGE                                                                     COMMAND                  SERVICE      CREATED          STATUS                      PORTS
+roamwise-api-1          roamwise-api                                                              "uv run --frozen --n…"   api          12 minutes ago   Up 12 minutes (healthy)     127.0.0.1:8000->8000/tcp
+roamwise-evaluate-1     roamwise-evaluate                                                         "uv run --frozen --n…"   evaluate     12 minutes ago   Exited (0) 12 minutes ago
+roamwise-index-1        roamwise-index                                                            "uv run --frozen --n…"   index        12 minutes ago   Exited (0) 12 minutes ago
+roamwise-ingest-1       roamwise-ingest                                                           "uv run --frozen --n…"   ingest       12 minutes ago   Exited (0) 12 minutes ago
+roamwise-preprocess-1   roamwise-preprocess                                                       "uv run --frozen --n…"   preprocess   12 minutes ago   Exited (0) 12 minutes ago
+roamwise-web-1          sha256:8fd744e49ed0df68b8c6530ef54ad345537bc669d802857774561d77304a8396   "/docker-entrypoint.…"   web          14 minutes ago   Up 14 minutes               127.0.0.1:8080->80/tcp

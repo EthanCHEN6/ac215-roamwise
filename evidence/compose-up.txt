@@ -1,0 +1,300 @@
+ Image roamwise-index Building
+ Image roamwise-api Building
+ Image roamwise-web Building
+ Image roamwise-evaluate Building
+ Image roamwise-ingest Building
+ Image roamwise-preprocess Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 3.51kB 0.0s done
+#1 DONE 0.0s
+
+#2 [evaluate internal] load build definition from Dockerfile
+#2 transferring dockerfile: 565B 0.0s done
+#2 DONE 0.1s
+
+#3 [preprocess internal] load build definition from Dockerfile
+#3 transferring dockerfile: 542B 0.0s done
+#3 DONE 0.1s
+
+#4 [api internal] load build definition from Dockerfile
+#4 transferring dockerfile: 556B 0.0s done
+#4 DONE 0.1s
+
+#5 [index internal] load build definition from Dockerfile
+#5 transferring dockerfile: 527B 0.0s done
+#5 DONE 0.1s
+
+#6 [preprocess internal] load metadata for ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632
+#6 DONE 0.1s
+
+#7 [web internal] load build definition from Dockerfile
+#7 transferring dockerfile: 276B 0.0s done
+#7 DONE 0.1s
+
+#8 [ingest internal] load build definition from Dockerfile
+#8 transferring dockerfile: 462B done
+#8 DONE 0.2s
+
+#9 [ingest internal] load .dockerignore
+#9 transferring context: 32B
+#9 transferring context: 92B 0.0s done
+#9 DONE 0.0s
+
+#10 [web internal] load metadata for docker.io/library/nginx:1.28.0-alpine@sha256:30f1c0d78e0ad60901648be663a710bdadf19e4c10ac6782c235200619158284
+#10 DONE 0.1s
+
+#11 [index 1/6] FROM ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632
+#11 resolve ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632
+#11 resolve ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632 0.1s done
+#11 DONE 0.1s
+
+#12 [preprocess internal] load build context
+#12 transferring context: 952B 0.1s done
+#12 DONE 0.1s
+
+#13 [web 1/3] FROM docker.io/library/nginx:1.28.0-alpine@sha256:30f1c0d78e0ad60901648be663a710bdadf19e4c10ac6782c235200619158284
+#13 resolve docker.io/library/nginx:1.28.0-alpine@sha256:30f1c0d78e0ad60901648be663a710bdadf19e4c10ac6782c235200619158284 0.1s done
+#13 DONE 0.1s
+
+#14 [ingest internal] load build context
+#14 transferring context: 7.33kB 0.1s done
+#14 DONE 0.1s
+
+#15 [index internal] load build context
+#15 transferring context: 7.04kB 0.1s done
+#15 DONE 0.1s
+
+#16 [api internal] load build context
+#16 transferring context: 192.72kB 0.1s done
+#16 DONE 0.2s
+
+#17 [web internal] load build context
+#17 transferring context: 17.84kB 0.0s done
+#17 DONE 0.2s
+
+#18 [evaluate internal] load build context
+#18 transferring context: 14.69kB 0.1s done
+#18 DONE 0.2s
+
+#19 [web 2/3] COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
+#19 CACHED
+
+#20 [web 3/3] COPY frontend/index.html frontend/app.js frontend/styles.css /usr/share/nginx/html/
+#20 CACHED
+
+#21 [web] exporting to image
+#21 exporting layers 0.0s done
+#21 exporting manifest sha256:f4a8ed03bdbec8ec078e0c3b9a23f164be45b357ddb8971af9bf95a44e632150 done
+#21 exporting config sha256:7b0f2f02e4e5ac13b2b3c933dcc9072cf065d8d24da7da8243b8235b909dce0e done
+#21 ...
+
+#22 [evaluate 3/7] COPY services/evaluate/pyproject.toml services/evaluate/uv.lock ./
+#22 CACHED
+
+#23 [preprocess 3/6] COPY services/preprocess/pyproject.toml services/preprocess/uv.lock ./
+#23 CACHED
+
+#24 [api 3/6] COPY services/api/pyproject.toml services/api/uv.lock ./
+#24 CACHED
+
+#25 [index 3/6] COPY services/index/pyproject.toml services/index/uv.lock ./
+#25 CACHED
+
+#26 [ingest 3/6] COPY services/ingest/pyproject.toml services/ingest/uv.lock ./
+#26 CACHED
+
+#27 [evaluate 2/6] WORKDIR /app
+#27 CACHED
+
+#28 [evaluate 4/7] RUN uv sync --frozen --no-dev
+#28 CACHED
+
+#29 [ingest 4/6] RUN uv sync --frozen --no-dev
+#29 CACHED
+
+#30 [index 4/6] RUN uv sync --frozen --no-dev
+#30 CACHED
+
+#31 [preprocess 4/6] RUN uv sync --frozen --no-dev
+#31 CACHED
+
+#32 [api 4/6] RUN uv sync --frozen --no-dev
+#32 CACHED
+
+#21 [web] exporting to image
+#21 exporting attestation manifest sha256:622ebc050ce50ddfe6f8d58764f92f2d9c98e74bf8531f840dabfcc27d926000 0.1s done
+#21 exporting manifest list sha256:33dbd7aa5e8b2b224c4d1ebaffb208d99b00b5eb07ffbc7a30f82ccc01ea95c0
+#21 ...
+
+#33 [evaluate 5/7] COPY roamwise ./roamwise
+#33 DONE 0.2s
+
+#34 [ingest 5/6] COPY roamwise ./roamwise
+#34 DONE 0.3s
+
+#35 [index 5/6] COPY roamwise ./roamwise
+#35 DONE 0.3s
+
+#21 [web] exporting to image
+#21 exporting manifest list sha256:33dbd7aa5e8b2b224c4d1ebaffb208d99b00b5eb07ffbc7a30f82ccc01ea95c0 0.1s done
+#21 naming to docker.io/library/roamwise-web:latest 0.0s done
+#21 unpacking to docker.io/library/roamwise-web:latest 0.0s done
+#21 DONE 0.5s
+
+#36 [preprocess 5/6] COPY roamwise ./roamwise
+#36 DONE 0.4s
+
+#37 [api 5/6] COPY roamwise ./roamwise
+#37 DONE 0.4s
+
+#38 [preprocess 6/6] COPY config ./config
+#38 ...
+
+#39 [evaluate 6/7] COPY config ./config
+#39 DONE 0.5s
+
+#40 [ingest 6/6] COPY config ./config
+#40 DONE 0.5s
+
+#41 [evaluate 7/7] COPY evaluation ./evaluation
+#41 ...
+
+#42 [index 6/6] COPY config ./config
+#42 DONE 0.6s
+
+#38 [preprocess 6/6] COPY config ./config
+#38 DONE 0.5s
+
+#43 [api 6/6] COPY config ./config
+#43 DONE 0.6s
+
+#44 [preprocess] exporting to image
+#44 ...
+
+#41 [evaluate 7/7] COPY evaluation ./evaluation
+#41 DONE 0.4s
+
+#45 [evaluate] exporting to image
+#45 ...
+
+#46 [web] resolving provenance for metadata file
+#46 DONE 0.0s
+
+#44 [preprocess] exporting to image
+#44 exporting layers 1.6s done
+#44 exporting manifest sha256:81ebc0feaa6e97b0b0fd18970421efe384e046056820e12c90aec7f98a5e1b03
+#44 exporting manifest sha256:81ebc0feaa6e97b0b0fd18970421efe384e046056820e12c90aec7f98a5e1b03 0.1s done
+#44 exporting config sha256:104966af79d713afd239625e93f868ac51ae8f7f57db2d150c8234f45e9f3367
+#44 exporting config sha256:104966af79d713afd239625e93f868ac51ae8f7f57db2d150c8234f45e9f3367 0.2s done
+#44 exporting attestation manifest sha256:10ee6d6cc13cfd67315d751cbd7e8970e9c341c8c71688a45af5430b93ce4535
+#44 exporting attestation manifest sha256:10ee6d6cc13cfd67315d751cbd7e8970e9c341c8c71688a45af5430b93ce4535 0.2s done
+#44 exporting manifest list sha256:411768b3369b26178bce555c80fb24b9b00259c5b0fd99ea10360d66fdbaa4b7
+#44 exporting manifest list sha256:411768b3369b26178bce555c80fb24b9b00259c5b0fd99ea10360d66fdbaa4b7 0.1s done
+#44 naming to docker.io/library/roamwise-preprocess:latest
+#44 ...
+
+#47 [ingest] exporting to image
+#47 exporting layers 0.9s done
+#47 exporting manifest sha256:750a2028e44fc35cbf8468ed670529a2cb11885e0382c045f7fcea507e2ae12c 0.2s done
+#47 exporting config sha256:14da0d6ee79b908039ec2c51a2392c5aae2a620453e4ecd8823fb2641ece50b2 0.2s done
+#47 exporting attestation manifest sha256:2bc35ae52b952451dccc0e17780c73a66098287620c939e4e0f973a264949dad 0.1s done
+#47 exporting manifest list sha256:bab12cb5d28d374ec5bad7b28cf29aa5c0b75cfef15b174815aaef7ceb948205 0.1s done
+#47 naming to docker.io/library/roamwise-ingest:latest 0.1s done
+#47 unpacking to docker.io/library/roamwise-ingest:latest 0.6s done
+#47 DONE 2.6s
+
+#44 [preprocess] exporting to image
+#44 naming to docker.io/library/roamwise-preprocess:latest 0.0s done
+#44 unpacking to docker.io/library/roamwise-preprocess:latest
+#44 ...
+
+#48 [index] exporting to image
+#48 exporting layers 1.4s done
+#48 exporting manifest sha256:69a04e7a33985557df8a42f73cb0d20a2935dc2eb46a87ebf8cf89104b54e5ff 0.1s done
+#48 exporting config sha256:b54c2aa1db614c7b3795e465e112ee05dcff297461c4215d3479cdaf201d2bcb 0.1s done
+#48 exporting attestation manifest sha256:3dc938af0ff31e733a50cf515e6fa9165550cf31198a6a799787a23288458fa6 0.2s done
+#48 exporting manifest list sha256:5b40aaebacdf5d83740e648090081b9416b5e2fa3f64bc7eb39e0de51f3a775c 0.2s done
+#48 naming to docker.io/library/roamwise-index:latest 0.0s done
+#48 unpacking to docker.io/library/roamwise-index:latest 0.4s done
+#48 DONE 2.8s
+
+#44 [preprocess] exporting to image
+#44 unpacking to docker.io/library/roamwise-preprocess:latest 0.4s done
+#44 DONE 2.9s
+
+#45 [evaluate] exporting to image
+#45 exporting layers 1.5s done
+#45 exporting manifest sha256:ccdb8f924452f383e3484b4c3ac0ccefc7bd91bdf15a722d27320422c033447e 0.1s done
+#45 exporting config sha256:5d8e707a60c63329bb3eec21310fce17861b34536aa1f0bf718cc657436c1e6c 0.1s done
+#45 exporting attestation manifest sha256:cb15f0ff49162688f7f637cdd165f425db2d8d3d250f08b850f9766452a33c50 0.1s done
+#45 exporting manifest list sha256:e362d8f83c6aa1682461367b7a3ac7018f612b34d401cd1be90db99d0ada21c1 0.1s done
+#45 naming to docker.io/library/roamwise-evaluate:latest 0.0s done
+#45 unpacking to docker.io/library/roamwise-evaluate:latest
+#45 ...
+
+#49 [api] exporting to image
+#49 exporting layers 1.5s done
+#49 exporting manifest sha256:6f363a09822ae6848993e91fbb824889dea490f23e0154a496b5bbf9ff0f690e 0.1s done
+#49 exporting config sha256:8760d3f4d8619e58341f3e452c7bcaee68e2715e985dac1319882fe3cea1f7c2 0.1s done
+#49 exporting attestation manifest sha256:6d8f8f973697232dd2d78749c036f0078c72d119c5cc2d4a34ac589f362c7d5f 0.2s done
+#49 exporting manifest list sha256:c4cb5bb5a22047199586cdfd3c8922c77a59f048c42749e7c2944cb061e71032 0.1s done
+#49 naming to docker.io/library/roamwise-api:latest 0.0s done
+#49 unpacking to docker.io/library/roamwise-api:latest 0.4s done
+#49 DONE 2.8s
+
+#45 [evaluate] exporting to image
+#45 unpacking to docker.io/library/roamwise-evaluate:latest 0.5s done
+#45 DONE 3.0s
+
+#50 [ingest] resolving provenance for metadata file
+#50 DONE 0.7s
+
+#51 [index] resolving provenance for metadata file
+#51 DONE 0.5s
+
+#52 [preprocess] resolving provenance for metadata file
+#52 DONE 0.1s
+
+#53 [evaluate] resolving provenance for metadata file
+#53 DONE 0.3s
+
+#54 [api] resolving provenance for metadata file
+#54 DONE 0.0s
+ Image roamwise-evaluate Built
+ Image roamwise-web Built
+ Image roamwise-ingest Built
+ Image roamwise-preprocess Built
+ Image roamwise-index Built
+ Image roamwise-api Built
+time="2026-10-16T00:24:39-04:00" level=warning msg="volume \"roamwise-data\" already exists but was not created by Docker Compose. Use `external: true` to use an existing volume"
+ Container roamwise-web-1 Running
+ Container roamwise-ingest-1 Recreate
+ Container roamwise-ingest-1 Recreated
+ Container roamwise-preprocess-1 Recreate
+ Container roamwise-preprocess-1 Recreated
+ Container roamwise-index-1 Recreate
+ Container roamwise-index-1 Recreated
+ Container roamwise-api-1 Recreate
+ Container roamwise-api-1 Recreated
+ Container roamwise-evaluate-1 Recreate
+ Container roamwise-evaluate-1 Recreated
+ Container roamwise-ingest-1 Starting
+ Container roamwise-ingest-1 Started
+ Container roamwise-ingest-1 Waiting
+ Container roamwise-ingest-1 Exited
+ Container roamwise-preprocess-1 Starting
+ Container roamwise-preprocess-1 Started
+ Container roamwise-preprocess-1 Waiting
+ Container roamwise-preprocess-1 Exited
+ Container roamwise-index-1 Starting
+ Container roamwise-index-1 Started
+ Container roamwise-index-1 Waiting
+ Container roamwise-index-1 Exited
+ Container roamwise-api-1 Starting
+ Container roamwise-api-1 Started
+ Container roamwise-api-1 Waiting
+ Container roamwise-api-1 Waiting
+ Container roamwise-api-1 Healthy
+ Container roamwise-api-1 Healthy
+ Container roamwise-evaluate-1 Starting
+ Container roamwise-evaluate-1 Started

@@ -1,0 +1,71 @@
+{
+  "dataset_id": "boston-36bb6d7b74e39df3",
+  "created_at": "2026-10-16T04:18:01.237254+00:00",
+  "config": {
+    "schema_version": 1,
+    "selection_version": "boston-v1",
+    "cities": [
+      "Boston",
+      "Cambridge",
+      "Somerville"
+    ],
+    "boston_neighborhoods": [
+      "Allston",
+      "Brighton",
+      "Charlestown",
+      "Dorchester",
+      "East Boston",
+      "Jamaica Plain",
+      "Roxbury",
+      "South Boston",
+      "West Roxbury",
+      "Roslindale",
+      "Hyde Park",
+      "Mattapan"
+    ],
+    "bounds": {
+      "min_lat": 42.22,
+      "max_lat": 42.43,
+      "min_lon": -71.2,
+      "max_lon": -70.98
+    },
+    "places_per_category": 125,
+    "reviews_per_place": 6,
+    "chunk_words": 100,
+    "chunk_overlap": 20,
+    "max_review_words": 400,
+    "collection": "roamwise_minilm_v1",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "embedding_dimensions": 384,
+    "distance": "cosine"
+  },
+  "counts": {
+    "metadata_rows": 92520,
+    "duplicate_eligible_places": 10,
+    "review_rows_scanned": 10447007,
+    "selected_place_duplicate_texts": 23615,
+    "eligible_places": 4114,
+    "places": 500,
+    "sampled_reviews": 3000,
+    "chunks": 3976
+  },
+  "category_counts": {
+    "culture": 125,
+    "food": 125,
+    "lodging": 125,
+    "outdoors": 125
+  },
+  "city_counts": {
+    "Boston": 383,
+    "Somerville": 25,
+    "Cambridge": 92
+  },
+  "files": {
+    "places.jsonl": "5c82f99907d7d830f735f464849eeb6faa9d38c5900fcb5c27af5aa130abd25b",
+    "chunks.jsonl": "395f37d9093f6f76b7712a351f9677ed1d86e009d6a466ea7b6424adae42b70b"
+  },
+  "source_sha256": {
+    "meta-Massachusetts.json.gz": "56afa7ec4515f7411e14150e092bd10cac6062bef1577674d7a850f856a63f1f",
+    "review-Massachusetts.json.gz": "534ee80143f0f5e475fd39d87783cbf7ae6357ec57dbde33c7259c5e9dda3948"
+  }
+}

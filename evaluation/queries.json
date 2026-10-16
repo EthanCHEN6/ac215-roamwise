@@ -1,0 +1,22 @@
+[
+  {"id":"q01","query":"art museum and paintings","city":"Boston","expected_category":"culture"},
+  {"id":"q02","query":"museum exhibits near Harvard","city":"Cambridge","expected_category":"culture"},
+  {"id":"q03","query":"library with books and historic architecture","city":"Boston","expected_category":"culture"},
+  {"id":"q04","query":"theater for live performances","city":"Boston","expected_category":"culture"},
+  {"id":"q05","query":"art gallery and exhibitions","city":null,"expected_category":"culture"},
+  {"id":"q06","query":"park for an outdoor walk","city":"Boston","expected_category":"outdoors"},
+  {"id":"q07","query":"garden with flowers and trees","city":"Boston","expected_category":"outdoors"},
+  {"id":"q08","query":"university campus walk","city":"Cambridge","expected_category":"outdoors"},
+  {"id":"q09","query":"aquarium to see fish","city":"Boston","expected_category":"outdoors"},
+  {"id":"q10","query":"park for walking outside","city":"Somerville","expected_category":"outdoors"},
+  {"id":"q11","query":"coffee shop for a morning coffee","city":"Cambridge","expected_category":"food"},
+  {"id":"q12","query":"restaurant for seafood dinner","city":"Boston","expected_category":"food"},
+  {"id":"q13","query":"bakery with fresh pastries","city":"Boston","expected_category":"food"},
+  {"id":"q14","query":"pizza restaurant for lunch","city":"Somerville","expected_category":"food"},
+  {"id":"q15","query":"cafe for breakfast","city":null,"expected_category":"food"},
+  {"id":"q16","query":"hotel for an overnight stay","city":"Boston","expected_category":"lodging"},
+  {"id":"q17","query":"hotel accommodation in Cambridge","city":"Cambridge","expected_category":"lodging"},
+  {"id":"q18","query":"hostel for a short stay","city":"Boston","expected_category":"lodging"},
+  {"id":"q19","query":"lodging near a university","city":"Cambridge","expected_category":"lodging"},
+  {"id":"q20","query":"hotel rooms for a weekend visit","city":null,"expected_category":"lodging"}
+]

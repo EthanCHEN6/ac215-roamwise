@@ -1,0 +1,18 @@
+{
+  "dataset": "UCSD Google Local 2021 / Massachusetts",
+  "checked_at": "2026-10-16T04:24:51.740063+00:00",
+  "files": [
+    {
+      "name": "meta-Massachusetts.json.gz",
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/meta-Massachusetts.json.gz",
+      "sha256": "56afa7ec4515f7411e14150e092bd10cac6062bef1577674d7a850f856a63f1f",
+      "bytes": 20934405
+    },
+    {
+      "name": "review-Massachusetts.json.gz",
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/review-Massachusetts.json.gz",
+      "sha256": "534ee80143f0f5e475fd39d87783cbf7ae6357ec57dbde33c7259c5e9dda3948",
+      "bytes": 823152997
+    }
+  ]
+}

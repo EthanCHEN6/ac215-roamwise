@@ -1,0 +1,71 @@
+ Image roamwise-test Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 649B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 549B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 92B 0.0s done
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [1/7] FROM ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632
+#6 resolve ghcr.io/astral-sh/uv:0.8.22-python3.12-bookworm-slim@sha256:28df4bbd896cf66a224f2e0cb22240a9a2b9803a3a13519bcadf2e9fdd68c632 0.1s done
+#6 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 1.33kB 0.0s done
+#5 DONE 0.1s
+
+#7 [2/7] WORKDIR /app
+#7 CACHED
+
+#8 [3/7] COPY services/test/pyproject.toml services/test/uv.lock ./
+#8 CACHED
+
+#9 [4/7] RUN uv sync --frozen --no-dev
+#9 CACHED
+
+#10 [5/7] COPY roamwise ./roamwise
+#10 DONE 0.1s
+
+#11 [6/7] COPY config ./config
+#11 DONE 0.2s
+
+#12 [7/7] COPY tests ./tests
+#12 DONE 0.1s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 0.5s done
+#13 exporting manifest sha256:17dcca360e9d9ed22a62fa3431ba7148969c82fa92e1da4161e77114acf5afef 0.1s done
+#13 exporting config sha256:f712675ae908c4471f4bab0ea389e44ac62050de9ee0feda095a66d7f1399521 0.1s done
+#13 exporting attestation manifest sha256:232c82decf4898568b29485f66a482651b1a5ba3adf4879fedb5cf3b52fee3b9 0.1s done
+#13 exporting manifest list sha256:f5d2838d46ff84c7806a0a46b31d9bbfb3112e8b45e80611a2e7d6ad88eb2f6c
+#13 exporting manifest list sha256:f5d2838d46ff84c7806a0a46b31d9bbfb3112e8b45e80611a2e7d6ad88eb2f6c 0.1s done
+#13 naming to docker.io/library/roamwise-test:latest 0.0s done
+#13 unpacking to docker.io/library/roamwise-test:latest
+#13 unpacking to docker.io/library/roamwise-test:latest 0.2s done
+#13 DONE 1.3s
+
+#14 resolving provenance for metadata file
+#14 DONE 0.1s
+ Image roamwise-test Built
+ Container roamwise-test-run-eebe344e3ba5 Creating
+ Container roamwise-test-run-eebe344e3ba5 Created
+..................                                                       [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/starlette/testclient.py:51
+  /app/.venv/lib/python3.12/site-packages/starlette/testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+18 passed, 1 warning in 4.72s

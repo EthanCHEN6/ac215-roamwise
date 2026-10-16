@@ -1,0 +1,14 @@
+name: container-tests
+on:
+  push:
+    branches: [milestone2]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test in the uv container
+        run: docker compose --profile test run --build --rm test

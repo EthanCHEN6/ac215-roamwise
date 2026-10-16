@@ -1,0 +1,20 @@
+{"time": "2026-10-16T04:09:58.563937+00:00", "event": "download_complete", "file": "meta-Massachusetts.json.gz", "bytes": 20934405, "sha256": "56afa7ec4515f7411e14150e092bd10cac6062bef1577674d7a850f856a63f1f"}
+Using CPython 3.12.11 interpreter at: /usr/local/bin/python3
+Creating virtual environment at: /tmp/venv
+{"time": "2026-10-16T04:10:05.671185+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 52}
+{"time": "2026-10-16T04:10:12.072397+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 105}
+{"time": "2026-10-16T04:10:17.843408+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 157}
+{"time": "2026-10-16T04:10:23.675385+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 210}
+{"time": "2026-10-16T04:10:29.818579+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 262}
+{"time": "2026-10-16T04:10:35.210129+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 315}
+{"time": "2026-10-16T04:10:40.907213+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 367}
+{"time": "2026-10-16T04:10:46.793918+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 419}
+{"time": "2026-10-16T04:10:53.314890+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 472}
+{"time": "2026-10-16T04:10:59.327474+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 524}
+{"time": "2026-10-16T04:11:05.627076+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 577}
+{"time": "2026-10-16T04:11:11.245709+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 629}
+{"time": "2026-10-16T04:11:16.324759+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 682}
+{"time": "2026-10-16T04:11:21.901810+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 734}
+{"time": "2026-10-16T04:11:28.328602+00:00", "event": "download_progress", "file": "review-Massachusetts.json.gz", "megabytes": 786}
+{"time": "2026-10-16T04:11:33.503493+00:00", "event": "download_complete", "file": "review-Massachusetts.json.gz", "bytes": 823152997, "sha256": "534ee80143f0f5e475fd39d87783cbf7ae6357ec57dbde33c7259c5e9dda3948"}
+{"time": "2026-10-16T04:11:33.514861+00:00", "event": "ingest_complete", "files": 2}
