@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A source-backed Boston travel retrieval demo for Harvard AC215. Try live search, explore recorded examples, and download project materials."
+    />
+    <title>RoamWise · Explore the MS2 demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#">roamwise<span>↗</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#examples">Examples</a><a href="#materials">Materials</a
+        ><a
+          href="https://github.com/EthanCHEN6/ac215-roamwise/tree/milestone2"
+          target="_blank"
+          rel="noopener"
+          >GitHub ↗</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">GREATER BOSTON / AC215 · MILESTONE 2</p>
+          <h1>A good place<br />to start.</h1>
+          <p class="lede">
+            Find places in Boston, Cambridge and Somerville.<br />See the source
+            behind each suggestion.
+          </p>
+          <div class="actions">
+            <a
+              class="primary live-link"
+              href="https://surrounding-differently-elections-extends.trycloudflare.com"
+              target="_blank"
+              rel="noopener"
+              >Open live search <span>↗</span></a
+            ><a class="secondary" href="#examples"
+              >Explore recorded examples ↓</a
+            >
+          </div>
+          <p class="availability">
+            Live search runs while the demo computer is online.<br />This page
+            and the materials stay available when it is offline.
+          </p>
+        </div>
+        <figure class="preview">
+          <img
+            src="assets/app-search.png"
+            alt="RoamWise search interface showing Harvard Art Museums and cited review passages"
+            width="1200"
+            height="900"
+          />
+          <figcaption>
+            <span>THE WORKING APPLICATION</span
+            ><span>Recorded interface / October 2026</span>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="facts" aria-label="Dataset snapshot">
+        <p><strong>500</strong> places</p>
+        <p><strong>3,000</strong> sampled reviews</p>
+        <p><strong>3,976</strong> indexed passages</p>
+        <p class="snapshot">
+          Historical source data<br /><strong>through September 2021</strong>
+        </p>
+      </div>
+      <section id="examples" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A LOOK INSIDE</p>
+            <h2>Same question. Two ways to search.</h2>
+          </div>
+          <p>
+            These are saved results from the real API.<br />For a new question,
+            open live search above.
+          </p>
+        </div>
+        <div class="controls">
+          <div class="tabs" role="group" aria-label="Recorded query">
+            <button data-example="art" aria-pressed="true">
+              Art near Harvard</button
+            ><button data-example="parks" aria-pressed="false">
+              A walk in Boston</button
+            ><button data-example="coffee" aria-pressed="false">
+              Coffee in Cambridge
+            </button>
+          </div>
+          <div>
+            <label for="method">Method</label
+            ><select id="method">
+              <option value="semantic">Meaning & source text</option>
+              <option value="baseline">Category & rating baseline</option>
+            </select>
+          </div>
+        </div>
+        <div class="query-bar">
+          <p id="query">Loading recorded examples…</p>
+          <span id="method-note"></span>
+        </div>
+        <div id="results" class="results" aria-live="polite"></div>
+        <p class="caption" id="record-note">
+          Recorded results; no new model computation runs on this page.
+        </p>
+      </section>
+      <section id="materials" class="section materials">
+        <div>
+          <p class="eyebrow">FOR TEAMMATES, TFs & CURIOUS VISITORS</p>
+          <h2>The project,<br />ready to share.</h2>
+          <p class="body-copy">
+            A reproducible retrieval pipeline with a working frontend, source
+            citations and a simple baseline. Python uses uv; processing,
+            embedding, serving and tests run in Docker.
+          </p>
+          <a
+            class="text-link"
+            href="https://github.com/EthanCHEN6/ac215-roamwise/tree/milestone2"
+            target="_blank"
+            rel="noopener"
+            >Browse the repository ↗</a
+          >
+        </div>
+        <div class="downloads">
+          <a href="assets/RoamWise_MS2.pptx" download
+            ><span class="item-number">01</span
+            ><span
+              ><strong>Presentation</strong
+              ><small
+                >10 slides · English with Chinese speaker notes</small
+              ></span
+            ><span>↓</span></a
+          ><a
+            href="https://github.com/EthanCHEN6/ac215-roamwise/blob/milestone2/docs/MS2_%E4%B8%AD%E6%96%87%E5%AF%B9%E7%85%A7%E8%AF%B4%E6%98%8E.md"
+            target="_blank"
+            rel="noopener"
+            ><span class="item-number">02</span
+            ><span
+              ><strong>中文要求与代码说明</strong
+              ><small>教授要求、实现对照和演示准备</small></span
+            ><span>↗</span></a
+          ><a
+            href="https://github.com/EthanCHEN6/ac215-roamwise/archive/refs/heads/milestone2.zip"
+            ><span class="item-number">03</span
+            ><span
+              ><strong>Complete source package</strong
+              ><small
+                >Code, lockfiles, documentation and run evidence</small
+              ></span
+            ><span>↓</span></a
+          ><a
+            href="https://github.com/EthanCHEN6/ac215-roamwise/blob/milestone2/docs/RESULTS.md"
+            target="_blank"
+            rel="noopener"
+            ><span class="item-number">04</span
+            ><span
+              ><strong>Results & limitations</strong
+              ><small
+                >18 passing tests · 20 benchmark queries per method</small
+              ></span
+            ><span>↗</span></a
+          >
+        </div>
+      </section>
+      <section class="closing">
+        <p class="eyebrow">WHAT THIS DEMO DOES</p>
+        <p>Query → retrieved passages → places with sources.</p>
+        <div>
+          MS2 implements retrieval, not generated itineraries. Ratings, hours
+          and prices may be outdated. Verify current information before
+          visiting. The category benchmark is a proxy, not a human relevance
+          score.
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>RoamWise / The Routevengers</span><span>Harvard AC215 · MS2</span
+      ><a
+        href="https://github.com/EthanCHEN6/ac215-roamwise/blob/milestone2/docs/SHARING.md"
+        target="_blank"
+        rel="noopener"
+        >About this shared demo ↗</a
+      >
+    </footer>
+  </body>
+</html>

@@ -209,7 +209,9 @@ async function search() {
       throw new Error(
         response.status === 422
           ? "Please check your search inputs."
-          : "Search is unavailable. Check that the Docker pipeline is running.",
+          : response.status === 429
+            ? "The demo is busy. Wait a few seconds and search again."
+            : "Search is temporarily unavailable. Please try again later.",
       );
     const data = await response.json();
     $("results-title").textContent = data.results.length

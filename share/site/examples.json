@@ -1,0 +1,1269 @@
+{
+  "recorded_at": "2026-10-16T05:48:15.382234+00:00",
+  "examples": [
+    {
+      "id": "art",
+      "title": "Art near Harvard",
+      "query": "art museum with paintings near Harvard",
+      "city": "Cambridge",
+      "methods": {
+        "semantic": {
+          "query": "art museum with paintings near Harvard",
+          "method": "semantic",
+          "score_type": "cosine_similarity",
+          "dataset_id": "boston-36bb6d7b74e39df3",
+          "index_id": "80e7efec48cc96a7",
+          "elapsed_ms": 246.02,
+          "results": [
+            {
+              "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+              "name": "Harvard Art Museums",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Art museum",
+                "Cafe",
+                "Gift shop",
+                "Tourist attraction"
+              ],
+              "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+              "latitude": 42.3740898,
+              "longitude": -71.1143582,
+              "rating": 4.7,
+              "review_count": 1177,
+              "price": null,
+              "historical_hours": null,
+              "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+              "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 89957,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.81463,
+              "evidence": [
+                {
+                  "citation": "1.1",
+                  "chunk_id": "3a83e36a268390009a0d1ac96e7c251c",
+                  "kind": "review",
+                  "text": "The museum was in a convenient location by foot, anywhere in Boston when taking the T. I felt annoyed that there was no monetary break",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8946844,
+                  "timestamp_ms": 1606849907107
+                },
+                {
+                  "citation": "1.2",
+                  "chunk_id": "bcadd89b0ed6ea108b1f94ed0aab0567",
+                  "kind": "review",
+                  "text": "Van Gogh, Ingres, Picasso, Otto Dix, Greek classical period terracotta pottery, Etruscan art, masterpieces in the most important university museum in the United States. The",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8946847,
+                  "timestamp_ms": 1613958404966
+                }
+              ],
+              "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge."
+            },
+            {
+              "place_id": "0x89e37746dc6c2a43:0xe91ab7e7b2233d1c",
+              "name": "Harvard Museum of the Ancient Near East",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Museum",
+                "Archaeological museum",
+                "Tourist attraction"
+              ],
+              "address": "Harvard Museum of the Ancient Near East, 6 Divinity Ave, Cambridge, MA 02138",
+              "latitude": 42.378068,
+              "longitude": -71.11397,
+              "rating": 4.5,
+              "review_count": 104,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Tuesday",
+                  "11AM–4PM"
+                ],
+                [
+                  "Wednesday",
+                  "11AM–4PM"
+                ],
+                [
+                  "Thursday",
+                  "11AM–4PM"
+                ],
+                [
+                  "Friday",
+                  "11AM–4PM"
+                ],
+                [
+                  "Saturday",
+                  "Closed"
+                ],
+                [
+                  "Sunday",
+                  "11AM–4PM"
+                ],
+                [
+                  "Monday",
+                  "11AM–4PM"
+                ]
+              ],
+              "description": "Collection of archeological finds from the Near East, including Egypt, Israel, Iraq & Syria.",
+              "source_url": "https://www.google.com/maps?cid=16796939965985668380",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 73231,
+              "sampled_review_count": 6,
+              "rank": 2,
+              "score": 0.74084,
+              "evidence": [
+                {
+                  "citation": "2.1",
+                  "chunk_id": "34c61b483e2b43ee3e0a271901de1931",
+                  "kind": "review",
+                  "text": "Small place with rich history. Free entry for everyone. Great location to visit.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 4170580,
+                  "timestamp_ms": 1564082851849
+                },
+                {
+                  "citation": "2.2",
+                  "chunk_id": "e104dd1889b2cbd3c1ff7526bf4afdc9",
+                  "kind": "review",
+                  "text": "Great place, very interesting Egyptian and Mesopotamian collections, plus augmented reality",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 4170577,
+                  "timestamp_ms": 1558780610649
+                }
+              ],
+              "reason": "Retrieved source material for Harvard Museum of the Ancient Near East, a culture place in Cambridge."
+            },
+            {
+              "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+              "name": "The Harvard Museum of Natural History",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Natural history museum"
+              ],
+              "address": "The Harvard Museum of Natural History, 26 Oxford St, Cambridge, MA 02138",
+              "latitude": 42.3784626,
+              "longitude": -71.1155576,
+              "rating": 4.7,
+              "review_count": 2903,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Sunday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Monday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Tuesday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Wednesday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Thursday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Friday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Saturday",
+                  "9AM–5PM"
+                ]
+              ],
+              "description": "Extensive natural-science collections, including animals, minerals & the famous Glass Flowers.",
+              "source_url": "https://www.google.com/maps?cid=7006910828754287227",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 92192,
+              "sampled_review_count": 6,
+              "rank": 3,
+              "score": 0.69665,
+              "evidence": [
+                {
+                  "citation": "3.1",
+                  "chunk_id": "95d722df6cb279f3bf0ac7dd4d2e9cfd",
+                  "kind": "review",
+                  "text": "Such a cool museum. My whole family loved it. You can easily spend several hours here. We stayed for about 2 hours. Well put together",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10106072,
+                  "timestamp_ms": 1581741851040
+                },
+                {
+                  "citation": "3.2",
+                  "chunk_id": "4c2d003fe6e8f624e7dc8fd7aac0f59b",
+                  "kind": "review",
+                  "text": "I went here many times, twice for a school field trip, and 5 times on my own, and I was always having a great time",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10106074,
+                  "timestamp_ms": 1614296731019
+                }
+              ],
+              "reason": "Retrieved source material for The Harvard Museum of Natural History, a culture place in Cambridge."
+            }
+          ],
+          "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability."
+        },
+        "baseline": {
+          "query": "art museum with paintings near Harvard",
+          "method": "baseline",
+          "score_type": "bayesian_rating_1_to_5",
+          "dataset_id": "boston-36bb6d7b74e39df3",
+          "index_id": "80e7efec48cc96a7",
+          "elapsed_ms": 18.63,
+          "results": [
+            {
+              "place_id": "0x89e377681efab811:0xa23191acd7421e0",
+              "name": "The Brattle Theatre",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Movie theater",
+                "Non-profit organization"
+              ],
+              "address": "The Brattle Theatre, 40 Brattle St, Cambridge, MA 02138",
+              "latitude": 42.373592699999996,
+              "longitude": -71.1213969,
+              "rating": 4.8,
+              "review_count": 418,
+              "price": null,
+              "historical_hours": null,
+              "description": "Popular cinema featuring indie, art-house & classic film series, special events plus wine & beer.",
+              "source_url": "https://www.google.com/maps?cid=730455167470936544",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 89626,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 4.71453,
+              "evidence": [
+                {
+                  "citation": "1.1",
+                  "chunk_id": "3f7b2d73cea663ce7c4ab096192e7b25",
+                  "kind": "metadata",
+                  "text": "The Brattle Theatre. Cambridge. Categories: Movie theater, Non-profit organization. Popular cinema featuring indie, art-house & classic film series, special events plus wine & beer.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 89626,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "1.2",
+                  "chunk_id": "eea0604d4c3ab45eda536175a0b23177",
+                  "kind": "review",
+                  "text": "Awesome community theater. My housemates and I have been renting it out every once in a while during COVID for small group screenings (max 15",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8816627,
+                  "timestamp_ms": 1616250690207
+                }
+              ],
+              "reason": "Retrieved source material for The Brattle Theatre, a culture place in Cambridge."
+            },
+            {
+              "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+              "name": "The Harvard Museum of Natural History",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Natural history museum"
+              ],
+              "address": "The Harvard Museum of Natural History, 26 Oxford St, Cambridge, MA 02138",
+              "latitude": 42.3784626,
+              "longitude": -71.1155576,
+              "rating": 4.7,
+              "review_count": 2903,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Sunday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Monday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Tuesday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Wednesday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Thursday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Friday",
+                  "9AM–5PM"
+                ],
+                [
+                  "Saturday",
+                  "9AM–5PM"
+                ]
+              ],
+              "description": "Extensive natural-science collections, including animals, minerals & the famous Glass Flowers.",
+              "source_url": "https://www.google.com/maps?cid=7006910828754287227",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 92192,
+              "sampled_review_count": 6,
+              "rank": 2,
+              "score": 4.68815,
+              "evidence": [
+                {
+                  "citation": "2.1",
+                  "chunk_id": "198812f7a86717b302dd1931dadbf816",
+                  "kind": "metadata",
+                  "text": "The Harvard Museum of Natural History. Cambridge. Categories: Natural history museum. Extensive natural-science collections, including animals, minerals & the famous Glass Flowers.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 92192,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "2.2",
+                  "chunk_id": "e67f64029be20f7fffbd0285beb8f0bc",
+                  "kind": "review",
+                  "text": "This museum of natural history is a must if you are in the Boston area. We were very impressed with their collections. The glass flower",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10106069,
+                  "timestamp_ms": 1578247294934
+                }
+              ],
+              "reason": "Retrieved source material for The Harvard Museum of Natural History, a culture place in Cambridge."
+            },
+            {
+              "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+              "name": "Harvard Art Museums",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Art museum",
+                "Cafe",
+                "Gift shop",
+                "Tourist attraction"
+              ],
+              "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+              "latitude": 42.3740898,
+              "longitude": -71.1143582,
+              "rating": 4.7,
+              "review_count": 1177,
+              "price": null,
+              "historical_hours": null,
+              "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+              "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 89957,
+              "sampled_review_count": 6,
+              "rank": 3,
+              "score": 4.67148,
+              "evidence": [
+                {
+                  "citation": "3.1",
+                  "chunk_id": "19baef4d7043d09cd891dd81a3497bb1",
+                  "kind": "metadata",
+                  "text": "Harvard Art Museums. Cambridge. Categories: Art museum, Cafe, Gift shop, Tourist attraction. Harvard's oldest museum, featuring European & American art from the Middle Ages to",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 89957,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "3.2",
+                  "chunk_id": "c8204ee9637dab523e791923d1166ece",
+                  "kind": "review",
+                  "text": "You shall not be here merely for its collections but for the architecture.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8946843,
+                  "timestamp_ms": 1618687808648
+                }
+              ],
+              "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge."
+            }
+          ],
+          "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability."
+        }
+      }
+    },
+    {
+      "id": "parks",
+      "title": "A walk in Boston",
+      "query": "A park for an outdoor walk",
+      "city": "Boston",
+      "methods": {
+        "semantic": {
+          "query": "A park for an outdoor walk",
+          "method": "semantic",
+          "score_type": "cosine_similarity",
+          "dataset_id": "boston-36bb6d7b74e39df3",
+          "index_id": "80e7efec48cc96a7",
+          "elapsed_ms": 312.54,
+          "results": [
+            {
+              "place_id": "0x89e37bef78f9b9b3:0x1aea05ea8116550f",
+              "name": "Harambee Park",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "City park",
+                "Park"
+              ],
+              "address": "Harambee Park, 930 Blue Hill Avenue, Boston, MA 02124",
+              "latitude": 42.2926876,
+              "longitude": -71.0884643,
+              "rating": 4.1,
+              "review_count": 288,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Wednesday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Thursday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Friday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Saturday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Sunday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Monday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Tuesday",
+                  "6AM–11:30PM"
+                ]
+              ],
+              "description": "Historic space from the landscape architect of NYC's Central Park, with tennis, basketball & more.",
+              "source_url": "https://www.google.com/maps?cid=1939369094282630415",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 77850,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.56333,
+              "evidence": [
+                {
+                  "citation": "1.1",
+                  "chunk_id": "9d99bf387ba50c18724f88413078e487",
+                  "kind": "review",
+                  "text": "Out of all the parks my son says this one is his favorite. It is quite nice but no parking - no bueno",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 5165563,
+                  "timestamp_ms": 1619130586956
+                },
+                {
+                  "citation": "1.2",
+                  "chunk_id": "f382a632a4daee644385518f16ad10bd",
+                  "kind": "review",
+                  "text": "Nice park. Has water sprinkles. A toddler space, and older kid space. Picnic tables. Basketball. Tennis center 2 mins. Away and a boys and girls",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 5165561,
+                  "timestamp_ms": 1619297325729
+                }
+              ],
+              "reason": "Retrieved source material for Harambee Park, a outdoors place in Boston."
+            },
+            {
+              "place_id": "0x89e37a2a30255649:0x2e18fe57a00ca31d",
+              "name": "Southwest Corridor Park",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "State park",
+                "Park",
+                "Recreation center",
+                "Tourist attraction"
+              ],
+              "address": "Southwest Corridor Park, 38 New Heath St, Boston, MA 02130",
+              "latitude": 42.3203653,
+              "longitude": -71.1011876,
+              "rating": 4.4,
+              "review_count": 288,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Sunday",
+                  "6:30AM–7PM"
+                ],
+                [
+                  "Monday",
+                  "6:30AM–7PM"
+                ],
+                [
+                  "Tuesday",
+                  "6:30AM–7PM"
+                ],
+                [
+                  "Wednesday",
+                  "6:30AM–7PM"
+                ],
+                [
+                  "Thursday",
+                  "6:30AM–7PM"
+                ],
+                [
+                  "Friday",
+                  "6:30AM–7PM"
+                ],
+                [
+                  "Saturday",
+                  "6:30AM–7PM"
+                ]
+              ],
+              "description": "Long 4.1-mi. park with trails, playgrounds, basketball & tennis courts & street hockey rinks.",
+              "source_url": "https://www.google.com/maps?cid=3321684377486533405",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 66981,
+              "sampled_review_count": 6,
+              "rank": 2,
+              "score": 0.5318,
+              "evidence": [
+                {
+                  "citation": "2.1",
+                  "chunk_id": "dba4dfa3306e4b6e0412675039780463",
+                  "kind": "review",
+                  "text": "It's a pleasant walk on a sunny day. On a rainy day if you have an umbrella still very nice walk.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 3322079,
+                  "timestamp_ms": 1616751267609
+                },
+                {
+                  "citation": "2.2",
+                  "chunk_id": "d67939b51585c1b7a513f0eca28fd776",
+                  "kind": "review",
+                  "text": "I am a regular visitor to the Jamaica Plain section of the park. I used to commute by bicycle from JP to the Melnea Cass",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 3322076,
+                  "timestamp_ms": 1618583158557
+                }
+              ],
+              "reason": "Retrieved source material for Southwest Corridor Park, a outdoors place in Boston."
+            },
+            {
+              "place_id": "0x89e37f5c67b0a0fd:0x7f0a034068b982fc",
+              "name": "Millennium Park",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "City park",
+                "Nature preserve",
+                "Tourist attraction"
+              ],
+              "address": "Millennium Park, 300 Gardner St, Boston, MA 02132",
+              "latitude": 42.2818787,
+              "longitude": -71.18020969999999,
+              "rating": 4.7,
+              "review_count": 648,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Thursday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Friday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Saturday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Sunday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Monday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Tuesday",
+                  "6AM–11:30PM"
+                ],
+                [
+                  "Wednesday",
+                  "6AM–11:30PM"
+                ]
+              ],
+              "description": "Natural retreat with 6 miles of accessible trails, playing fields, a canoe launch & scenic views.",
+              "source_url": "https://www.google.com/maps?cid=9154132767753732860",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 37979,
+              "sampled_review_count": 6,
+              "rank": 3,
+              "score": 0.52861,
+              "evidence": [
+                {
+                  "citation": "3.1",
+                  "chunk_id": "e70c2752392e50fe8c7bfb7a231b5f9b",
+                  "kind": "review",
+                  "text": "A wonderful place to walk your dog, particularly if you want them to socialize. Great views, lots of open space, tons of parking. Only real",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 1082481,
+                  "timestamp_ms": 1620603217030
+                },
+                {
+                  "citation": "3.2",
+                  "chunk_id": "9324cbf7fbef33c2652f5d60b1979fa4",
+                  "kind": "review",
+                  "text": "Lots of fields for baseball and soccer with nice walking paths around the park and a nice little playground. Decent views from the \"top\" and",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 1082480,
+                  "timestamp_ms": 1623530932330
+                }
+              ],
+              "reason": "Retrieved source material for Millennium Park, a outdoors place in Boston."
+            }
+          ],
+          "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability."
+        },
+        "baseline": {
+          "query": "A park for an outdoor walk",
+          "method": "baseline",
+          "score_type": "bayesian_rating_1_to_5",
+          "dataset_id": "boston-36bb6d7b74e39df3",
+          "index_id": "80e7efec48cc96a7",
+          "elapsed_ms": 20.12,
+          "results": [
+            {
+              "place_id": "0x89e37a77d14e4c2f:0xd71ca9d80ba76f8d",
+              "name": "Trapology Boston",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "Escape room center",
+                "Amusement center",
+                "Corporate entertainment service",
+                "Outdoor activity organiser",
+                "Tourist attraction"
+              ],
+              "address": "Trapology Boston, 177 Tremont St 2nd Floor, Boston, MA 02111",
+              "latitude": 42.3529998,
+              "longitude": -71.0640533,
+              "rating": 4.9,
+              "review_count": 615,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Monday",
+                  "Closed"
+                ],
+                [
+                  "Tuesday",
+                  "5:30–10PM"
+                ],
+                [
+                  "Wednesday",
+                  "2:30–10PM"
+                ],
+                [
+                  "Thursday",
+                  "2:30–10PM"
+                ],
+                [
+                  "Friday",
+                  "2:30–10PM"
+                ],
+                [
+                  "Saturday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Sunday",
+                  "11AM–10PM"
+                ]
+              ],
+              "description": "Interactive escape room game center offering several themes, plus an open beer & wine bar.",
+              "source_url": "https://www.google.com/maps?cid=15500450762875957133",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 79572,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 4.83233,
+              "evidence": [
+                {
+                  "citation": "1.1",
+                  "chunk_id": "5c947e357ac02f6baf3b4731e241d475",
+                  "kind": "metadata",
+                  "text": "Trapology Boston. Boston. Categories: Escape room center, Amusement center, Corporate entertainment service, Outdoor activity organiser, Tourist attraction. Interactive escape room game center offering several themes,",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 79572,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "1.2",
+                  "chunk_id": "1fd8f515e81f38ed3962dc733dff7d36",
+                  "kind": "review",
+                  "text": "I’ve had the pleasure of doing two virtual escape room experiences with Trapology. They did an amazing job making this type of experience virtual! I",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 5554776,
+                  "timestamp_ms": 1620010491704
+                }
+              ],
+              "reason": "Retrieved source material for Trapology Boston, a outdoors place in Boston."
+            },
+            {
+              "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+              "name": "Boston Public Garden",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "City park",
+                "Garden",
+                "Tourist attraction"
+              ],
+              "address": "Boston Public Garden, 4 Charles St, Boston, MA 02108",
+              "latitude": 42.354167499999996,
+              "longitude": -71.0704279,
+              "rating": 4.8,
+              "review_count": 9998,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Saturday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Sunday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Monday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Tuesday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Wednesday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Thursday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Friday",
+                  "Open 24 hours"
+                ]
+              ],
+              "description": "Placid, verdant, circa-1837 city park with a lagoon, boat rides, fountains & other sights.",
+              "source_url": "https://www.google.com/maps?cid=14688348396492089089",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 92472,
+              "sampled_review_count": 6,
+              "rank": 2,
+              "score": 4.79602,
+              "evidence": [
+                {
+                  "citation": "2.1",
+                  "chunk_id": "dc94431cfa18300c687db4b5ac896ae7",
+                  "kind": "metadata",
+                  "text": "Boston Public Garden. Boston. Categories: City park, Garden, Tourist attraction. Placid, verdant, circa-1837 city park with a lagoon, boat rides, fountains & other sights.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 92472,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "2.2",
+                  "chunk_id": "a829648bee04bc69c6737e1659ecfa65",
+                  "kind": "review",
+                  "text": "Nice quick walk through for those who like the scenery and monuments. Pretty close to Boston Commons so you get the best of both worlds.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10377787,
+                  "timestamp_ms": 1618272736121
+                }
+              ],
+              "reason": "Retrieved source material for Boston Public Garden, a outdoors place in Boston."
+            },
+            {
+              "place_id": "0x89e379f63f253f6f:0xa2800dcb647a5504",
+              "name": "Fenway Park",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "Stadium",
+                "Baseball field",
+                "Tourist attraction"
+              ],
+              "address": "Fenway Park, 4 Jersey St, Boston, MA 02215, United States",
+              "latitude": 42.3466764,
+              "longitude": -71.0972178,
+              "rating": 4.8,
+              "review_count": 9998,
+              "price": null,
+              "historical_hours": null,
+              "description": "Historic, small-capacity ballpark, home of the Red Sox & occasional big-name concert venue.",
+              "source_url": "https://www.google.com/maps?cid=11709374198378550532",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 41628,
+              "sampled_review_count": 6,
+              "rank": 3,
+              "score": 4.79602,
+              "evidence": [
+                {
+                  "citation": "3.1",
+                  "chunk_id": "cf33624f5a56d51e1b742fbfdcce8400",
+                  "kind": "metadata",
+                  "text": "Fenway Park. Boston. Categories: Stadium, Baseball field, Tourist attraction. Historic, small-capacity ballpark, home of the Red Sox & occasional big-name concert venue.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 41628,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "3.2",
+                  "chunk_id": "8d9109542cbc24db5d2ca4062f051541",
+                  "kind": "review",
+                  "text": "Night games or day games are equally memorable. This place just lives up to the billing as a great venue for baseball. However....you better hand",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 1337372,
+                  "timestamp_ms": 1622598162558
+                }
+              ],
+              "reason": "Retrieved source material for Fenway Park, a outdoors place in Boston."
+            }
+          ],
+          "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability."
+        }
+      }
+    },
+    {
+      "id": "coffee",
+      "title": "Coffee in Cambridge",
+      "query": "Coffee shop for breakfast",
+      "city": "Cambridge",
+      "methods": {
+        "semantic": {
+          "query": "Coffee shop for breakfast",
+          "method": "semantic",
+          "score_type": "cosine_similarity",
+          "dataset_id": "boston-36bb6d7b74e39df3",
+          "index_id": "80e7efec48cc96a7",
+          "elapsed_ms": 170.49,
+          "results": [
+            {
+              "place_id": "0x89e377523f3ac3d1:0xab2badf0cb7eb871",
+              "name": "Prospect Place Bed & Breakfast",
+              "city": "Cambridge",
+              "category": "lodging",
+              "categories": [
+                "Bed & breakfast",
+                "Hotel"
+              ],
+              "address": "Prospect Place Bed & Breakfast, 112 Prospect St, Cambridge, MA 02139",
+              "latitude": 42.3678075,
+              "longitude": -71.1018223,
+              "rating": 4.9,
+              "review_count": 18,
+              "price": null,
+              "historical_hours": null,
+              "description": "Cozy Victorian lodging featuring old-world furnishings & breakfast served in an elegant dining room.",
+              "source_url": "https://www.google.com/maps?cid=12334143254202071153",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 74327,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.51874,
+              "evidence": [
+                {
+                  "citation": "1.1",
+                  "chunk_id": "fe27b432fd6087ff90206a9992b1c217",
+                  "kind": "review",
+                  "text": "My brother, niece and I had a great stay. We were here two years ago and wanted to book here again. \"It feels like a",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 4347491,
+                  "timestamp_ms": 1536279071741
+                },
+                {
+                  "citation": "1.2",
+                  "chunk_id": "ed4c3b043591d1a1d8b36f72fa9643a7",
+                  "kind": "metadata",
+                  "text": "Prospect Place Bed & Breakfast. Cambridge. Categories: Bed & breakfast, Hotel. Cozy Victorian lodging featuring old-world furnishings & breakfast served in an elegant dining room.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 74327,
+                  "timestamp_ms": null
+                }
+              ],
+              "reason": "Retrieved source material for Prospect Place Bed & Breakfast, a lodging place in Cambridge."
+            },
+            {
+              "place_id": "0x89b849f0a72645fd:0x75e787c6b6f1143d",
+              "name": "A Cambridge House Inn At Porter",
+              "city": "Cambridge",
+              "category": "lodging",
+              "categories": [
+                "Bed & breakfast"
+              ],
+              "address": "A Cambridge House Inn At Porter, 2218 Massachusetts Ave, Cambridge, MA 02140",
+              "latitude": 42.3932777,
+              "longitude": -71.12619269999999,
+              "rating": 4.1,
+              "review_count": 58,
+              "price": null,
+              "historical_hours": null,
+              "description": "Victorian-style property featuring period & modern rooms, plus free continental breakfast & WiFi.",
+              "source_url": "https://www.google.com/maps?cid=8495908509600257085",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 67581,
+              "sampled_review_count": 6,
+              "rank": 2,
+              "score": 0.48143,
+              "evidence": [
+                {
+                  "citation": "2.1",
+                  "chunk_id": "6d2c96a98bffae62ce09def79d81ad20",
+                  "kind": "review",
+                  "text": "Lovely place. Nice room. Ok breakfast.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 3394379,
+                  "timestamp_ms": 1537648795751
+                },
+                {
+                  "citation": "2.2",
+                  "chunk_id": "6128e4b6d8466e22567bb7191a6b988d",
+                  "kind": "review",
+                  "text": "No breakfast during the pandemic, but charming rooms, very helpful staff, and a great market and deli across the street. And for the pandemic they",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 3394377,
+                  "timestamp_ms": 1619923469891
+                }
+              ],
+              "reason": "Retrieved source material for A Cambridge House Inn At Porter, a lodging place in Cambridge."
+            },
+            {
+              "place_id": "0x89e3774339457a0d:0x3d269c89b22efb",
+              "name": "Tatte Bakery & Cafe",
+              "city": "Cambridge",
+              "category": "food",
+              "categories": [
+                "Cafe",
+                "Bakery",
+                "Coffee shop",
+                "Restaurant"
+              ],
+              "address": "Tatte Bakery & Cafe, 1288 Massachusetts Ave, Cambridge, MA 02138",
+              "latitude": 42.3726822,
+              "longitude": -71.1169414,
+              "rating": 4.5,
+              "review_count": 1615,
+              "price": "$$",
+              "historical_hours": [
+                [
+                  "Thursday",
+                  "7AM–9PM"
+                ],
+                [
+                  "Friday",
+                  "7AM–9PM"
+                ],
+                [
+                  "Saturday",
+                  "7AM–9PM"
+                ],
+                [
+                  "Sunday",
+                  "7AM–9PM"
+                ],
+                [
+                  "Monday",
+                  "7AM–9PM"
+                ],
+                [
+                  "Tuesday",
+                  "7AM–9PM"
+                ],
+                [
+                  "Wednesday",
+                  "7AM–9PM"
+                ]
+              ],
+              "description": "",
+              "source_url": "https://www.google.com/maps?cid=17212427346259707",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 86525,
+              "sampled_review_count": 6,
+              "rank": 3,
+              "score": 0.46435,
+              "evidence": [
+                {
+                  "citation": "3.1",
+                  "chunk_id": "5dc793793afad7412ed31efac195dbc1",
+                  "kind": "review",
+                  "text": "Terrible service!! I was with my 7 year old waiting for my order, the hostess told me to wait outdoors. We were both masked and",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 7533877,
+                  "timestamp_ms": 1617480195525
+                },
+                {
+                  "citation": "3.2",
+                  "chunk_id": "68bd76abef2172178728d80b398aa544",
+                  "kind": "metadata",
+                  "text": "Tatte Bakery & Cafe. Cambridge. Categories: Cafe, Bakery, Coffee shop, Restaurant.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 86525,
+                  "timestamp_ms": null
+                }
+              ],
+              "reason": "Retrieved source material for Tatte Bakery & Cafe, a food place in Cambridge."
+            }
+          ],
+          "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability."
+        },
+        "baseline": {
+          "query": "Coffee shop for breakfast",
+          "method": "baseline",
+          "score_type": "bayesian_rating_1_to_5",
+          "dataset_id": "boston-36bb6d7b74e39df3",
+          "index_id": "80e7efec48cc96a7",
+          "elapsed_ms": 7.03,
+          "results": [
+            {
+              "place_id": "0x89e37754654e9227:0xabd328d66f8dad77",
+              "name": "Veggie Galaxy",
+              "city": "Cambridge",
+              "category": "food",
+              "categories": [
+                "Vegetarian restaurant",
+                "Diner"
+              ],
+              "address": "Veggie Galaxy, 450 Massachusetts Ave, Cambridge, MA 02139",
+              "latitude": 42.3636597,
+              "longitude": -71.1011111,
+              "rating": 4.7,
+              "review_count": 2843,
+              "price": "$$",
+              "historical_hours": [
+                [
+                  "Monday",
+                  "11AM–8PM"
+                ],
+                [
+                  "Tuesday",
+                  "11AM–8PM"
+                ],
+                [
+                  "Wednesday",
+                  "11AM–8PM"
+                ],
+                [
+                  "Thursday",
+                  "11AM–8PM"
+                ],
+                [
+                  "Friday",
+                  "11AM–9PM"
+                ],
+                [
+                  "Saturday",
+                  "9:30AM–9PM"
+                ],
+                [
+                  "Sunday",
+                  "9:30AM–8PM"
+                ]
+              ],
+              "description": "Imaginative twist on an old-school diner specializing in from-scratch vegan & vegetarian options.",
+              "source_url": "https://www.google.com/maps?cid=12381284702031293815",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 88297,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 4.6879,
+              "evidence": [
+                {
+                  "citation": "1.1",
+                  "chunk_id": "b3f2d93f8fbf8032d5095bbba6a62ace",
+                  "kind": "metadata",
+                  "text": "Veggie Galaxy. Cambridge. Categories: Vegetarian restaurant, Diner. Imaginative twist on an old-school diner specializing in from-scratch vegan & vegetarian options.",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 88297,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "1.2",
+                  "chunk_id": "5edb58779093c79beb064d81ecdf6b6b",
+                  "kind": "review",
+                  "text": "Amazing food. The vegan milkshakes are to die for. Buffalo “chicken” tenders were yummyyyy. Everything is good here, I just wish they accepted cash. Realized",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8247165,
+                  "timestamp_ms": 1619280204162
+                }
+              ],
+              "reason": "Retrieved source material for Veggie Galaxy, a food place in Cambridge."
+            },
+            {
+              "place_id": "0x89e377548fd8bda7:0x589b9c005c670c09",
+              "name": "Toscanini's Ice Cream",
+              "city": "Cambridge",
+              "category": "food",
+              "categories": [
+                "Ice cream shop",
+                "Cake shop",
+                "Coffee shop"
+              ],
+              "address": "Toscanini's Ice Cream, 159 First St, Cambridge, MA 02139",
+              "latitude": 42.366014,
+              "longitude": -71.0782227,
+              "rating": 4.7,
+              "review_count": 2493,
+              "price": "$$",
+              "historical_hours": [
+                [
+                  "Monday",
+                  "Closed"
+                ],
+                [
+                  "Tuesday",
+                  "Closed"
+                ],
+                [
+                  "Wednesday",
+                  "12–11PM"
+                ],
+                [
+                  "Thursday",
+                  "12–11PM"
+                ],
+                [
+                  "Friday",
+                  "12–11PM"
+                ],
+                [
+                  "Saturday",
+                  "12–11PM"
+                ],
+                [
+                  "Sunday",
+                  "12–11PM"
+                ]
+              ],
+              "description": "Longtime favorite for espresso & gourmet ice cream in a range of unique flavors that changes often.",
+              "source_url": "https://www.google.com/maps?cid=6384868422092000265",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 91830,
+              "sampled_review_count": 6,
+              "rank": 2,
+              "score": 4.68624,
+              "evidence": [
+                {
+                  "citation": "2.1",
+                  "chunk_id": "e1ae3853d8ad924088380f12227592ae",
+                  "kind": "metadata",
+                  "text": "Toscanini's Ice Cream. Cambridge. Categories: Ice cream shop, Cake shop, Coffee shop. Longtime favorite for espresso & gourmet ice cream in a range of unique",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 91830,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "2.2",
+                  "chunk_id": "8d01214ab2fc0c7ab8e4ffa84bf7b7d2",
+                  "kind": "review",
+                  "text": "It was good. Ice cream were really fresh and tasty. I had B3, good for chocolate lovers. Strawberry was of real strawberry and not only",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 9855221,
+                  "timestamp_ms": 1618183584019
+                }
+              ],
+              "reason": "Retrieved source material for Toscanini's Ice Cream, a food place in Cambridge."
+            },
+            {
+              "place_id": "0x89e3775119ecbd2d:0x32c08dd4009dc097",
+              "name": "Life Alive Organic Cafe",
+              "city": "Cambridge",
+              "category": "food",
+              "categories": [
+                "Organic restaurant",
+                "Health food restaurant",
+                "Juice shop",
+                "Vegetarian restaurant"
+              ],
+              "address": "Life Alive Organic Cafe, 765 Massachusetts Ave, Cambridge, MA 02139",
+              "latitude": 42.366664,
+              "longitude": -71.105402,
+              "rating": 4.7,
+              "review_count": 1688,
+              "price": "$$",
+              "historical_hours": [
+                [
+                  "Sunday",
+                  "8AM–9PM"
+                ],
+                [
+                  "Monday",
+                  "8AM–9PM"
+                ],
+                [
+                  "Tuesday",
+                  "8AM–9PM"
+                ],
+                [
+                  "Wednesday",
+                  "8AM–9PM"
+                ],
+                [
+                  "Thursday",
+                  "8AM–9PM"
+                ],
+                [
+                  "Friday",
+                  "8AM–9PM"
+                ],
+                [
+                  "Saturday",
+                  "8AM–9PM"
+                ]
+              ],
+              "description": "Friendly, funky, quick-serve spot for organic veggie/vegan wraps, salads & smoothies.",
+              "source_url": "https://www.google.com/maps?cid=3657078839107764375",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 89612,
+              "sampled_review_count": 6,
+              "rank": 3,
+              "score": 4.67986,
+              "evidence": [
+                {
+                  "citation": "3.1",
+                  "chunk_id": "0729cdac759f6b27555883b1aca16688",
+                  "kind": "metadata",
+                  "text": "Life Alive Organic Cafe. Cambridge. Categories: Organic restaurant, Health food restaurant, Juice shop, Vegetarian restaurant. Friendly, funky, quick-serve spot for organic veggie/vegan wraps, salads &",
+                  "source_file": "meta-Massachusetts.json.gz",
+                  "source_line": 89612,
+                  "timestamp_ms": null
+                },
+                {
+                  "citation": "3.2",
+                  "chunk_id": "82945167e4bac9deb0a01b42d43b4a53",
+                  "kind": "review",
+                  "text": "This cafe serves up great healthy food that will leave you filling full and healthy. I tried the Green Goddess bowl. It was so delicious",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8808654,
+                  "timestamp_ms": 1618631039965
+                }
+              ],
+              "reason": "Retrieved source material for Life Alive Organic Cafe, a food place in Cambridge."
+            }
+          ],
+          "notice": "Historical data through September 2021. Check current hours, prices and availability. Similarity is not a match probability."
+        }
+      }
+    }
+  ],
+  "note": "Recorded API results, not live search. Excerpts shortened to 25 words."
+}

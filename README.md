@@ -4,6 +4,8 @@ Find places in Boston, Cambridge and Somerville using historical Google Local me
 
 ## Run
 
+For visitors: [public demo and materials](https://ethan-roamwise-ms2.thomaslinnn.chatgpt.site). Recorded examples are always available; live search requires the host computer to remain online. See [sharing instructions](docs/SHARING.md).
+
 Install Docker Desktop with Linux containers (Windows: WSL 2 backend), or Docker Engine with Compose on Linux. Allow at least 8 GB memory and about 8 GB free disk space. No host Python, GPU, cloud account or API key is needed.
 
 ```bash
