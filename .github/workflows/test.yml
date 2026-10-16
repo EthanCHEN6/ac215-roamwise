@@ -3,6 +3,7 @@ on:
   push:
     branches: [milestone2]
   pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
