@@ -1,68 +1,45 @@
 # RoamWise
 
-Find places in Boston, Cambridge and Somerville using historical Google Local metadata and reviews. The web app sends a request to FastAPI, retrieves source passages from Chroma, and shows places with citations. This MS2 build implements retrieval; it does not generate itineraries or claim live availability.
+Plan short trips in Boston, Cambridge or Somerville. A language model plans database searches, reads retrieved passages and drafts a cited itinerary from the places you select. The server checks place IDs, citations, daily stop limits and the proposed schedule.
+
+The website follows our six-page prototype: home → preferences → retrieval → selection → itinerary, with source details. This is a course prototype, not a booking service.
 
 ## Run
 
-For visitors: [public demo and materials](https://ethan-roamwise-ms2.thomaslinnn.chatgpt.site). Recorded examples are always available; live search requires the host computer to remain online. See [sharing instructions](docs/SHARING.md).
-
-Install Docker Desktop with Linux containers (Windows: WSL 2 backend), or Docker Engine with Compose on Linux. Allow at least 8 GB memory and about 8 GB free disk space. No host Python, GPU, cloud account or API key is needed.
+Install Docker with Compose. All Python services use uv and committed lockfiles. Computation runs in containers.
 
 ```bash
 git clone https://github.com/EthanCHEN6/ac215-roamwise.git
 cd ac215-roamwise
 git checkout milestone2
-docker compose up --build
+docker compose -f compose.yaml -f compose.rag.yaml up --build
 ```
 
-The last line downloads the data, preprocesses it, builds the vector index, starts the API and website, and runs the evaluation. The first run needs internet access and downloads about 844 MB of source data plus images and the encoder. Later runs reuse verified data and the index. Wait for the API health check and `evaluation_complete`.
+Open **http://localhost:8080** after the API is healthy. The first run downloads data, images and model weights. Allow at least 8 GB RAM and 12 GB disk. Local CPU generation uses Ollama and can be slow. The shared cloud service uses Vertex AI; see [deployment](docs/DEPLOYMENT.md).
 
-- App: http://localhost:8080
-- API schema and interactive requests: http://localhost:8000/docs
-- Status and versions: http://localhost:8000/api/status
-
-Stop with Ctrl+C and `docker compose down`. Named volumes keep the dataset and model. Do not add `-v` unless you intend to delete them. To run in the background, use `docker compose up --build -d`.
-
-## Pipeline
+For the original retrieval pipeline, use `docker compose up --build`. The new trip form needs a configured LLM and reports an error if generation is unavailable.
 
 ```text
-UCSD gzip files → ingest → preprocess → MiniLM / Chroma → FastAPI → static UI
-                                                         ↓
-                                              evaluation + saved evidence
+Historical source → clean/chunk → MiniLM embeddings → Chroma
+                                                       ↑
+Preferences → LLM search plan → retrieval → selection → LLM draft → validation
+Data maintenance: snapshot audit + Google ID discovery + on-demand current details
 ```
 
-| Component | What it does |
-|---|---|
-| `ingest` | Downloads two Massachusetts files and checks committed SHA-256 values. |
-| `preprocess` | Filters geography/categories, removes duplicate place IDs and review texts, drops reviewer identifiers, and chunks text. |
-| `index` | Embeds chunks with pretrained all-MiniLM-L6-v2 on CPU and persists a cosine index in Chroma. |
-| `api` | Validates requests, filters by city/type, deduplicates places, and returns source context. |
-| `web` | Offers search, source details, saved places and shortlist export. |
-| `evaluate` | Compares semantic retrieval with a category-and-rating baseline on 20 fixed queries. |
+The pilot contains 500 places, 3,000 reviews and 3,976 chunks, with sources through September 2021. Every chunk retains its source file, line, place ID and dataset ID. New Google API content is not inserted into this historical index. The maintenance catalog stores place IDs and our check timestamps only.
 
-Each Python service has a Dockerfile, `pyproject.toml` and `uv.lock`. Images use `uv sync --frozen`; CPU work, including tests and evaluation, runs in containers. The static frontend is also served in a container.
-
-## Data and model
-
-The pilot takes up to 125 places per category, ordered by source review count, and the first six distinct nonempty review texts per place in source order. This is a small, popularity-biased sample. Text chunks contain 100 words with 20-word overlap; reviews are capped at 400 words. Each chunk retains its place ID, source file, source line and dataset ID. See [data and model notes](docs/DATA.md).
-
-The baseline infers a broad category from query keywords and ranks using a Bayesian-adjusted rating. Semantic retrieval uses a pretrained encoder; no model is trained in MS2. Similarity is not a probability. The automatic category benchmark is not human Precision@5.
-
-## Verify and inspect
+## Verify
 
 ```bash
 docker compose --profile test run --build --rm test
 docker compose run --rm --no-deps evaluate
-docker compose ps -a
-docker compose logs --no-color
+docker compose -f compose.yaml -f compose.rag.yaml --profile maintenance run --build --rm data-agent
 ```
 
-Checked-in evidence includes [sample input](evidence/sample-input.json), [retrieved output](evidence/sample-output.json), [evaluation](evidence/evaluation.json), data/model manifests, logs and screenshots. Run evidence is regenerated in `evidence/`. Raw files, full review texts and model weights are not committed.
+Read [RAG design](docs/RAG.md), [Chinese explanation and TF questions](docs/RAG_中文讲解.md), [data notes](docs/DATA.md) and [retrieval results](docs/RESULTS.md). The original slides in `slides/` describe the earlier retrieval-only build; use the RAG notes for this update.
 
-See [results](docs/RESULTS.md), [the Chinese requirement/code guide](docs/MS2_中文对照说明.md), and [the presentation](slides/RoamWise_MS2.pptx).
+## Limits
 
-## Limits and next step
+Budget is a preference. Current prices, total cost, accessibility and availability are not verified by the planner. Travel times use distance and assumed speed, not routing. Citation checks establish reference membership, not the truth of every sentence. The 0.25 similarity cutoff is provisional. Results on 20 synthetic category queries are not human relevance or RAG-quality scores.
 
-Source data ends in September 2021. Prices and hours may be missing or outdated. English queries work best with this encoder. Geographic selection uses address parsing plus a bounding box, not city polygons. A place with few reviews can return fewer results under a restrictive filter. MS3 work should add independently reviewed relevance labels and train/evaluate a small reranker before adding generated explanations.
-
-Submission: push the `milestone2` branch and submit its full commit hash on Canvas. The [course MS2 page](https://harvard-iacs.github.io/2026-AC215/milestone2/) lists October 20, 10 PM ET and a team presentation with individual checks.
+The [AC215 MS2 requirements](https://harvard-iacs.github.io/2026-AC215/milestone2/) require a one-command container pipeline, retrieval evidence, a working application skeleton and documentation. Submit the full commit hash of the `milestone2` branch. A functioning demo does not establish a particular grade.

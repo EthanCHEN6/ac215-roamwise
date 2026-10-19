@@ -1,3 +1,5 @@
+> Earlier retrieval-only build. See [RAG update](RAG.md) and [new verification](RAG_RESULTS.md) for the current release.
+
 # MS2 run results
 
 Recorded on 2026-10-16 using Docker Desktop, Linux containers and CPU inference. Source and implementation versions are in the evidence manifests and uv lockfiles.

@@ -1,0 +1,448 @@
+{
+  "input": {
+    "trip": {
+      "city": "Boston",
+      "start_date": "2026-10-20",
+      "days": 2,
+      "interests": [
+        "History",
+        "Nature"
+      ],
+      "notes": "Historic places and public parks, with short visits.",
+      "adults": 2,
+      "children": 0,
+      "budget": 100,
+      "transport": "walk",
+      "pace": "balanced"
+    },
+    "place_ids": [
+      "0x89e3709b5849f247:0x20a325cbb627ca0e",
+      "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+      "0x89e370f21ceb539b:0x4331f7947542c00d",
+      "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73"
+    ]
+  },
+  "output": {
+    "id": "aeea514d9ce844209207de61ef737cef",
+    "status": "ok",
+    "generation_mode": "llm_rag",
+    "summary": "This two-day itinerary focuses on Boston's historical landmarks and scenic public spaces. The plan balances cultural exploration with relaxed walks through the city's notable outdoor areas, keeping daily visit durations short as requested.",
+    "trip": {
+      "city": "Boston",
+      "start_date": "2026-10-20",
+      "days": 2,
+      "interests": [
+        "History",
+        "Nature"
+      ],
+      "notes": "Historic places and public parks, with short visits.",
+      "adults": 2,
+      "children": 0,
+      "budget": 100,
+      "transport": "walk",
+      "pace": "balanced"
+    },
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-20",
+        "stops": [
+          {
+            "place_id": "0x89e3709b5849f247:0x20a325cbb627ca0e",
+            "day": 1,
+            "duration_minutes": 90,
+            "reason": "Historical reviews describe this site as a cultural space with a brief walking tour and significant history.",
+            "citation_ids": [
+              "S1.1",
+              "S1.2"
+            ],
+            "place": {
+              "place_id": "0x89e3709b5849f247:0x20a325cbb627ca0e",
+              "name": "Boston African American National Historic Site",
+              "city": "Boston",
+              "category": "culture",
+              "categories": [
+                "Historical place museum",
+                "Historical place",
+                "Tourist attraction"
+              ],
+              "address": "Boston African American National Historic Site, 46 Joy St, Boston, MA 02108",
+              "latitude": 42.3599643,
+              "longitude": -71.0651767,
+              "rating": 4.7,
+              "review_count": 46,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Wednesday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Thursday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Friday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Saturday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Sunday",
+                  "Closed"
+                ],
+                [
+                  "Monday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Tuesday",
+                  "10AM–4PM"
+                ]
+              ],
+              "description": "Rotating & permanent exhibits on local African-American history displayed in an 1834 schoolhouse.",
+              "source_url": "https://www.google.com/maps?cid=2351764987282180622",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 86914,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.81587,
+              "evidence": [
+                {
+                  "citation": "S1.1",
+                  "chunk_id": "7235a34a28ae2b3544ea51b5bafc8241",
+                  "kind": "review",
+                  "text": "Great cultural space!!! Tons of history to absorb and a brief walking tour. Definitely worth the $10 admission fee",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 7682145,
+                  "timestamp_ms": 1536003645683
+                },
+                {
+                  "citation": "S1.2",
+                  "chunk_id": "5b347cb80d73d0c9fad7ec049cc1d79a",
+                  "kind": "review",
+                  "text": "Definitely worth the visit.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 7682144,
+                  "timestamp_ms": 1616183515254
+                }
+              ],
+              "reason": "Retrieved source material for Boston African American National Historic Site, a culture place in Boston."
+            },
+            "start_minutes": 540,
+            "end_minutes": 630,
+            "transfer": null
+          },
+          {
+            "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+            "day": 1,
+            "duration_minutes": 60,
+            "reason": "Historical reviews describe this as a scenic location for a quick walk through monuments and nature.",
+            "citation_ids": [
+              "S2.1",
+              "S2.2"
+            ],
+            "place": {
+              "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+              "name": "Boston Public Garden",
+              "city": "Boston",
+              "category": "outdoors",
+              "categories": [
+                "City park",
+                "Garden",
+                "Tourist attraction"
+              ],
+              "address": "Boston Public Garden, 4 Charles St, Boston, MA 02108",
+              "latitude": 42.354167499999996,
+              "longitude": -71.0704279,
+              "rating": 4.8,
+              "review_count": 9998,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Saturday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Sunday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Monday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Tuesday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Wednesday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Thursday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Friday",
+                  "Open 24 hours"
+                ]
+              ],
+              "description": "Placid, verdant, circa-1837 city park with a lagoon, boat rides, fountains & other sights.",
+              "source_url": "https://www.google.com/maps?cid=14688348396492089089",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 92472,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.73597,
+              "evidence": [
+                {
+                  "citation": "S2.1",
+                  "chunk_id": "a829648bee04bc69c6737e1659ecfa65",
+                  "kind": "review",
+                  "text": "Nice quick walk through for those who like the scenery and monuments. Pretty close to Boston Commons so you get the best of both worlds.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10377787,
+                  "timestamp_ms": 1618272736121
+                },
+                {
+                  "citation": "S2.2",
+                  "chunk_id": "4536fbd03cdf206190e7b8957f459d4a",
+                  "kind": "review",
+                  "text": "NO WORDS CAN DESCRIBE MY LOVES....",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10377792,
+                  "timestamp_ms": 1616828137878
+                }
+              ],
+              "reason": "Retrieved source material for Boston Public Garden, a outdoors place in Boston."
+            },
+            "start_minutes": 661,
+            "end_minutes": 721,
+            "transfer": {
+              "minutes": 16,
+              "straight_line_km": 0.78,
+              "estimated": true,
+              "method": "Straight-line distance × 1.35, assumed speed and fixed buffer; not a routed journey."
+            }
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2026-10-21",
+        "stops": [
+          {
+            "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+            "day": 2,
+            "duration_minutes": 90,
+            "reason": "Historical reviews describe the library as a beautiful and timeless space.",
+            "citation_ids": [
+              "S4.1",
+              "S4.2"
+            ],
+            "place": {
+              "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+              "name": "Boston Public Library",
+              "city": "Boston",
+              "category": "culture",
+              "categories": [
+                "Public library",
+                "Historical landmark"
+              ],
+              "address": "Boston Public Library, 700 Boylston St, Boston, MA 02116",
+              "latitude": 42.349313599999995,
+              "longitude": -71.0781875,
+              "rating": 4.8,
+              "review_count": 1077,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Monday",
+                  "Closed"
+                ],
+                [
+                  "Tuesday",
+                  "10AM–6PM"
+                ],
+                [
+                  "Wednesday",
+                  "10AM–6PM"
+                ],
+                [
+                  "Thursday",
+                  "10AM–6PM"
+                ],
+                [
+                  "Friday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Saturday",
+                  "10AM–4PM"
+                ],
+                [
+                  "Sunday",
+                  "Closed"
+                ]
+              ],
+              "description": "Historic library with grand, Renaissance-style architecture, murals by John Singer Sargent & tours.",
+              "source_url": "https://www.google.com/maps?cid=13390430939121822835",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 91995,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.75731,
+              "evidence": [
+                {
+                  "citation": "S4.1",
+                  "chunk_id": "d100968dab9af90e9d0868b1431e8cdb",
+                  "kind": "review",
+                  "text": "Absolutely beautiful and timeless inside. I loved going here to study during my undergrad years,",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 9959994,
+                  "timestamp_ms": 1614098613212
+                },
+                {
+                  "citation": "S4.2",
+                  "chunk_id": "27f99e13dd6c90da7da6195ee2a4a992",
+                  "kind": "review",
+                  "text": "Unfortunately I was unable to visit the inside of it because it was close, only God knows the pain I felt. It looks amazingly beautiful and so inviting from the outside.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 9959991,
+                  "timestamp_ms": 1613015828591
+                }
+              ],
+              "reason": "Retrieved source material for Boston Public Library, a culture place in Boston."
+            },
+            "start_minutes": 540,
+            "end_minutes": 630,
+            "transfer": null
+          },
+          {
+            "place_id": "0x89e370f21ceb539b:0x4331f7947542c00d",
+            "day": 2,
+            "duration_minutes": 120,
+            "reason": "Historical reviews describe this park as a scenic area with significant historical context.",
+            "citation_ids": [
+              "S3.1",
+              "S3.2"
+            ],
+            "place": {
+              "place_id": "0x89e370f21ceb539b:0x4331f7947542c00d",
+              "name": "Boston National Historical Park",
+              "city": "Boston",
+              "category": "culture",
+              "categories": [
+                "National park",
+                "Historical place museum",
+                "History museum",
+                "Park",
+                "Tourist attraction",
+                "Visitor center"
+              ],
+              "address": "Boston National Historical Park, Building 5, Charlestown Navy Yard, Boston, MA 02109",
+              "latitude": 42.373162,
+              "longitude": -71.056834,
+              "rating": 4.7,
+              "review_count": 8467,
+              "price": null,
+              "historical_hours": [
+                [
+                  "Saturday",
+                  "10AM–5PM"
+                ],
+                [
+                  "Sunday",
+                  "10AM–5PM"
+                ],
+                [
+                  "Monday",
+                  "Open 24 hours"
+                ],
+                [
+                  "Tuesday",
+                  "Closed"
+                ],
+                [
+                  "Wednesday",
+                  "10AM–5PM"
+                ],
+                [
+                  "Thursday",
+                  "10AM–5PM"
+                ],
+                [
+                  "Friday",
+                  "10AM–5PM"
+                ]
+              ],
+              "description": "The 43-acre park with 2 visitor centers offers ranger-guided tours & talks about the city's history.",
+              "source_url": "https://www.google.com/maps?cid=4841923291394523149",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 92380,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.81555,
+              "evidence": [
+                {
+                  "citation": "S3.1",
+                  "chunk_id": "c151d8cf66d25117e36a6feaca5bc942",
+                  "kind": "review",
+                  "text": "Beautiful must hike a few steps. But scenic and worth it!",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10321489,
+                  "timestamp_ms": 1618160452437
+                },
+                {
+                  "citation": "S3.2",
+                  "chunk_id": "cec37720c3994def7b1a5bd59512d75a",
+                  "kind": "review",
+                  "text": "What History! If you've never been to Boston this is a must see on any trip. Lots of history here and a great place to take the kids to show them what our country's past was like. Enjoy! Hey if this info helped you in any way please like for me. God Bless!",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 10321491,
+                  "timestamp_ms": 1572291985740
+                }
+              ],
+              "reason": "Retrieved source material for Boston National Historical Park, a culture place in Boston."
+            },
+            "start_minutes": 710,
+            "end_minutes": 830,
+            "transfer": {
+              "minutes": 65,
+              "straight_line_km": 3.18,
+              "estimated": true,
+              "method": "Straight-line distance × 1.35, assumed speed and fixed buffer; not a routed journey."
+            }
+          }
+        ]
+      }
+    ],
+    "dataset_id": "boston-36bb6d7b74e39df3",
+    "index_id": "80e7efec48cc96a7",
+    "prompt_version": "rag-planner-v1",
+    "context_sha256": "c5c4f4e61f827bf887cfa9d1408b3845d2bb93c017a4c2684a52b0da82a617fa",
+    "model": {
+      "provider": "vertex",
+      "model": "gemini-3.1-flash-lite",
+      "configured": true
+    },
+    "validation": {
+      "place_ids": true,
+      "citation_membership": true,
+      "unique_stops": true,
+      "time_window": true,
+      "semantic_entailment": "not automatically verified",
+      "repair_attempts": 0
+    },
+    "elapsed_ms": 5589,
+    "notices": [
+      "Historical sources through September 2021. Check current opening hours and availability.",
+      "Visit lengths, breaks and transfers are planning estimates. The first journey is not included.",
+      "The budget is a preference. Current prices and total cost have not been verified.",
+      "AI-generated explanations can contain errors. Open each source before relying on a claim."
+    ]
+  }
+}

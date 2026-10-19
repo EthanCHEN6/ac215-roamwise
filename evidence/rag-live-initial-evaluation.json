@@ -1,0 +1,570 @@
+{
+  "checked_at": "2026-10-19T01:21:01.455070+00:00",
+  "base_url": "http://localhost:8000",
+  "kind": "live integration smoke test",
+  "cases": [
+    {
+      "case": "Cambridge recommendations",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 2477,
+      "result_count": 8
+    },
+    {
+      "case": "Cambridge itinerary",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 2387,
+      "validation": {
+        "place_ids": true,
+        "citation_membership": true,
+        "unique_stops": true,
+        "time_window": true,
+        "semantic_entailment": "not automatically verified",
+        "repair_attempts": 0
+      },
+      "error": null
+    },
+    {
+      "case": "Boston recommendations",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 3409,
+      "result_count": 13
+    },
+    {
+      "case": "Boston itinerary",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 4586,
+      "validation": {
+        "place_ids": true,
+        "citation_membership": true,
+        "unique_stops": true,
+        "time_window": true,
+        "semantic_entailment": "not automatically verified",
+        "repair_attempts": 0
+      },
+      "error": null
+    },
+    {
+      "case": "outside city",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 9776,
+      "output": {
+        "status": "needs_clarification",
+        "message": "I am a travel assistant for the Greater Boston area. I cannot plan trips for Paris, France.",
+        "results": []
+      }
+    },
+    {
+      "case": "instruction override",
+      "passed": false,
+      "http_status": 200,
+      "elapsed_ms": 2411,
+      "output": {
+        "status": "ok",
+        "message": "",
+        "results": [
+          {
+            "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+            "name": "Harvard Art Museums",
+            "city": "Cambridge",
+            "category": "culture",
+            "categories": [
+              "Art museum",
+              "Cafe",
+              "Gift shop",
+              "Tourist attraction"
+            ],
+            "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+            "latitude": 42.3740898,
+            "longitude": -71.1143582,
+            "rating": 4.7,
+            "review_count": 1177,
+            "price": null,
+            "historical_hours": null,
+            "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+            "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+            "source_snapshot": "Google Local 2021",
+            "metadata_source_line": 89957,
+            "sampled_review_count": 6,
+            "rank": 1,
+            "score": 0.87877,
+            "evidence": [
+              {
+                "citation": "S1.1",
+                "chunk_id": "26da02ad429668abb3a29281ea9640bd",
+                "kind": "review",
+                "text": "As much as I am not an art critic myself, gotta say I really liked visiting this museum. Prices are low and the place looks amazing. Plus a lot of good art to see. Recommending.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 8946845,
+                "timestamp_ms": 1603212432475
+              },
+              {
+                "citation": "S1.2",
+                "chunk_id": "80cf01851eaf7516358748333c524ed6",
+                "kind": "review",
+                "text": "Such a peaceful and beautiful museum. Has a wide array of art on every floor and a really cool gift shop! Also, I don't recommend wearing heels since it's very quiet!",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 8946846,
+                "timestamp_ms": 1546791707152
+              }
+            ],
+            "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge."
+          },
+          {
+            "place_id": "0x89e379fe564d3833:0xb088f5563275aca8",
+            "name": "MIT List Visual Arts Center",
+            "city": "Cambridge",
+            "category": "culture",
+            "categories": [
+              "Museum",
+              "Art gallery",
+              "Tourist attraction"
+            ],
+            "address": "MIT List Visual Arts Center, 20 Ames St, Cambridge, MA 02142",
+            "latitude": 42.3610052,
+            "longitude": -71.0878262,
+            "rating": 4.5,
+            "review_count": 126,
+            "price": null,
+            "historical_hours": [
+              [
+                "Friday",
+                "12–6PM"
+              ],
+              [
+                "Saturday",
+                "12–6PM"
+              ],
+              [
+                "Sunday",
+                "12–6PM"
+              ],
+              [
+                "Monday",
+                "Closed"
+              ],
+              [
+                "Tuesday",
+                "12–6PM"
+              ],
+              [
+                "Wednesday",
+                "12–6PM"
+              ],
+              [
+                "Thursday",
+                "12–8PM"
+              ]
+            ],
+            "description": "MIT's contemporary-art collection & temporary exhibits in an I.M. Pei-designed building.",
+            "source_url": "https://www.google.com/maps?cid=12720686898070531240",
+            "source_snapshot": "Google Local 2021",
+            "metadata_source_line": 90286,
+            "sampled_review_count": 6,
+            "rank": 2,
+            "score": 0.75485,
+            "evidence": [
+              {
+                "citation": "S2.1",
+                "chunk_id": "c31bc7cc981e7126b0279d4b7591e808",
+                "kind": "review",
+                "text": "The exhibits were unique, staff was friendly, and the price (free) can't be beat!",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 9121956,
+                "timestamp_ms": 1565459911839
+              },
+              {
+                "citation": "S2.2",
+                "chunk_id": "be8834fe93987df1c4c463a86805f87d",
+                "kind": "review",
+                "text": "A beautiful contemporary art museum. They have a nice website where you can find the schedule of all shows that are coming up. Cool gallery opening nights with vegetarian and vegan friendly options of food + tasty wines. Nice conversations, amazing art experiences and a meaningful contemporary art - these are the things you get at the LIST.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 9121955,
+                "timestamp_ms": 1529900085993
+              }
+            ],
+            "reason": "Retrieved source material for MIT List Visual Arts Center, a culture place in Cambridge."
+          },
+          {
+            "place_id": "0x89e37746dc6c2a43:0xe91ab7e7b2233d1c",
+            "name": "Harvard Museum of the Ancient Near East",
+            "city": "Cambridge",
+            "category": "culture",
+            "categories": [
+              "Museum",
+              "Archaeological museum",
+              "Tourist attraction"
+            ],
+            "address": "Harvard Museum of the Ancient Near East, 6 Divinity Ave, Cambridge, MA 02138",
+            "latitude": 42.378068,
+            "longitude": -71.11397,
+            "rating": 4.5,
+            "review_count": 104,
+            "price": null,
+            "historical_hours": [
+              [
+                "Tuesday",
+                "11AM–4PM"
+              ],
+              [
+                "Wednesday",
+                "11AM–4PM"
+              ],
+              [
+                "Thursday",
+                "11AM–4PM"
+              ],
+              [
+                "Friday",
+                "11AM–4PM"
+              ],
+              [
+                "Saturday",
+                "Closed"
+              ],
+              [
+                "Sunday",
+                "11AM–4PM"
+              ],
+              [
+                "Monday",
+                "11AM–4PM"
+              ]
+            ],
+            "description": "Collection of archeological finds from the Near East, including Egypt, Israel, Iraq & Syria.",
+            "source_url": "https://www.google.com/maps?cid=16796939965985668380",
+            "source_snapshot": "Google Local 2021",
+            "metadata_source_line": 73231,
+            "sampled_review_count": 6,
+            "rank": 3,
+            "score": 0.74632,
+            "evidence": [
+              {
+                "citation": "S3.1",
+                "chunk_id": "e104dd1889b2cbd3c1ff7526bf4afdc9",
+                "kind": "review",
+                "text": "Great place, very interesting Egyptian and Mesopotamian collections, plus augmented reality",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 4170577,
+                "timestamp_ms": 1558780610649
+              },
+              {
+                "citation": "S3.2",
+                "chunk_id": "17305a4ea2bb79f00d9af0de09061009",
+                "kind": "review",
+                "text": "Current exhibit features casts of royal monuments from Mesopotamia. Very informative. Free.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 4170578,
+                "timestamp_ms": 1527157468880
+              }
+            ],
+            "reason": "Retrieved source material for Harvard Museum of the Ancient Near East, a culture place in Cambridge."
+          },
+          {
+            "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+            "name": "The Harvard Museum of Natural History",
+            "city": "Cambridge",
+            "category": "culture",
+            "categories": [
+              "Natural history museum"
+            ],
+            "address": "The Harvard Museum of Natural History, 26 Oxford St, Cambridge, MA 02138",
+            "latitude": 42.3784626,
+            "longitude": -71.1155576,
+            "rating": 4.7,
+            "review_count": 2903,
+            "price": null,
+            "historical_hours": [
+              [
+                "Sunday",
+                "9AM–5PM"
+              ],
+              [
+                "Monday",
+                "9AM–5PM"
+              ],
+              [
+                "Tuesday",
+                "9AM–5PM"
+              ],
+              [
+                "Wednesday",
+                "9AM–5PM"
+              ],
+              [
+                "Thursday",
+                "9AM–5PM"
+              ],
+              [
+                "Friday",
+                "9AM–5PM"
+              ],
+              [
+                "Saturday",
+                "9AM–5PM"
+              ]
+            ],
+            "description": "Extensive natural-science collections, including animals, minerals & the famous Glass Flowers.",
+            "source_url": "https://www.google.com/maps?cid=7006910828754287227",
+            "source_snapshot": "Google Local 2021",
+            "metadata_source_line": 92192,
+            "sampled_review_count": 6,
+            "rank": 4,
+            "score": 0.7412,
+            "evidence": [
+              {
+                "citation": "S4.1",
+                "chunk_id": "95d722df6cb279f3bf0ac7dd4d2e9cfd",
+                "kind": "review",
+                "text": "Such a cool museum. My whole family loved it. You can easily spend several hours here. We stayed for about 2 hours. Well put together and great pieces. It was not very busy. The glass flowers were very beautiful. My kids enjoyed all the animals exhibits and the beautiful rocks.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 10106072,
+                "timestamp_ms": 1581741851040
+              },
+              {
+                "citation": "S4.2",
+                "chunk_id": "4c2d003fe6e8f624e7dc8fd7aac0f59b",
+                "kind": "review",
+                "text": "I went here many times, twice for a school field trip, and 5 times on my own, and I was always having a great time and learned new things",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 10106074,
+                "timestamp_ms": 1614296731019
+              }
+            ],
+            "reason": "Retrieved source material for The Harvard Museum of Natural History, a culture place in Cambridge."
+          },
+          {
+            "place_id": "0x89e37754d18b40ef:0xcba82b413cc2736d",
+            "name": "MIT Museum",
+            "city": "Cambridge",
+            "category": "culture",
+            "categories": [
+              "Science museum",
+              "Museum",
+              "Technology museum",
+              "Tourist attraction"
+            ],
+            "address": "MIT Museum, 265 Massachusetts Ave, Cambridge, MA 02139",
+            "latitude": 42.3622611,
+            "longitude": -71.09754459999999,
+            "rating": 4.3,
+            "review_count": 2466,
+            "price": null,
+            "historical_hours": [
+              [
+                "Sunday",
+                "10AM–5PM"
+              ],
+              [
+                "Monday",
+                "10AM–5PM"
+              ],
+              [
+                "Tuesday",
+                "10AM–5PM"
+              ],
+              [
+                "Wednesday",
+                "10AM–5PM"
+              ],
+              [
+                "Thursday",
+                "10AM–5PM"
+              ],
+              [
+                "Friday",
+                "10AM–5PM"
+              ],
+              [
+                "Saturday",
+                "10AM–5PM"
+              ]
+            ],
+            "description": "Highlights of MIT's science & technology exhibits include kinetic sculptures, robots & holograms.",
+            "source_url": "https://www.google.com/maps?cid=14675026944979006317",
+            "source_snapshot": "Google Local 2021",
+            "metadata_source_line": 92043,
+            "sampled_review_count": 6,
+            "rank": 1,
+            "score": 0.81241,
+            "evidence": [
+              {
+                "citation": "S5.1",
+                "chunk_id": "8d589a545c2addac7520f6f83bc53846",
+                "kind": "review",
+                "text": "Overall it was worth $10 but not much more. The art in motion exhibit was my favorite and I would have loved to see 10x more!!",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 10000646,
+                "timestamp_ms": 1571353554016
+              },
+              {
+                "citation": "S5.2",
+                "chunk_id": "17bd12ad6faca44b0c9ecc7649a82f2e",
+                "kind": "review",
+                "text": "Surely a good place to take kids to. Nice for adults as well. Be sure to interact with some the art work.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 10000651,
+                "timestamp_ms": 1546733311941
+              }
+            ],
+            "reason": "Retrieved source material for MIT Museum, a culture place in Cambridge."
+          },
+          {
+            "place_id": "0x89e37746d15ee397:0x120a9da97291d878",
+            "name": "Peabody Museum of Archaeology and Ethnology",
+            "city": "Cambridge",
+            "category": "culture",
+            "categories": [
+              "Museum",
+              "Tourist attraction"
+            ],
+            "address": "Peabody Museum of Archaeology and Ethnology, 11 Divinity Ave, Cambridge, MA 02138",
+            "latitude": 42.378195999999996,
+            "longitude": -71.11493,
+            "rating": 4.6,
+            "review_count": 435,
+            "price": null,
+            "historical_hours": [
+              [
+                "Saturday",
+                "9AM–5PM"
+              ],
+              [
+                "Sunday",
+                "9AM–5PM"
+              ],
+              [
+                "Monday",
+                "9AM–5PM"
+              ],
+              [
+                "Tuesday",
+                "9AM–5PM"
+              ],
+              [
+                "Wednesday",
+                "9AM–5PM"
+              ],
+              [
+                "Thursday",
+                "9AM–5PM"
+              ],
+              [
+                "Friday",
+                "9AM–5PM"
+              ]
+            ],
+            "description": "Harvard museum with ancient cultures' artifacts & archeology, plus access to Natural History Museum.",
+            "source_url": "https://www.google.com/maps?cid=1300024793547004024",
+            "source_snapshot": "Google Local 2021",
+            "metadata_source_line": 74943,
+            "sampled_review_count": 6,
+            "rank": 4,
+            "score": 0.6981,
+            "evidence": [
+              {
+                "citation": "S6.1",
+                "chunk_id": "45ced757e31c6974cbde18f54b94eece",
+                "kind": "review",
+                "text": "This museum was one of my favorite places during our Boston vacation. The museum has many great things to see. We got there an hour before closing but we managed to see everything and enjoy them. If you're close by give it a try. Highly recommended.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 4486642,
+                "timestamp_ms": 1539926765163
+              },
+              {
+                "citation": "S6.2",
+                "chunk_id": "65bd7fafeffc892aff87c25f18701ad1",
+                "kind": "review",
+                "text": "Amazing! They pack so much into a small museum. Loved every square inch of it. :) TIP: If you have a similar museum membership in another major city, they might offer free reciprocal admission. Double check the website and bring proof of membership.",
+                "source_file": "review-Massachusetts.json.gz",
+                "source_line": 4486639,
+                "timestamp_ms": 1564177135983
+              }
+            ],
+            "reason": "Retrieved source material for Peabody Museum of Archaeology and Ethnology, a culture place in Cambridge."
+          }
+        ],
+        "search_plan": {
+          "in_scope": true,
+          "clarification": "",
+          "searches": [
+            {
+              "query": "Harvard Art Museums Cambridge",
+              "category": "culture"
+            },
+            {
+              "query": "MIT Museum Cambridge",
+              "category": "culture"
+            },
+            {
+              "query": "Museum of Science Boston near Cambridge",
+              "category": "culture"
+            }
+          ]
+        },
+        "trace": [
+          {
+            "tool": "search_places",
+            "query": "Harvard Art Museums Cambridge",
+            "category": "culture",
+            "city": "Cambridge",
+            "retrieved": 4,
+            "accepted": 4,
+            "elapsed_ms": 367.46
+          },
+          {
+            "tool": "search_places",
+            "query": "MIT Museum Cambridge",
+            "category": "culture",
+            "city": "Cambridge",
+            "retrieved": 4,
+            "accepted": 4,
+            "elapsed_ms": 572.99
+          },
+          {
+            "tool": "search_places",
+            "query": "Museum of Science Boston near Cambridge",
+            "category": "culture",
+            "city": "Cambridge",
+            "retrieved": 4,
+            "accepted": 4,
+            "elapsed_ms": 217.98
+          }
+        ],
+        "dataset_id": "boston-36bb6d7b74e39df3",
+        "index_id": "80e7efec48cc96a7",
+        "prompt_version": "rag-planner-v1",
+        "model": {
+          "provider": "vertex",
+          "model": "gemini-3.1-flash-lite",
+          "configured": true
+        },
+        "elapsed_ms": 2406
+      }
+    },
+    {
+      "case": "unknown place",
+      "passed": true,
+      "http_status": 422,
+      "elapsed_ms": 11
+    },
+    {
+      "case": "unsupported city",
+      "passed": true,
+      "http_status": 422,
+      "elapsed_ms": 8
+    },
+    {
+      "case": "oversized request",
+      "passed": true,
+      "http_status": 413,
+      "elapsed_ms": 5
+    }
+  ],
+  "passed": false,
+  "limitation": "Small integration check. No independent relevance, entailment or usefulness labels."
+}

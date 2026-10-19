@@ -5,4 +5,5 @@ COPY services/api/pyproject.toml services/api/uv.lock ./
 RUN uv sync --frozen --no-dev
 COPY roamwise ./roamwise
 COPY config ./config
+COPY frontend ./frontend
 CMD ["uv","run","--frozen","--no-sync","uvicorn","roamwise.api:app","--host","0.0.0.0","--port","8000"]

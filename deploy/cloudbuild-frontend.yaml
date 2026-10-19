@@ -1,0 +1,11 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: [build, '--build-arg', 'BASE_IMAGE=${_BASE_IMAGE}', '-t', '${_REGION}-docker.pkg.dev/$PROJECT_ID/roamwise/app:${_TAG}', '-f', deploy/Dockerfile.frontend, '.']
+images: ['${_REGION}-docker.pkg.dev/$PROJECT_ID/roamwise/app:${_TAG}']
+timeout: 600s
+options:
+  logging: CLOUD_LOGGING_ONLY
+substitutions:
+  _REGION: us-central1
+  _TAG: frontend-update
+  _BASE_IMAGE: ''

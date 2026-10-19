@@ -1,0 +1,52 @@
+[
+  {
+    "path": "home.html",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "path": "plan.html",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "path": "generating.html",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "path": "recommendations.html",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "path": "itinerary.html",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "path": "place-details.html",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "path": "site.css",
+    "status": 200,
+    "type": "text/css"
+  },
+  {
+    "path": "planner-app.js",
+    "status": 200,
+    "type": "application/javascript"
+  },
+  {
+    "path": "assets/leaflet.js",
+    "status": 200,
+    "type": "application/javascript"
+  },
+  {
+    "path": "api/status",
+    "status": 200,
+    "type": "application/json"
+  }
+]

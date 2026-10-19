@@ -1,0 +1,229 @@
+{
+  "input": {
+    "trip": {
+      "city": "Cambridge",
+      "start_date": "2026-10-20",
+      "days": 1,
+      "interests": [
+        "Museums",
+        "Food"
+      ],
+      "notes": "Art museums and a relaxed lunch.",
+      "adults": 2,
+      "children": 0,
+      "budget": 100,
+      "transport": "walk",
+      "pace": "balanced"
+    },
+    "place_ids": [
+      "0x89e377448897a76d:0xe34244cf7bf8f747",
+      "0x89e3775d55ccd58d:0xa2c6ed67688dbd7c"
+    ]
+  },
+  "output": {
+    "id": "4c3e397642de4dfc8bcabba49a5915d3",
+    "status": "ok",
+    "generation_mode": "llm_rag",
+    "summary": "This one-day itinerary focuses on exploring the Harvard Art Museums followed by a casual lunch at Shake Shack in the Harvard Square area.",
+    "trip": {
+      "city": "Cambridge",
+      "start_date": "2026-10-20",
+      "days": 1,
+      "interests": [
+        "Museums",
+        "Food"
+      ],
+      "notes": "Art museums and a relaxed lunch.",
+      "adults": 2,
+      "children": 0,
+      "budget": 100,
+      "transport": "walk",
+      "pace": "balanced"
+    },
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-20",
+        "stops": [
+          {
+            "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+            "day": 1,
+            "duration_minutes": 150,
+            "reason": "Historical reviews describe the museum as a peaceful space with a wide array of art on every floor.",
+            "citation_ids": [
+              "S1.1",
+              "S1.2"
+            ],
+            "place": {
+              "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+              "name": "Harvard Art Museums",
+              "city": "Cambridge",
+              "category": "culture",
+              "categories": [
+                "Art museum",
+                "Cafe",
+                "Gift shop",
+                "Tourist attraction"
+              ],
+              "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+              "latitude": 42.3740898,
+              "longitude": -71.1143582,
+              "rating": 4.7,
+              "review_count": 1177,
+              "price": null,
+              "historical_hours": null,
+              "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+              "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 89957,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.68789,
+              "evidence": [
+                {
+                  "citation": "S1.1",
+                  "chunk_id": "80cf01851eaf7516358748333c524ed6",
+                  "kind": "review",
+                  "text": "Such a peaceful and beautiful museum. Has a wide array of art on every floor and a really cool gift shop! Also, I don't recommend wearing heels since it's very quiet!",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8946846,
+                  "timestamp_ms": 1546791707152
+                },
+                {
+                  "citation": "S1.2",
+                  "chunk_id": "26da02ad429668abb3a29281ea9640bd",
+                  "kind": "review",
+                  "text": "As much as I am not an art critic myself, gotta say I really liked visiting this museum. Prices are low and the place looks amazing. Plus a lot of good art to see. Recommending.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 8946845,
+                  "timestamp_ms": 1603212432475
+                }
+              ],
+              "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge."
+            },
+            "start_minutes": 540,
+            "end_minutes": 690,
+            "transfer": null
+          },
+          {
+            "place_id": "0x89e3775d55ccd58d:0xa2c6ed67688dbd7c",
+            "day": 1,
+            "duration_minutes": 60,
+            "reason": "Historical reviews describe this location as a dining option in Harvard Square that offers items like chicken burgers and shakes.",
+            "citation_ids": [
+              "S2.1",
+              "S2.2"
+            ],
+            "place": {
+              "place_id": "0x89e3775d55ccd58d:0xa2c6ed67688dbd7c",
+              "name": "Shake Shack",
+              "city": "Cambridge",
+              "category": "food",
+              "categories": [
+                "Hamburger restaurant",
+                "American restaurant",
+                "Fast food restaurant"
+              ],
+              "address": "Shake Shack, 92 Winthrop St, Cambridge, MA 02138",
+              "latitude": 42.37224,
+              "longitude": -71.120976,
+              "rating": 4.3,
+              "review_count": 1582,
+              "price": "$$",
+              "historical_hours": [
+                [
+                  "Wednesday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Thursday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Friday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Saturday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Sunday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Monday",
+                  "11AM–10PM"
+                ],
+                [
+                  "Tuesday",
+                  "11AM–10PM"
+                ]
+              ],
+              "description": "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
+              "source_url": "https://www.google.com/maps?cid=11729323307924569468",
+              "source_snapshot": "Google Local 2021",
+              "metadata_source_line": 86905,
+              "sampled_review_count": 6,
+              "rank": 1,
+              "score": 0.55109,
+              "evidence": [
+                {
+                  "citation": "S2.1",
+                  "chunk_id": "0685eec6e098c223e7e20b56652445ef",
+                  "kind": "review",
+                  "text": "For a fast food restaurant this tops them all. It's a bit pricey.. But the dinning experience is worth it.. The person who greeted us and helped us order or food was great. Ken stayed with us throughout our whole dine in. It's well worth the trip and their Covid19 precautions are far above any place I've been",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 7674079,
+                  "timestamp_ms": 1612722347854
+                },
+                {
+                  "citation": "S2.2",
+                  "chunk_id": "b0fda9d42693e0f461f42896ba90b75d",
+                  "kind": "review",
+                  "text": "Good hygiene practices. Tasty overall, my Shake had marshmallow bits. I'm not big on salt, but the chicken burger was good. Pricey and Harvard Square is an adventure.",
+                  "source_file": "review-Massachusetts.json.gz",
+                  "source_line": 7674081,
+                  "timestamp_ms": 1613158202210
+                }
+              ],
+              "reason": "Retrieved source material for Shake Shack, a food place in Cambridge."
+            },
+            "start_minutes": 717,
+            "end_minutes": 777,
+            "transfer": {
+              "minutes": 12,
+              "straight_line_km": 0.58,
+              "estimated": true,
+              "method": "Straight-line distance × 1.35, assumed speed and fixed buffer; not a routed journey."
+            }
+          }
+        ]
+      }
+    ],
+    "dataset_id": "boston-36bb6d7b74e39df3",
+    "index_id": "80e7efec48cc96a7",
+    "prompt_version": "rag-planner-v1",
+    "context_sha256": "86293e0892a10a1bb68f036f9da0658056ca5186efa52e4cd01f7d64f45efbc8",
+    "model": {
+      "provider": "vertex",
+      "model": "gemini-3.1-flash-lite",
+      "configured": true
+    },
+    "validation": {
+      "place_ids": true,
+      "citation_membership": true,
+      "unique_stops": true,
+      "time_window": true,
+      "semantic_entailment": "not automatically verified",
+      "repair_attempts": 0
+    },
+    "elapsed_ms": 3162,
+    "notices": [
+      "Historical sources through September 2021. Check current opening hours and availability.",
+      "Visit lengths, breaks and transfers are planning estimates. The first journey is not included.",
+      "The budget is a preference. Current prices and total cost have not been verified.",
+      "AI-generated explanations can contain errors. Open each source before relying on a claim."
+    ]
+  }
+}

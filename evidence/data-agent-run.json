@@ -1,0 +1,12 @@
+{
+  "snapshot": {
+    "checked_at": "2026-10-19T01:26:38.514545+00:00",
+    "dataset_id": "boston-36bb6d7b74e39df3",
+    "places": 500,
+    "chunks": 3976,
+    "checksums_match": true,
+    "orphan_chunks": 0,
+    "source_cutoff": "2021-09",
+    "new_google_api_content_in_vector_index": false
+  }
+}

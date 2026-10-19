@@ -1,0 +1,1039 @@
+{
+  "input": {
+    "city": "Boston",
+    "start_date": "2026-10-20",
+    "days": 2,
+    "interests": [
+      "History",
+      "Nature"
+    ],
+    "notes": "Historic places and public parks, with short visits.",
+    "adults": 2,
+    "children": 0,
+    "budget": 100,
+    "transport": "walk",
+    "pace": "balanced"
+  },
+  "output": {
+    "status": "ok",
+    "message": "",
+    "results": [
+      {
+        "place_id": "0x89e3709b5849f247:0x20a325cbb627ca0e",
+        "name": "Boston African American National Historic Site",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "Historical place museum",
+          "Historical place",
+          "Tourist attraction"
+        ],
+        "address": "Boston African American National Historic Site, 46 Joy St, Boston, MA 02108",
+        "latitude": 42.3599643,
+        "longitude": -71.0651767,
+        "rating": 4.7,
+        "review_count": 46,
+        "price": null,
+        "historical_hours": [
+          [
+            "Wednesday",
+            "10AM–4PM"
+          ],
+          [
+            "Thursday",
+            "10AM–4PM"
+          ],
+          [
+            "Friday",
+            "10AM–4PM"
+          ],
+          [
+            "Saturday",
+            "10AM–4PM"
+          ],
+          [
+            "Sunday",
+            "Closed"
+          ],
+          [
+            "Monday",
+            "10AM–4PM"
+          ],
+          [
+            "Tuesday",
+            "10AM–4PM"
+          ]
+        ],
+        "description": "Rotating & permanent exhibits on local African-American history displayed in an 1834 schoolhouse.",
+        "source_url": "https://www.google.com/maps?cid=2351764987282180622",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 86914,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.73669,
+        "evidence": [
+          {
+            "citation": "S1.1",
+            "chunk_id": "7235a34a28ae2b3544ea51b5bafc8241",
+            "kind": "review",
+            "text": "Great cultural space!!! Tons of history to absorb and a brief walking tour. Definitely worth the $10 admission fee",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7682145,
+            "timestamp_ms": 1536003645683
+          },
+          {
+            "citation": "S1.2",
+            "chunk_id": "5b347cb80d73d0c9fad7ec049cc1d79a",
+            "kind": "review",
+            "text": "Definitely worth the visit.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7682144,
+            "timestamp_ms": 1616183515254
+          }
+        ],
+        "reason": "Retrieved source material for Boston African American National Historic Site, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e370f21ceb539b:0x4331f7947542c00d",
+        "name": "Boston National Historical Park",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "National park",
+          "Historical place museum",
+          "History museum",
+          "Park",
+          "Tourist attraction",
+          "Visitor center"
+        ],
+        "address": "Boston National Historical Park, Building 5, Charlestown Navy Yard, Boston, MA 02109",
+        "latitude": 42.373162,
+        "longitude": -71.056834,
+        "rating": 4.7,
+        "review_count": 8467,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "10AM–5PM"
+          ],
+          [
+            "Sunday",
+            "10AM–5PM"
+          ],
+          [
+            "Monday",
+            "Open 24 hours"
+          ],
+          [
+            "Tuesday",
+            "Closed"
+          ],
+          [
+            "Wednesday",
+            "10AM–5PM"
+          ],
+          [
+            "Thursday",
+            "10AM–5PM"
+          ],
+          [
+            "Friday",
+            "10AM–5PM"
+          ]
+        ],
+        "description": "The 43-acre park with 2 visitor centers offers ranger-guided tours & talks about the city's history.",
+        "source_url": "https://www.google.com/maps?cid=4841923291394523149",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92380,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.69678,
+        "evidence": [
+          {
+            "citation": "S2.1",
+            "chunk_id": "c151d8cf66d25117e36a6feaca5bc942",
+            "kind": "review",
+            "text": "Beautiful must hike a few steps. But scenic and worth it!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10321489,
+            "timestamp_ms": 1618160452437
+          },
+          {
+            "citation": "S2.2",
+            "chunk_id": "cec37720c3994def7b1a5bd59512d75a",
+            "kind": "review",
+            "text": "What History! If you've never been to Boston this is a must see on any trip. Lots of history here and a great place to take the kids to show them what our country's past was like. Enjoy! Hey if this info helped you in any way please like for me. God Bless!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10321491,
+            "timestamp_ms": 1572291985740
+          }
+        ],
+        "reason": "Retrieved source material for Boston National Historical Park, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e37a0c429bf853:0xb9d45dfe5bc1ac73",
+        "name": "Boston Public Library",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "Public library",
+          "Historical landmark"
+        ],
+        "address": "Boston Public Library, 700 Boylston St, Boston, MA 02116",
+        "latitude": 42.349313599999995,
+        "longitude": -71.0781875,
+        "rating": 4.8,
+        "review_count": 1077,
+        "price": null,
+        "historical_hours": [
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "10AM–6PM"
+          ],
+          [
+            "Wednesday",
+            "10AM–6PM"
+          ],
+          [
+            "Thursday",
+            "10AM–6PM"
+          ],
+          [
+            "Friday",
+            "10AM–4PM"
+          ],
+          [
+            "Saturday",
+            "10AM–4PM"
+          ],
+          [
+            "Sunday",
+            "Closed"
+          ]
+        ],
+        "description": "Historic library with grand, Renaissance-style architecture, murals by John Singer Sargent & tours.",
+        "source_url": "https://www.google.com/maps?cid=13390430939121822835",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 91995,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.6842,
+        "evidence": [
+          {
+            "citation": "S3.1",
+            "chunk_id": "d100968dab9af90e9d0868b1431e8cdb",
+            "kind": "review",
+            "text": "Absolutely beautiful and timeless inside. I loved going here to study during my undergrad years,",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9959994,
+            "timestamp_ms": 1614098613212
+          },
+          {
+            "citation": "S3.2",
+            "chunk_id": "efd6cd7232738ce830bb5cf5711f3176",
+            "kind": "review",
+            "text": "The free Art and Architecture your, runs about an hour, is a must. Beautiful building and very friendly staff. Has 2 places to buy food and enjoy. Map Room exhibit is so kid friendly it was hard to get the kids to leave.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9959992,
+            "timestamp_ms": 1563105224411
+          }
+        ],
+        "reason": "Retrieved source material for Boston Public Library, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e3709b58341c95:0x9cbac60ab0d6ba16",
+        "name": "Museum of African American History",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "History museum",
+          "Tourist attraction"
+        ],
+        "address": "Museum of African American History, 46 Joy St, Boston, MA 02114",
+        "latitude": 42.359991699999995,
+        "longitude": -71.06521959999999,
+        "rating": 4.4,
+        "review_count": 204,
+        "price": null,
+        "historical_hours": [
+          [
+            "Tuesday",
+            "10AM–4PM"
+          ],
+          [
+            "Wednesday",
+            "10AM–4PM"
+          ],
+          [
+            "Thursday",
+            "10AM–4PM"
+          ],
+          [
+            "Friday",
+            "10AM–4PM"
+          ],
+          [
+            "Saturday",
+            "Closed"
+          ],
+          [
+            "Sunday",
+            "Closed"
+          ],
+          [
+            "Monday",
+            "10AM–4PM"
+          ]
+        ],
+        "description": "",
+        "source_url": "https://www.google.com/maps?cid=11293556764803774998",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 64974,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.68391,
+        "evidence": [
+          {
+            "citation": "S4.1",
+            "chunk_id": "db9cadfe07c05ce8a01eb9269c99618e",
+            "kind": "review",
+            "text": "my boyfriend and I spent the next hour and a half walking through the city to lesser known historic sights! Would 100% recommend.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 2934490,
+            "timestamp_ms": 1614146602961
+          },
+          {
+            "citation": "S4.2",
+            "chunk_id": "161ce1f7b40d254ff291d64ce8255fb5",
+            "kind": "review",
+            "text": "It was great. The staff is extremely knowledgeable. I didn't realize there was so much I didn't know about African American history in Boston.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 2934493,
+            "timestamp_ms": 1616183414672
+          }
+        ],
+        "reason": "Retrieved source material for Museum of African American History, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e3709e822b60bb:0xcbd77f0b5e16e701",
+        "name": "Boston Public Garden",
+        "city": "Boston",
+        "category": "outdoors",
+        "categories": [
+          "City park",
+          "Garden",
+          "Tourist attraction"
+        ],
+        "address": "Boston Public Garden, 4 Charles St, Boston, MA 02108",
+        "latitude": 42.354167499999996,
+        "longitude": -71.0704279,
+        "rating": 4.8,
+        "review_count": 9998,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "Open 24 hours"
+          ],
+          [
+            "Sunday",
+            "Open 24 hours"
+          ],
+          [
+            "Monday",
+            "Open 24 hours"
+          ],
+          [
+            "Tuesday",
+            "Open 24 hours"
+          ],
+          [
+            "Wednesday",
+            "Open 24 hours"
+          ],
+          [
+            "Thursday",
+            "Open 24 hours"
+          ],
+          [
+            "Friday",
+            "Open 24 hours"
+          ]
+        ],
+        "description": "Placid, verdant, circa-1837 city park with a lagoon, boat rides, fountains & other sights.",
+        "source_url": "https://www.google.com/maps?cid=14688348396492089089",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92472,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.81848,
+        "evidence": [
+          {
+            "citation": "S5.1",
+            "chunk_id": "4536fbd03cdf206190e7b8957f459d4a",
+            "kind": "review",
+            "text": "NO WORDS CAN DESCRIBE MY LOVES....",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10377792,
+            "timestamp_ms": 1616828137878
+          },
+          {
+            "citation": "S5.2",
+            "chunk_id": "a829648bee04bc69c6737e1659ecfa65",
+            "kind": "review",
+            "text": "Nice quick walk through for those who like the scenery and monuments. Pretty close to Boston Commons so you get the best of both worlds.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10377787,
+            "timestamp_ms": 1618272736121
+          }
+        ],
+        "reason": "Retrieved source material for Boston Public Garden, a outdoors place in Boston."
+      },
+      {
+        "place_id": "0x89e3709dbc6e232b:0x3f8683fc7ba94f04",
+        "name": "Boston Common",
+        "city": "Boston",
+        "category": "outdoors",
+        "categories": [
+          "City park",
+          "Historical landmark",
+          "Park",
+          "Tourist attraction"
+        ],
+        "address": "Boston Common, 139 Tremont St 1B Charles St 38 Beacon St 167 Tremont St, 115 Boylston St, Boston, MA 02116, United States",
+        "latitude": 42.3550897,
+        "longitude": -71.0657256,
+        "rating": 4.7,
+        "review_count": 9998,
+        "price": null,
+        "historical_hours": [
+          [
+            "Wednesday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Thursday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Friday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Saturday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Sunday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Monday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Tuesday",
+            "6AM–11:30PM"
+          ]
+        ],
+        "description": "Storied, nearly 50-acre urban park that hosted British troops during the American Revolution.",
+        "source_url": "https://www.google.com/maps?cid=4577491191698378500",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 77667,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.75003,
+        "evidence": [
+          {
+            "citation": "S6.1",
+            "chunk_id": "41b1e789738aca618f00081b04976706",
+            "kind": "review",
+            "text": "This is such a nice park and in such a nice area in Boston. Easily accessible by car or public transportation. The lawn is well kept and the park is very clean; there are several food spots, a playground, clean restrooms and plenty of space to do a nice picnic with friends. Also, lots of activities to do. Definitely a nice place to hang out when the weather cooperates!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 5107387,
+            "timestamp_ms": 1617903574833
+          },
+          {
+            "citation": "S6.2",
+            "chunk_id": "5590069fbccdb90332abd54277a87f20",
+            "kind": "review",
+            "text": "Such a beautiful park. This is a great place to spend an afternoon or a whole day with friends, family or alone. There is so much to do and see. Bring a blanket and buy some food and you can have a great picnic. The playground is great if you're bringing children. There are a lot of running baths and places to ride scooters or bikes.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 5107386,
+            "timestamp_ms": 1618166645007
+          }
+        ],
+        "reason": "Retrieved source material for Boston Common, a outdoors place in Boston."
+      },
+      {
+        "place_id": "0x89e3777d01e5fc2d:0xe79a490e4133b288",
+        "name": "Christian Herter Park",
+        "city": "Boston",
+        "category": "outdoors",
+        "categories": [
+          "Tourist attraction"
+        ],
+        "address": "Christian a Herter Park, Boston, MA 02134",
+        "latitude": 42.3659472,
+        "longitude": -71.1354778,
+        "rating": 4.6,
+        "review_count": 558,
+        "price": null,
+        "historical_hours": null,
+        "description": "Public park with separate playgrounds for toddlers & older children, plus a theater & gardens.",
+        "source_url": "https://www.google.com/maps?cid=16688731694747071112",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 90329,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.72255,
+        "evidence": [
+          {
+            "citation": "S7.1",
+            "chunk_id": "734e3c97fdf184d4c8a892bf56118a1c",
+            "kind": "review",
+            "text": "Nice clean park, lots of parking",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9141285,
+            "timestamp_ms": 1618797055447
+          },
+          {
+            "citation": "S7.2",
+            "chunk_id": "4beaa43f8257c8871f5a75340e30d126",
+            "kind": "review",
+            "text": "Love this corner of the charles. Playground. Green space. Community gardens. Wading pool. Beer garden. Kayak launch.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9141281,
+            "timestamp_ms": 1611018143899
+          }
+        ],
+        "reason": "Retrieved source material for Christian Herter Park, a outdoors place in Boston."
+      },
+      {
+        "place_id": "0x89e37046b64a4eb1:0x684774dc42014d17",
+        "name": "East Boston Memorial Park",
+        "city": "Boston",
+        "category": "outdoors",
+        "categories": [
+          "City park",
+          "Park",
+          "Tourist attraction"
+        ],
+        "address": "East Boston Memorial Park, 143 Porter St, Boston, MA 02128",
+        "latitude": 42.3717231,
+        "longitude": -71.0301468,
+        "rating": 4.6,
+        "review_count": 508,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Sunday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Monday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Tuesday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Wednesday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Thursday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Friday",
+            "6AM–11:30PM"
+          ]
+        ],
+        "description": "This urban recreational area offers a children's playground, spray fountains & sport fields.",
+        "source_url": "https://www.google.com/maps?cid=7514102992639970583",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 68325,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.71335,
+        "evidence": [
+          {
+            "citation": "S8.1",
+            "chunk_id": "95c2b16cd657ba4084c5913bf795625a",
+            "kind": "review",
+            "text": "My granddaughter had a blast playing. Very neat and tidy. All of the spring flowers are popping out. Beautiful Boston.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 3480481,
+            "timestamp_ms": 1616975212439
+          },
+          {
+            "citation": "S8.2",
+            "chunk_id": "84c57aa577ebba54a5c7d45b0d4bba76",
+            "kind": "review",
+            "text": "nice park with lots of room to kick or throw a ball around. There is also a kids playground and a sprinkler there as well.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 3480482,
+            "timestamp_ms": 1614114766550
+          }
+        ],
+        "reason": "Retrieved source material for East Boston Memorial Park, a outdoors place in Boston."
+      },
+      {
+        "place_id": "0x89e370891c593eb5:0x703fcf0804432bcc",
+        "name": "The Paul Revere House",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "Historical place museum",
+          "History museum",
+          "Tourist attraction"
+        ],
+        "address": "The Paul Revere House, 19 N Square, Boston, MA 02113",
+        "latitude": 42.363738999999995,
+        "longitude": -71.05369999999999,
+        "rating": 4.4,
+        "review_count": 2665,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "10AM–4:30PM"
+          ],
+          [
+            "Sunday",
+            "10AM–4:30PM"
+          ],
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "Closed"
+          ],
+          [
+            "Wednesday",
+            "10AM–4:30PM"
+          ],
+          [
+            "Thursday",
+            "10AM–4:30PM"
+          ],
+          [
+            "Friday",
+            "10AM–4:30PM"
+          ]
+        ],
+        "description": "Revere's legendary ride began at this restored Colonial-era home, which includes family furnishings.",
+        "source_url": "https://www.google.com/maps?cid=8088411089118899148",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 75385,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.42776,
+        "evidence": [
+          {
+            "citation": "S9.1",
+            "chunk_id": "c8cd84da22ea4cd041cc85d6ff149344",
+            "kind": "review",
+            "text": "Well kept and staffed Historic landmark on the Freedom trail. Well worth the $6 admissions with friendly and informative tour guides. They are keeping very good social distancing protocols so good idea to go in off peak times.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 4625432,
+            "timestamp_ms": 1620571914568
+          },
+          {
+            "citation": "S9.2",
+            "chunk_id": "45350c9d76162ef259800b52d067fab0",
+            "kind": "review",
+            "text": "Such a great historic landmark nestled in the North end of Boston. Great historical tour and the area is surrounded with things to do. It's along the Freedom Trail. Easy to find.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 4625435,
+            "timestamp_ms": 1615820850599
+          }
+        ],
+        "reason": "Retrieved source material for The Paul Revere House, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e370f49452ff73:0xfd27a3475167f0e8",
+        "name": "USS Cassin Young",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "Maritime museum",
+          "National park",
+          "Tourist attraction"
+        ],
+        "address": "USS Cassin Young, 198 3rd St, Boston, MA 02129",
+        "latitude": 42.3722164,
+        "longitude": -71.054468,
+        "rating": 4.6,
+        "review_count": 212,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "10AM–4PM"
+          ],
+          [
+            "Sunday",
+            "10AM–4PM"
+          ],
+          [
+            "Monday",
+            "10AM–4PM"
+          ],
+          [
+            "Tuesday",
+            "10AM–4PM"
+          ],
+          [
+            "Wednesday",
+            "10AM–4PM"
+          ],
+          [
+            "Thursday",
+            "10AM–4PM"
+          ],
+          [
+            "Friday",
+            "10AM–4PM"
+          ]
+        ],
+        "description": "Restored 1943 ship which survived WWII Pacific battles & Kamikaze hits, with self-guided tours.",
+        "source_url": "https://www.google.com/maps?cid=18241728342391255272",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 80986,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.39522,
+        "evidence": [
+          {
+            "citation": "S10.1",
+            "chunk_id": "f6376a60d03f687121eab5d29dc039bc",
+            "kind": "review",
+            "text": "Cool WWII and continental navy ships towards the end of the freedom trail",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 5896352,
+            "timestamp_ms": 1618086190572
+          },
+          {
+            "citation": "S10.2",
+            "chunk_id": "2ea4b9b66b02d99857ccde9295c8a224",
+            "kind": "review",
+            "text": "Awesome ship right next to the USS Constitution. After touring the Constitution I was walking around and heard a tour being announced for the Cassin Young. It was free and took walk ins. I decided to take the tour and it was awesome. The tour guide took us through the ship and was very knowledgeable and entertaining. Parts of the ship are accessible to those not on a tour, but",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 5896354,
+            "timestamp_ms": 1564450160273
+          }
+        ],
+        "reason": "Retrieved source material for USS Cassin Young, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e370849414750d:0x23e3de907f95f01b",
+        "name": "King's Chapel",
+        "city": "Boston",
+        "category": "culture",
+        "categories": [
+          "Church",
+          "Christian church",
+          "Historical landmark",
+          "History museum",
+          "Unitarian Universalist Church"
+        ],
+        "address": "King's Chapel, 58 Tremont St, Boston, MA 02108",
+        "latitude": 42.3580116,
+        "longitude": -71.0601562,
+        "rating": 4.6,
+        "review_count": 394,
+        "price": null,
+        "historical_hours": [
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "Closed"
+          ],
+          [
+            "Wednesday",
+            "Closed"
+          ],
+          [
+            "Thursday",
+            "Closed"
+          ],
+          [
+            "Friday",
+            "Closed"
+          ],
+          [
+            "Saturday",
+            "Closed"
+          ],
+          [
+            "Sunday",
+            "11AM–12PM"
+          ]
+        ],
+        "description": "Historic Unitarian Christian church founded in 1686 with daily crypt & bell tower tours.",
+        "source_url": "https://www.google.com/maps?cid=2586155323237986331",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 83970,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.36478,
+        "evidence": [
+          {
+            "citation": "S11.1",
+            "chunk_id": "335bcc40a5cb21da07c866659337dec2",
+            "kind": "review",
+            "text": "and found it one of the more memorable attractions on the Freedom Trail. This is one of the places we would be eager to return to during future visits to Boston.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6728798,
+            "timestamp_ms": 1534302752323
+          },
+          {
+            "citation": "S11.2",
+            "chunk_id": "c67b0ad5d58c16f7417c998688f7dc79",
+            "kind": "review",
+            "text": "those seen at several other historic churches in Boston. It was neat learning about families procuring and decorating the boxes during centuries past. Just outside the church, you can visit the small King's Chapel burial ground, which includes the markers of historical figures such as first Massachusett's governor John Winthrop as well as Mary Chilton, the first European female to disembark the Mayflower and set foot in the New England",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6728798,
+            "timestamp_ms": 1534302752323
+          }
+        ],
+        "reason": "Retrieved source material for King's Chapel, a culture place in Boston."
+      },
+      {
+        "place_id": "0x89e37a81d51035e3:0xe6be51f7d3ae601b",
+        "name": "Boston Harborwalk",
+        "city": "Boston",
+        "category": "outdoors",
+        "categories": [
+          "Park",
+          "Garden",
+          "Historical landmark"
+        ],
+        "address": "Boston Harborwalk, Boston Wharf Rd, Boston, MA 02210",
+        "latitude": 42.3596528,
+        "longitude": -71.0506915,
+        "rating": 4.7,
+        "review_count": 197,
+        "price": null,
+        "historical_hours": [
+          [
+            "Thursday",
+            "Open 24 hours"
+          ],
+          [
+            "Friday",
+            "Open 24 hours"
+          ],
+          [
+            "Saturday",
+            "Open 24 hours"
+          ],
+          [
+            "Sunday",
+            "Open 24 hours"
+          ],
+          [
+            "Monday",
+            "Open 24 hours"
+          ],
+          [
+            "Tuesday",
+            "Open 24 hours"
+          ],
+          [
+            "Wednesday",
+            "Open 24 hours"
+          ]
+        ],
+        "description": "",
+        "source_url": "https://www.google.com/maps?cid=16626816999148642331",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 90707,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.58907,
+        "evidence": [
+          {
+            "citation": "S12.1",
+            "chunk_id": "8aa2d08762c8853092073a6362c462f1",
+            "kind": "review",
+            "text": "Beautiful, clean, friendly people all around. Nice walk. You can get great views anywhere around here. Plenty of restaurants too. Would come back anytime!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9307672,
+            "timestamp_ms": 1532909926552
+          },
+          {
+            "citation": "S12.2",
+            "chunk_id": "5595f7629a4188d4b301da9165ac5266",
+            "kind": "review",
+            "text": "Perfect place for a walk. Great to take your dog for a light jog or just for sightseeing as the views are beautiful!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9307670,
+            "timestamp_ms": 1612197771977
+          }
+        ],
+        "reason": "Retrieved source material for Boston Harborwalk, a outdoors place in Boston."
+      },
+      {
+        "place_id": "0x89e37a1e29987cdd:0x6e56493aa0fbdf69",
+        "name": "Back Bay Fens",
+        "city": "Boston",
+        "category": "outdoors",
+        "categories": [
+          "Park",
+          "Tourist attraction"
+        ],
+        "address": "Back Bay Fens, 100 Park Dr, Boston, MA 02215",
+        "latitude": 42.3434795,
+        "longitude": -71.09456399999999,
+        "rating": 4.5,
+        "review_count": 725,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Sunday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Monday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Tuesday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Wednesday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Thursday",
+            "6AM–11:30PM"
+          ],
+          [
+            "Friday",
+            "6AM–11:30PM"
+          ]
+        ],
+        "description": "This large greenspace has multiple gardens, playgrounds, ball fields & memorials, plus picnic areas.",
+        "source_url": "https://www.google.com/maps?cid=7950622708326981481",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 85870,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.58004,
+        "evidence": [
+          {
+            "citation": "S13.1",
+            "chunk_id": "1fcb4615623344ce8e3eeb0baec86f2e",
+            "kind": "review",
+            "text": "Community garden very well taken care and very easy to walk around and appreciate the beautiful work people have been doing there.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7305282,
+            "timestamp_ms": 1563911064572
+          },
+          {
+            "citation": "S13.2",
+            "chunk_id": "5fd8571116ebd6b02ae549284138ee41",
+            "kind": "review",
+            "text": "I really want to give this place a five star rating - the little community garden plots, the walks, the oval, the rose garden - the Fens packs a punch for variety. It has a downside though, with the homeless people living in the riverbank.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7305281,
+            "timestamp_ms": 1604229585128
+          }
+        ],
+        "reason": "Retrieved source material for Back Bay Fens, a outdoors place in Boston."
+      }
+    ],
+    "search_plan": {
+      "in_scope": true,
+      "clarification": "",
+      "searches": [
+        {
+          "query": "historic sites in downtown Boston",
+          "category": "culture"
+        },
+        {
+          "query": "best public parks and gardens in Boston",
+          "category": "outdoors"
+        },
+        {
+          "query": "Freedom Trail walking tour",
+          "category": "culture"
+        },
+        {
+          "query": "Boston Common and Public Garden walking paths",
+          "category": "outdoors"
+        }
+      ]
+    },
+    "trace": [
+      {
+        "tool": "search_places",
+        "query": "historic sites in downtown Boston",
+        "category": "culture",
+        "city": "Boston",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 804.5
+      },
+      {
+        "tool": "search_places",
+        "query": "best public parks and gardens in Boston",
+        "category": "outdoors",
+        "city": "Boston",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 718.02
+      },
+      {
+        "tool": "search_places",
+        "query": "Freedom Trail walking tour",
+        "category": "culture",
+        "city": "Boston",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 795.27
+      },
+      {
+        "tool": "search_places",
+        "query": "Boston Common and Public Garden walking paths",
+        "category": "outdoors",
+        "city": "Boston",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 838.57
+      }
+    ],
+    "dataset_id": "boston-36bb6d7b74e39df3",
+    "index_id": "80e7efec48cc96a7",
+    "prompt_version": "rag-planner-v1",
+    "model": {
+      "provider": "vertex",
+      "model": "gemini-3.1-flash-lite",
+      "configured": true
+    },
+    "elapsed_ms": 4943
+  }
+}

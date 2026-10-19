@@ -1,0 +1,12 @@
+.git
+.venv
+**/__pycache__
+.pytest_cache
+.env*
+data/*
+!data/processed/
+!data/processed/**
+evidence/
+slides/
+share/
+*.zip

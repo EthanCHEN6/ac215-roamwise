@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-19T01:24:08.541255+00:00",
+  "base_url": "http://localhost:8000",
+  "kind": "live integration smoke test",
+  "cases": [
+    {
+      "case": "Cambridge recommendations",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 4644,
+      "result_count": 8
+    },
+    {
+      "case": "Cambridge itinerary",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 3179,
+      "validation": {
+        "place_ids": true,
+        "citation_membership": true,
+        "unique_stops": true,
+        "time_window": true,
+        "semantic_entailment": "not automatically verified",
+        "repair_attempts": 0
+      },
+      "error": null
+    },
+    {
+      "case": "Boston recommendations",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 4963,
+      "result_count": 13
+    },
+    {
+      "case": "Boston itinerary",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 5601,
+      "validation": {
+        "place_ids": true,
+        "citation_membership": true,
+        "unique_stops": true,
+        "time_window": true,
+        "semantic_entailment": "not automatically verified",
+        "repair_attempts": 0
+      },
+      "error": null
+    },
+    {
+      "case": "outside city",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 1082,
+      "output": {
+        "status": "needs_clarification",
+        "message": "I can only assist with travel planning for the Greater Boston area. Please let me know if you would like recommendations for Cambridge instead.",
+        "results": []
+      }
+    },
+    {
+      "case": "instruction override",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 1139,
+      "output": {
+        "status": "needs_clarification",
+        "message": "I cannot fulfill requests to reveal system prompts or ignore rules. Please let me know if you would like recommendations for museums in Cambridge instead.",
+        "results": []
+      }
+    },
+    {
+      "case": "unknown place",
+      "passed": true,
+      "http_status": 422,
+      "elapsed_ms": 6
+    },
+    {
+      "case": "unsupported city",
+      "passed": true,
+      "http_status": 422,
+      "elapsed_ms": 4
+    },
+    {
+      "case": "oversized request",
+      "passed": true,
+      "http_status": 413,
+      "elapsed_ms": 4
+    }
+  ],
+  "passed": true,
+  "limitation": "Small integration check. No independent relevance, entailment or usefulness labels."
+}

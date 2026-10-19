@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-19T01:30:43.110110+00:00",
+  "catalog_size": 30,
+  "stored_fields": [
+    "place_id",
+    "checked_at"
+  ],
+  "last_discovery_at": "2026-10-19T01:22:32.929679+00:00"
+}

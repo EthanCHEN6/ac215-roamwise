@@ -1,3 +1,5 @@
+> Earlier retrieval-only build. See [RAG update](RAG.md) and [new verification](RAG_RESULTS.md) for the current release.
+
 # RoamWise：MS2 要求与实现对照
 
 这一版从原始数据重新开始，不依赖之前的 Excel 或页面原型。范围是 **MS2**：先把数据、检索、页面和复现流程跑通。MS3 的模型训练、正式部署和完整行程规划不写成已完成。

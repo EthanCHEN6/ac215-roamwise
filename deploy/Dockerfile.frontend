@@ -1,0 +1,6 @@
+# Reuse a verified data/index image for a frontend-only update.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+USER root
+COPY --chown=app:app frontend /app/frontend
+USER app

@@ -1,7 +1,12 @@
 .git
 .venv
 **/__pycache__
-data
+data/*
+!data/processed
+!data/processed/**
 evidence
 docs
 slides
+share
+.env*
+*.zip
