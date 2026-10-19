@@ -40,6 +40,8 @@ docker compose -f compose.yaml -f compose.rag.yaml --profile maintenance run --b
 
 Read [RAG design](docs/RAG.md), [presentation notes and TF questions](docs/PRESENTATION_NOTES.md), [data notes](docs/DATA.md) and [retrieval results](docs/RESULTS.md). The original slides in `slides/` describe the earlier retrieval-only build; use the RAG notes for this update.
 
+For team preparation, use the [five-person work plan](docs/TEAM_PLAN.md) and [demo guide](docs/DEMO.md). They separate component ownership, review tasks and presentation roles.
+
 ## Limits
 
 Budget is a preference. Current prices, total cost, accessibility and availability are not verified by the planner. Travel times use distance and assumed speed, not routing. Citation checks establish reference membership, not the truth of every sentence. The 0.25 similarity cutoff is provisional. Results on 20 synthetic category queries are not human relevance or RAG-quality scores.

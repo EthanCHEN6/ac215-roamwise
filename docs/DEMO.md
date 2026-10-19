@@ -1,27 +1,29 @@
 # TF demo and individual preparation
 
-Use the slides for 10–15 minutes, then navigate the repository. Suggested sequence:
+Use the [five-person plan](TEAM_PLAN.md) for ownership and a 13-minute presentation schedule. Use [presentation notes](PRESENTATION_NOTES.md) for the current RAG explanation. The existing PPTX documents the earlier retrieval-only build and needs a content update before presenting the current system.
 
-1. Show the problem and pilot scope (1 min).
-2. Explain source data, selection and limitations (2 min).
-3. Walk through Compose dependencies, one Dockerfile and a lockfile (2 min).
-4. Search for an art museum near Harvard. Open a result's source details (2 min).
-5. Switch to the baseline and explain why the ordering differs (1 min).
-6. Show the saved input/output, manifests, tests and benchmark (2 min).
-7. Explain limitations and the next experiment (1 min).
+## Live demonstration
 
-Before presenting, run the app and confirm the index is ready. If internet is unavailable, cached data, weights and images are sufficient. Keep the saved screenshots and example JSON as a backup; describe them as a recorded run.
+1. Open the [cloud app](https://roamwise-rag-74919420019.us-central1.run.app). Confirm it responds before the meeting.
+2. Select Cambridge, one day, History, Museums, Food and Nature.
+3. Show that result filters preserve the selected interests. A place may match more than one search.
+4. Open one source passage and its file/line reference. The sources are historical.
+5. Select two or three stops and generate an itinerary. Open a citation and the generation record.
+6. Explain one validation rule and one limit: citation membership is checked, but claim meaning is not automatically verified.
 
-## Questions everyone should be able to answer
+For a baseline comparison, use the saved retrieval benchmark and its recorded input/output. The current trip form does not provide the earlier baseline-switching interface.
 
-- Why use containers and uv? Containers fix the OS/runtime; the lockfile fixes Python dependencies.
-- What makes a run reproducible? Source checksums, deterministic selection, config, model checksum, dependency locks and persisted manifests.
-- Why split text? Smaller passages make the relevant evidence easier to retrieve. Overlap preserves context at boundaries.
-- What does the vector score mean? Cosine similarity in the encoder's space; it is not a probability or a quality rating.
-- Where is the LLM? MS2 implements the retrieval foundation required for the LLM track. It returns context; generation is not implemented.
-- Why can two methods disagree? The baseline uses broad category words and historical ratings. Semantic search compares source text, which can retrieve related but unwanted categories.
-- What is the benchmark measuring? Broad category consistency and latency on 20 fixed queries, not human relevance or travel quality.
-- What happens if the source changes? Ingestion fails its checksum check; inspect and intentionally version a new snapshot.
-- What remains for MS3? Human relevance judgments, a reranker training experiment, tracked runs and a serving/deployment plan.
+If the service fails, use saved evidence or a recording and label it as a recorded run. Cached retrieval data alone cannot replace a cloud LLM. Local Ollama is an alternative whose response quality has not been evaluated in this release.
 
-Team members must describe their real contributions and review the whole codebase. The initial implementation was AI-assisted; no team member's contribution or understanding is claimed by these materials.
+## Everyone should be able to explain
+
+- The data source, selection bias, chunking, embeddings and version IDs.
+- How uv, Docker and Compose support reproduction.
+- The difference between retrieval, generation and model training.
+- How the server restricts searches and validates place IDs and citations.
+- Why historical data, estimated transfers and unverified prices limit the itinerary.
+- What tests check, what the category benchmark measures and what remains unverified.
+- How runtime credentials reach the container without exposing secrets.
+- Their actual contribution and how they checked AI-assisted work.
+
+Current evidence: [RAG verification](RAG_RESULTS.md), [retrieval results](RESULTS.md), `evidence/cloud/interest-filter-check.json` and `evidence/cloud/interest-release-check.json`. Keep evidence from different prompt versions clearly labeled.

@@ -38,4 +38,4 @@ A 100-word chunk is a heuristic: subword tokenization can still truncate unusual
 
 ## Missing and historical fields
 
-Null price/hours means unknown. Source ratings and closure flags describe the historical snapshot. Neither metadata nor reviews establish current opening status, affordability, accessibility or availability. Generated schedules, walking times and route optimization are outside this milestone.
+Null price/hours means unknown. Source ratings and closure flags describe the historical snapshot. Neither metadata nor reviews establish current opening status, affordability, accessibility or availability. The current RAG app proposes schedules and estimates transfers from distance and assumed speed. It does not verify travel times or optimize routes.
