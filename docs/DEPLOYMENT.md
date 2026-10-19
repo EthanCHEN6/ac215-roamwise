@@ -30,3 +30,5 @@ Check `/api/health` and `/api/status`, load the static pages, then run recommend
 Mount local test credentials read-only outside the image. Never copy ADC files, API keys or CLI configuration into the build context. The ignore files exclude unnecessary data and local evidence.
 
 A separately hosted frontend sets `frontend/config.js` to the Cloud Run URL. Add its exact origin to `CORS_ORIGINS`. Same-origin Cloud Run hosting uses an empty `apiBase`.
+
+For a frontend-only change, `deploy/cloudbuild-frontend.yaml` can reuse a verified base image by digest. This avoids rebuilding the same embeddings. `_BASE_IMAGE` must identify the tested data image; `_TAG` names the new release. Rebuild the full image when Python code, dependencies or data change.

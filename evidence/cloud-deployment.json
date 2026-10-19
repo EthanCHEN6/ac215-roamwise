@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-19T01:44:25.660959+00:00",
+  "project": "adroit-poet-462207-s3",
+  "region": "us-central1",
+  "uri": "https://roamwise-rag-z7x27lh44q-uc.a.run.app",
+  "terminal_condition": {
+    "type": "Ready",
+    "state": "CONDITION_SUCCEEDED",
+    "lastTransitionTime": "2026-10-19T01:44:16.430345Z"
+  },
+  "reconciling": null,
+  "scaling": {
+    "maxInstanceCount": 1
+  },
+  "template_scaling": null,
+  "timeout": "300s",
+  "concurrency": 8,
+  "service_account": "roamwise-runtime@adroit-poet-462207-s3.iam.gserviceaccount.com",
+  "containers": [
+    {
+      "image": "us-central1-docker.pkg.dev/adroit-poet-462207-s3/roamwise/app@sha256:92edc6a6cad16386ef163fc3915b5293bc9e64cb415bccb0d9a707f0b5fe45ee",
+      "env": [
+        {
+          "name": "LLM_PROVIDER",
+          "value": "vertex"
+        },
+        {
+          "name": "LLM_MODEL",
+          "value": "gemini-3.1-flash-lite"
+        },
+        {
+          "name": "GOOGLE_CLOUD_PROJECT",
+          "value": "adroit-poet-462207-s3"
+        },
+        {
+          "name": "GOOGLE_CLOUD_LOCATION",
+          "value": "global"
+        },
+        {
+          "name": "GOOGLE_PLACES_AUTH",
+          "value": "adc"
+        },
+        {
+          "name": "REQUESTS_PER_HOUR",
+          "value": "60"
+        }
+      ],
+      "resources": {
+        "limits": {
+          "cpu": "1",
+          "memory": "2Gi"
+        },
+        "cpuIdle": true
+      },
+      "ports": [
+        {
+          "name": "http1",
+          "containerPort": 8080
+        }
+      ],
+      "startupProbe": {
+        "timeoutSeconds": 240,
+        "periodSeconds": 240,
+        "failureThreshold": 1,
+        "tcpSocket": {
+          "port": 8080
+        }
+      }
+    }
+  ],
+  "implementation_commit": "cf6ab9aeb6ec5ccff862de8d19d6764b99860b00"
+}

@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-19T01:45:20.990374+00:00",
+  "base_url": "https://roamwise-rag-74919420019.us-central1.run.app",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 4995,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/plan.html",
+      "status": 200,
+      "bytes": 4775,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/recommendations.html",
+      "status": 200,
+      "bytes": 2689,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/itinerary.html",
+      "status": 200,
+      "bytes": 2924,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/place-details.html",
+      "status": 200,
+      "bytes": 1570,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/planner-app.js",
+      "status": 200,
+      "bytes": 18926,
+      "content_type": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/site.css",
+      "status": 200,
+      "bytes": 13250,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/leaflet.js",
+      "status": 200,
+      "bytes": 147552,
+      "content_type": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/assets/images/marker-icon.png",
+      "status": 200,
+      "bytes": 1466,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "bytes": 54,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "bytes": 2035,
+      "content_type": "application/json"
+    }
+  ],
+  "cors_allowed_origin": "https://ethan-roamwise-ms2.thomaslinnn.chatgpt.site"
+}

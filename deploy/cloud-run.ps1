@@ -17,5 +17,5 @@ Run-Gcloud projects add-iam-policy-binding $ProjectId --member="serviceAccount:$
 Run-Gcloud projects add-iam-policy-binding $ProjectId --member="serviceAccount:$ServiceAccount" --role=roles/serviceusage.serviceUsageConsumer --condition=None --format='value(version)'
 Run-Gcloud builds submit . --config=deploy/cloudbuild.yaml --region=$Region --project=$ProjectId --substitutions="_REGION=$Region,_TAG=$Tag"
 $Image = "$Region-docker.pkg.dev/$ProjectId/roamwise/app:$Tag"
-Run-Gcloud run deploy roamwise-rag --image=$Image --region=$Region --project=$ProjectId --service-account=$ServiceAccount --port=8080 --cpu=1 --memory=2Gi --min=0 --max=1 --concurrency=8 --timeout=300 --allow-unauthenticated --set-env-vars="LLM_PROVIDER=vertex,LLM_MODEL=$Model,GOOGLE_CLOUD_PROJECT=$ProjectId,GOOGLE_CLOUD_LOCATION=global,GOOGLE_PLACES_AUTH=adc,REQUESTS_PER_HOUR=60"
+Run-Gcloud run deploy roamwise-rag --image=$Image --region=$Region --project=$ProjectId --service-account=$ServiceAccount --port=8080 --cpu=1 --memory=2Gi --min=0 --max=1 --no-cpu-boost --concurrency=8 --timeout=300 --allow-unauthenticated --set-env-vars="LLM_PROVIDER=vertex,LLM_MODEL=$Model,GOOGLE_CLOUD_PROJECT=$ProjectId,GOOGLE_CLOUD_LOCATION=global,GOOGLE_PLACES_AUTH=adc,REQUESTS_PER_HOUR=60"
 Run-Gcloud run services describe roamwise-rag --region=$Region --project=$ProjectId --format='value(status.url)'

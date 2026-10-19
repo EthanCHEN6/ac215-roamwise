@@ -4,6 +4,8 @@ Plan short trips in Boston, Cambridge or Somerville. A language model plans data
 
 The website follows our six-page prototype: home → preferences → retrieval → selection → itinerary, with source details. This is a course prototype, not a booking service.
 
+Live app: [Open RoamWise](https://roamwise-rag-74919420019.us-central1.run.app). The service runs on Cloud Run; the owner's computer can be off.
+
 ## Run
 
 Install Docker with Compose. All Python services use uv and committed lockfiles. Computation runs in containers.

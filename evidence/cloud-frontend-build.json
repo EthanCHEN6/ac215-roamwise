@@ -1,0 +1,26 @@
+{
+  "id": "327bea34-6883-47ca-a4ce-ec1515dc6295",
+  "status": "SUCCESS",
+  "startTime": "2026-10-19T01:41:10.740284952Z",
+  "finishTime": "2026-10-19T01:42:03.995853Z",
+  "failureInfo": null,
+  "results": {
+    "images": [
+      {
+        "name": "us-central1-docker.pkg.dev/adroit-poet-462207-s3/roamwise/app:rag-20261019-final",
+        "digest": "sha256:92edc6a6cad16386ef163fc3915b5293bc9e64cb415bccb0d9a707f0b5fe45ee",
+        "pushTiming": {
+          "startTime": "2026-10-19T01:42:01.339050050Z",
+          "endTime": "2026-10-19T01:42:03.685632817Z"
+        },
+        "artifactRegistryPackage": "projects/adroit-poet-462207-s3/locations/us-central1/repositories/roamwise/packages/app/versions/sha256:92edc6a6cad16386ef163fc3915b5293bc9e64cb415bccb0d9a707f0b5fe45ee"
+      }
+    ],
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ]
+  }
+}

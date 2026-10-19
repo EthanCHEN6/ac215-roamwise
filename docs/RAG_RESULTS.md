@@ -18,3 +18,9 @@ The first scope test expected an instruction-override request to be rejected. Th
 Browser automation could not start because of a local tool runtime error. We checked JavaScript syntax, HTTP assets and real API flows, but did not complete visual, keyboard or mobile-browser QA. There is no independent human relevance, semantic-entailment or itinerary-usefulness score. Historical claims and current conditions need review before travel.
 
 Files: `rag-unit-tests.txt`, `rag-live-initial-evaluation.json`, `rag-live-evaluation.json`, `rag-cambridge-*.json`, `rag-boston-*.json`, `data-agent-audit.json`, `rag-server-log.txt`.
+
+## Public deployment check
+
+The public Cloud Run service passed the same 9-case integration suite with its production service account. Observed recommendation and itinerary requests took 1.7–2.9 seconds in this small warm run. All required page assets returned HTTP 200. The separate Sites origin passed the CORS check. A live Google Places lookup also returned name and hours fields without persisting response content.
+
+See `evidence/cloud/rag-live-evaluation.json`, `evidence/cloud-http-checks.json`, `evidence/cloud-google-lookup-check.json` and `evidence/cloud-deployment.json`. These checks do not replace browser or human quality review.

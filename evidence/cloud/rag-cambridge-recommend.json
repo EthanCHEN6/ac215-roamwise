@@ -1,0 +1,645 @@
+{
+  "input": {
+    "city": "Cambridge",
+    "start_date": "2026-10-20",
+    "days": 1,
+    "interests": [
+      "Museums",
+      "Food"
+    ],
+    "notes": "Art museums and a relaxed lunch.",
+    "adults": 2,
+    "children": 0,
+    "budget": 100,
+    "transport": "walk",
+    "pace": "balanced"
+  },
+  "output": {
+    "status": "ok",
+    "message": "",
+    "results": [
+      {
+        "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+        "name": "Harvard Art Museums",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Art museum",
+          "Cafe",
+          "Gift shop",
+          "Tourist attraction"
+        ],
+        "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+        "latitude": 42.3740898,
+        "longitude": -71.1143582,
+        "rating": 4.7,
+        "review_count": 1177,
+        "price": null,
+        "historical_hours": null,
+        "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+        "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 89957,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.7719,
+        "evidence": [
+          {
+            "citation": "S1.1",
+            "chunk_id": "80cf01851eaf7516358748333c524ed6",
+            "kind": "review",
+            "text": "Such a peaceful and beautiful museum. Has a wide array of art on every floor and a really cool gift shop! Also, I don't recommend wearing heels since it's very quiet!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8946846,
+            "timestamp_ms": 1546791707152
+          },
+          {
+            "citation": "S1.2",
+            "chunk_id": "3a83e36a268390009a0d1ac96e7c251c",
+            "kind": "review",
+            "text": "The museum was in a convenient location by foot, anywhere in Boston when taking the T. I felt annoyed that there was no monetary break for a veteran-priced ticket. Nonetheless, still worth the admission to go and see all of the riches that the Harvard alumni have donated!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8946844,
+            "timestamp_ms": 1606849907107
+          }
+        ],
+        "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge."
+      },
+      {
+        "place_id": "0x89e379fe564d3833:0xb088f5563275aca8",
+        "name": "MIT List Visual Arts Center",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Museum",
+          "Art gallery",
+          "Tourist attraction"
+        ],
+        "address": "MIT List Visual Arts Center, 20 Ames St, Cambridge, MA 02142",
+        "latitude": 42.3610052,
+        "longitude": -71.0878262,
+        "rating": 4.5,
+        "review_count": 126,
+        "price": null,
+        "historical_hours": [
+          [
+            "Friday",
+            "12–6PM"
+          ],
+          [
+            "Saturday",
+            "12–6PM"
+          ],
+          [
+            "Sunday",
+            "12–6PM"
+          ],
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "12–6PM"
+          ],
+          [
+            "Wednesday",
+            "12–6PM"
+          ],
+          [
+            "Thursday",
+            "12–8PM"
+          ]
+        ],
+        "description": "MIT's contemporary-art collection & temporary exhibits in an I.M. Pei-designed building.",
+        "source_url": "https://www.google.com/maps?cid=12720686898070531240",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 90286,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.74113,
+        "evidence": [
+          {
+            "citation": "S2.1",
+            "chunk_id": "be8834fe93987df1c4c463a86805f87d",
+            "kind": "review",
+            "text": "A beautiful contemporary art museum. They have a nice website where you can find the schedule of all shows that are coming up. Cool gallery opening nights with vegetarian and vegan friendly options of food + tasty wines. Nice conversations, amazing art experiences and a meaningful contemporary art - these are the things you get at the LIST.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9121955,
+            "timestamp_ms": 1529900085993
+          },
+          {
+            "citation": "S2.2",
+            "chunk_id": "c31bc7cc981e7126b0279d4b7591e808",
+            "kind": "review",
+            "text": "The exhibits were unique, staff was friendly, and the price (free) can't be beat!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9121956,
+            "timestamp_ms": 1565459911839
+          }
+        ],
+        "reason": "Retrieved source material for MIT List Visual Arts Center, a culture place in Cambridge."
+      },
+      {
+        "place_id": "0x89e37754d18b40ef:0xcba82b413cc2736d",
+        "name": "MIT Museum",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Science museum",
+          "Museum",
+          "Technology museum",
+          "Tourist attraction"
+        ],
+        "address": "MIT Museum, 265 Massachusetts Ave, Cambridge, MA 02139",
+        "latitude": 42.3622611,
+        "longitude": -71.09754459999999,
+        "rating": 4.3,
+        "review_count": 2466,
+        "price": null,
+        "historical_hours": [
+          [
+            "Sunday",
+            "10AM–5PM"
+          ],
+          [
+            "Monday",
+            "10AM–5PM"
+          ],
+          [
+            "Tuesday",
+            "10AM–5PM"
+          ],
+          [
+            "Wednesday",
+            "10AM–5PM"
+          ],
+          [
+            "Thursday",
+            "10AM–5PM"
+          ],
+          [
+            "Friday",
+            "10AM–5PM"
+          ],
+          [
+            "Saturday",
+            "10AM–5PM"
+          ]
+        ],
+        "description": "Highlights of MIT's science & technology exhibits include kinetic sculptures, robots & holograms.",
+        "source_url": "https://www.google.com/maps?cid=14675026944979006317",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92043,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.65121,
+        "evidence": [
+          {
+            "citation": "S3.1",
+            "chunk_id": "8d589a545c2addac7520f6f83bc53846",
+            "kind": "review",
+            "text": "Overall it was worth $10 but not much more. The art in motion exhibit was my favorite and I would have loved to see 10x more!!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10000646,
+            "timestamp_ms": 1571353554016
+          },
+          {
+            "citation": "S3.2",
+            "chunk_id": "17bd12ad6faca44b0c9ecc7649a82f2e",
+            "kind": "review",
+            "text": "Surely a good place to take kids to. Nice for adults as well. Be sure to interact with some the art work.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10000651,
+            "timestamp_ms": 1546733311941
+          }
+        ],
+        "reason": "Retrieved source material for MIT Museum, a culture place in Cambridge."
+      },
+      {
+        "place_id": "0x89e3774486d1d449:0x63d8084f6686a7ee",
+        "name": "Carpenter Center for the Visual Arts",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Art gallery",
+          "Tourist attraction"
+        ],
+        "address": "Carpenter Center for the Visual Arts, 24 Quincy St, Cambridge, MA 02138",
+        "latitude": 42.3736555,
+        "longitude": -71.1142899,
+        "rating": 4.7,
+        "review_count": 48,
+        "price": null,
+        "historical_hours": [
+          [
+            "Thursday",
+            "12–5PM"
+          ],
+          [
+            "Friday",
+            "12–5PM"
+          ],
+          [
+            "Saturday",
+            "12–5PM"
+          ],
+          [
+            "Sunday",
+            "12–5PM"
+          ],
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "12–5PM"
+          ],
+          [
+            "Wednesday",
+            "12–5PM"
+          ]
+        ],
+        "description": "This modern Harvard building by Le Corbusier holds art studios, galleries & film screenings.",
+        "source_url": "https://www.google.com/maps?cid=7194509541839906798",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 63392,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.62942,
+        "evidence": [
+          {
+            "citation": "S4.1",
+            "chunk_id": "ce12ff61efb4f81035983e6d672c44fc",
+            "kind": "review",
+            "text": "One of the few places in Boston that sells design books and zines, lots of good work with new arrivals every few months",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 2768951,
+            "timestamp_ms": 1579467735814
+          },
+          {
+            "citation": "S4.2",
+            "chunk_id": "48884ca13f9488a27f95b5eb1a294126",
+            "kind": "review",
+            "text": "Great display of modern art and expression.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 2768952,
+            "timestamp_ms": 1574782124780
+          }
+        ],
+        "reason": "Retrieved source material for Carpenter Center for the Visual Arts, a culture place in Cambridge."
+      },
+      {
+        "place_id": "0x89e3775d55ccd58d:0xa2c6ed67688dbd7c",
+        "name": "Shake Shack",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Hamburger restaurant",
+          "American restaurant",
+          "Fast food restaurant"
+        ],
+        "address": "Shake Shack, 92 Winthrop St, Cambridge, MA 02138",
+        "latitude": 42.37224,
+        "longitude": -71.120976,
+        "rating": 4.3,
+        "review_count": 1582,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Wednesday",
+            "11AM–10PM"
+          ],
+          [
+            "Thursday",
+            "11AM–10PM"
+          ],
+          [
+            "Friday",
+            "11AM–10PM"
+          ],
+          [
+            "Saturday",
+            "11AM–10PM"
+          ],
+          [
+            "Sunday",
+            "11AM–10PM"
+          ],
+          [
+            "Monday",
+            "11AM–10PM"
+          ],
+          [
+            "Tuesday",
+            "11AM–10PM"
+          ]
+        ],
+        "description": "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
+        "source_url": "https://www.google.com/maps?cid=11729323307924569468",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 86905,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.61075,
+        "evidence": [
+          {
+            "citation": "S5.1",
+            "chunk_id": "b0fda9d42693e0f461f42896ba90b75d",
+            "kind": "review",
+            "text": "Good hygiene practices. Tasty overall, my Shake had marshmallow bits. I'm not big on salt, but the chicken burger was good. Pricey and Harvard Square is an adventure.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7674081,
+            "timestamp_ms": 1613158202210
+          },
+          {
+            "citation": "S5.2",
+            "chunk_id": "4308ab8fd22e0cc138d93aa9575fa48d",
+            "kind": "review",
+            "text": "Here's the best Shake Shack in Boston at least for me. They cooked the burgers and fries nicely and served very gently. And they keep the tables clean. I have visited here several times and never been disappointed. Good foods with pleasant memories.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7674078,
+            "timestamp_ms": 1607300588471
+          }
+        ],
+        "reason": "Retrieved source material for Shake Shack, a food place in Cambridge."
+      },
+      {
+        "place_id": "0x89e37742b8bd0edb:0xaf0418fd65b75729",
+        "name": "Russell House Tavern",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "American restaurant",
+          "Bar",
+          "Restaurant"
+        ],
+        "address": "Russell House Tavern, 14 John F. Kennedy St, Cambridge, MA 02138",
+        "latitude": 42.373158,
+        "longitude": -71.11945899999999,
+        "rating": 4.3,
+        "review_count": 1944,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Sunday",
+            "10AM–11PM"
+          ],
+          [
+            "Monday",
+            "11AM–11PM"
+          ],
+          [
+            "Tuesday",
+            "4–11PM"
+          ],
+          [
+            "Wednesday",
+            "4–11PM"
+          ],
+          [
+            "Thursday",
+            "4–11PM"
+          ],
+          [
+            "Friday",
+            "11AM–1AM"
+          ],
+          [
+            "Saturday",
+            "10AM–1AM"
+          ]
+        ],
+        "description": "Upscale New American fare, craft cocktails & microbrews are on offer at this chic gathering spot.",
+        "source_url": "https://www.google.com/maps?cid=12611232333156538153",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 88923,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.57803,
+        "evidence": [
+          {
+            "citation": "S6.1",
+            "chunk_id": "b78f4610b6f6d1a8664b96c8e63800e4",
+            "kind": "review",
+            "text": "My daughter took me to Russell House for lunch and it is a standout. First and foremost COVID protocols are in place both inside and out. Tables are separated by plexiglass and your can't move in the place without a mask. Kudo's to their team for providing an enjoyable yet safe environment. The atmosphere is just what one would expect from a Harvard Square location. Historical yet with a young",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8505781,
+            "timestamp_ms": 1618073792952
+          },
+          {
+            "citation": "S6.2",
+            "chunk_id": "41586fde2f017bfbceb8b4816020a2aa",
+            "kind": "review",
+            "text": "Daughter). Both were very nice. The Russell House Tavern is surely well known amongst the Boston locals, but if visiting the area take the time to stop in for just a beverage or maybe a meal . . . you wont' be disappointed.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8505781,
+            "timestamp_ms": 1618073792952
+          }
+        ],
+        "reason": "Retrieved source material for Russell House Tavern, a food place in Cambridge."
+      },
+      {
+        "place_id": "0x89e3775d54040dad:0xecf9091fa1539456",
+        "name": "The Maharaja",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Indian restaurant",
+          "Asian restaurant",
+          "Restaurant",
+          "South Asian restaurant"
+        ],
+        "address": "The Maharaja, 57 John F. Kennedy St, Cambridge, MA 02138",
+        "latitude": 42.3721402,
+        "longitude": -71.1208654,
+        "rating": 4.2,
+        "review_count": 1406,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Tuesday",
+            "11:30AM–10PM"
+          ],
+          [
+            "Wednesday",
+            "11:30AM–10PM"
+          ],
+          [
+            "Thursday",
+            "11:30AM–10PM"
+          ],
+          [
+            "Friday",
+            "11:30AM–10:30PM"
+          ],
+          [
+            "Saturday",
+            "12–10:30PM"
+          ],
+          [
+            "Sunday",
+            "11:30AM–10PM"
+          ],
+          [
+            "Monday",
+            "11:30AM–10PM"
+          ]
+        ],
+        "description": "Tasteful & spacious 2nd-floor Indian venue featuring a lunch buffet & panoramic views.",
+        "source_url": "https://www.google.com/maps?cid=17075689493607191638",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 87252,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.57249,
+        "evidence": [
+          {
+            "citation": "S7.1",
+            "chunk_id": "7d2125339b094461032fad6aa8b601e5",
+            "kind": "review",
+            "text": "Its a nice place with nice view in the heart of the boston. Harvard square ... Bit expensive but their food is fresh and tasty..",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7824451,
+            "timestamp_ms": 1616626255811
+          },
+          {
+            "citation": "S7.2",
+            "chunk_id": "14b341111851683c66c856b869cab1d8",
+            "kind": "review",
+            "text": "The food is AMAZING!! Wow. So glad we went here!! First time eating Indian Cuisine in a while and the owner described what everything was to us- so so nice. 10/10 will come back when in Boston!!! Best food I’ve eaten in a long time!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7824454,
+            "timestamp_ms": 1613919178225
+          }
+        ],
+        "reason": "Retrieved source material for The Maharaja, a food place in Cambridge."
+      },
+      {
+        "place_id": "0x89e37706236c9855:0x41687ba9cc98808b",
+        "name": "Summer Shack",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Seafood restaurant",
+          "American restaurant",
+          "Crab house",
+          "Event venue",
+          "Family restaurant",
+          "Takeout Restaurant",
+          "Oyster bar restaurant",
+          "Sushi restaurant",
+          "Sushi takeaway"
+        ],
+        "address": "Summer Shack, 149 Alewife Brook Pkwy, Cambridge, MA 02140",
+        "latitude": 42.3937391,
+        "longitude": -71.1411846,
+        "rating": 4.3,
+        "review_count": 1358,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Saturday",
+            "11:30AM–10PM"
+          ],
+          [
+            "Sunday",
+            "11:30AM–9PM"
+          ],
+          [
+            "Monday",
+            "11:30AM–9PM"
+          ],
+          [
+            "Tuesday",
+            "11:30AM–9PM"
+          ],
+          [
+            "Wednesday",
+            "11:30AM–9PM"
+          ],
+          [
+            "Thursday",
+            "11:30AM–10PM"
+          ],
+          [
+            "Friday",
+            "11:30AM–10PM"
+          ]
+        ],
+        "description": "Spacious, storied seafood eatery serving classic New England fish house staples.",
+        "source_url": "https://www.google.com/maps?cid=4713152979255459979",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92372,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.56086,
+        "evidence": [
+          {
+            "citation": "S8.1",
+            "chunk_id": "1a512084c4f5567e8c6d062f4c6b85e3",
+            "kind": "review",
+            "text": "Food was great. Atmosphere was great. As restaurants have been kicked pretty hard with Covid, some of the wait staff may have forgotten how important customers are to their survival. Please remember the people sitting in the booths and at the tables are paying your wages. Drinks should never be on E, the customer should not have to refill their drinks at the bar and once the customer is ready",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10295271,
+            "timestamp_ms": 1615719698341
+          },
+          {
+            "citation": "S8.2",
+            "chunk_id": "6e143558c3d52c108fe7ddcd77fdad89",
+            "kind": "review",
+            "text": "wedge salad was huge and tasty but with average freshness. It could easily be shared between two people. Also got the lobster pot stickers which tasted better as leftovers and a maki roll which was dry and pretty gross.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10295273,
+            "timestamp_ms": 1610116291007
+          }
+        ],
+        "reason": "Retrieved source material for Summer Shack, a food place in Cambridge."
+      }
+    ],
+    "search_plan": {
+      "in_scope": true,
+      "clarification": "",
+      "searches": [
+        {
+          "query": "art museums in Cambridge MA",
+          "category": "culture"
+        },
+        {
+          "query": "relaxed lunch spots near Harvard Square",
+          "category": "food"
+        }
+      ]
+    },
+    "trace": [
+      {
+        "tool": "search_places",
+        "query": "art museums in Cambridge MA",
+        "category": "culture",
+        "city": "Cambridge",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 104.89
+      },
+      {
+        "tool": "search_places",
+        "query": "relaxed lunch spots near Harvard Square",
+        "category": "food",
+        "city": "Cambridge",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 183.53
+      }
+    ],
+    "dataset_id": "boston-36bb6d7b74e39df3",
+    "index_id": "80e7efec48cc96a7",
+    "prompt_version": "rag-planner-v1",
+    "model": {
+      "provider": "vertex",
+      "model": "gemini-3.1-flash-lite",
+      "configured": true
+    },
+    "elapsed_ms": 1717
+  }
+}

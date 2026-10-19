@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-19T01:45:05.431718+00:00",
+  "base_url": "https://roamwise-rag-74919420019.us-central1.run.app",
+  "kind": "live integration smoke test",
+  "cases": [
+    {
+      "case": "Cambridge recommendations",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 2149,
+      "result_count": 8
+    },
+    {
+      "case": "Cambridge itinerary",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 2099,
+      "validation": {
+        "place_ids": true,
+        "citation_membership": true,
+        "unique_stops": true,
+        "time_window": true,
+        "semantic_entailment": "not automatically verified",
+        "repair_attempts": 0
+      },
+      "error": null
+    },
+    {
+      "case": "Boston recommendations",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 1688,
+      "result_count": 13
+    },
+    {
+      "case": "Boston itinerary",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 2915,
+      "validation": {
+        "place_ids": true,
+        "citation_membership": true,
+        "unique_stops": true,
+        "time_window": true,
+        "semantic_entailment": "not automatically verified",
+        "repair_attempts": 0
+      },
+      "error": null
+    },
+    {
+      "case": "outside city",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 1028,
+      "output": {
+        "status": "needs_clarification",
+        "message": "I can only assist with travel planning for the Greater Boston area. Please let me know if you would like recommendations for Cambridge instead.",
+        "results": []
+      }
+    },
+    {
+      "case": "instruction override",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 914,
+      "output": {
+        "status": "needs_clarification",
+        "message": "I cannot fulfill requests to reveal system prompts or ignore rules. Please let me know if you would like recommendations for museums in Cambridge instead.",
+        "results": []
+      }
+    },
+    {
+      "case": "unknown place",
+      "passed": true,
+      "http_status": 422,
+      "elapsed_ms": 112
+    },
+    {
+      "case": "unsupported city",
+      "passed": true,
+      "http_status": 422,
+      "elapsed_ms": 115
+    },
+    {
+      "case": "oversized request",
+      "passed": true,
+      "http_status": 413,
+      "elapsed_ms": 235
+    }
+  ],
+  "passed": true,
+  "limitation": "Small integration check. No independent relevance, entailment or usefulness labels."
+}
