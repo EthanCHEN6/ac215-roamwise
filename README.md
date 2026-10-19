@@ -38,7 +38,7 @@ docker compose run --rm --no-deps evaluate
 docker compose -f compose.yaml -f compose.rag.yaml --profile maintenance run --build --rm data-agent
 ```
 
-Read [RAG design](docs/RAG.md), [Chinese explanation and TF questions](docs/RAG_中文讲解.md), [data notes](docs/DATA.md) and [retrieval results](docs/RESULTS.md). The original slides in `slides/` describe the earlier retrieval-only build; use the RAG notes for this update.
+Read [RAG design](docs/RAG.md), [presentation notes and TF questions](docs/PRESENTATION_NOTES.md), [data notes](docs/DATA.md) and [retrieval results](docs/RESULTS.md). The original slides in `slides/` describe the earlier retrieval-only build; use the RAG notes for this update.
 
 ## Limits
 

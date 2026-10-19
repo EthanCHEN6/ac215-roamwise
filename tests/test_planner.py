@@ -92,11 +92,40 @@ def test_scope_rejection_never_queries_database():
 def test_multistep_search_applies_hard_city_and_unique_places():
     engine = Engine()
     result = Planner(engine, Model([{"in_scope": True, "clarification": "", "searches": [
-        {"query": "art museums", "category": "culture"}, {"query": "history museums", "category": "culture"}]}])).recommend(trip())
+        {"query": "art museums", "interest": "Museums"}, {"query": "historic sites", "interest": "History"}]}])).recommend(
+            TripRequest(start_date="2026-10-20", interests=["History", "Museums"]))
     assert len(engine.queries) == 2
     assert all(q[1]["city"] == "Cambridge" for q in engine.queries)
     assert len(result["results"]) == 2
     assert result["results"][1]["evidence"][0]["citation"] == "S2.1"
+    assert all(p["matched_interests"] == ["History", "Museums"] for p in result["results"])
+
+
+def test_search_keeps_all_selected_interests_and_ignores_unselected_ones():
+    engine = Engine()
+    plan = {"in_scope": True, "clarification": "", "searches": [
+        {"query": "historic sites", "interest": "History"},
+        {"query": "more history", "interest": "History"},
+        {"query": "art museums", "interest": "Museums"}]}
+    request = TripRequest(start_date="2026-10-20", interests=["History", "Food", "Nature", "History"])
+    result = Planner(engine, Model([plan])).recommend(request)
+    assert [q[1]["category"] for q in engine.queries] == ["culture", "food", "outdoors"]
+    assert [t["interest"] for t in result["trace"]] == ["History", "Food", "Nature"]
+    assert result["trace"][1]["query_source"] == "default_interest_query"
+    assert all(p["matched_interests"] == ["History", "Food", "Nature"] for p in result["results"])
+
+
+def test_interest_matches_merge_when_a_later_search_has_a_better_score():
+    class RankedEngine(Engine):
+        def search(self, query, **kwargs):
+            result = super().search(query, **kwargs)
+            for row in result["results"]:
+                row["score"] = .3 if len(self.queries) == 1 else .9
+            return result
+    plan = {"in_scope": True, "clarification": "", "searches": [{"query": "old museums", "interest": "History"}]}
+    result = Planner(RankedEngine(), Model([plan])).recommend(
+        TripRequest(start_date="2026-10-20", interests=["History", "Museums"]))
+    assert all(p["score"] == .9 and p["matched_interests"] == ["History", "Museums"] for p in result["results"])
 
 
 def test_server_retrieves_sources_and_repairs_once():

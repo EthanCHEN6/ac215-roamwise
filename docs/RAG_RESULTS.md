@@ -19,6 +19,14 @@ Browser automation could not start because of a local tool runtime error. We che
 
 Files: `rag-unit-tests.txt`, `rag-live-initial-evaluation.json`, `rag-live-evaluation.json`, `rag-cambridge-*.json`, `rag-boston-*.json`, `data-agent-audit.json`, `rag-server-log.txt`.
 
+## Interest-filter update
+
+Prompt version `rag-planner-v2` preserves one search per selected interest and records matching interests on each place. Container tests: **36 passed**. A JavaScript DOM fixture checks filter labels and counts, overlapping interests, retained selections, empty results and refresh of older cached results. It does not test browser layout.
+
+One live four-interest request returned 16 unique Cambridge places: four matches for each selected interest. City and category filters passed. This verifies the response structure, not human relevance. See `evidence/cloud/interest-filter-check.json`. The earlier 9-case results below belong to prompt version v1; they have not been relabeled as v2 results.
+
+Current submission files use English. The language check covers text, filenames and PowerPoint XML, including speaker notes. Existing screenshot evidence was inspected separately. Private preparation notes are kept outside the repository.
+
 ## Public deployment check
 
 The public Cloud Run service passed the same 9-case integration suite with its production service account. Observed recommendation and itinerary requests took 1.7–2.9 seconds in this small warm run. All required page assets returned HTTP 200. The separate Sites origin passed the CORS check. A live Google Places lookup also returned name and hours fields without persisting response content.

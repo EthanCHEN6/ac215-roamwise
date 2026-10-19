@@ -5,13 +5,13 @@ The earlier build retrieved places and passages. It did not call a generative mo
 ## Request flow
 
 1. Validate the structured trip preferences and notes.
-2. Ask the LLM for at most four searches. Only an allowlisted database search is available; the model cannot execute code or browse arbitrary URLs.
-3. Apply hard city/category filters. Retrieve four places per search, keep similarity ≥ 0.25 and merge duplicates. The threshold is not calibrated against human labels.
+2. Ask the LLM for one search per selected interest (at most four). The server fills an omitted interest with a short default query and records that choice in the trace. Only an allowlisted database search is available; the model cannot execute code or browse arbitrary URLs.
+3. Apply hard city/category filters. Retrieve four places per search, keep similarity ≥ 0.25 and merge duplicates while keeping each matching interest. History and Museums use the culture index filter; Nature uses outdoors. The website keeps the original interest labels. A match means that a place was retrieved for that search, not that its relevance has been verified by a person. The threshold is not calibrated against human labels.
 4. Let the user select stops. Retrieve context again on the server; reject client-supplied source text.
 5. Generate JSON with selected place IDs, days, suggested durations, reasons and citations.
 6. Check every selected place exactly once, citation membership, city, days, daily stop count and the 09:00–18:00 window. Allow one repair; return an error if it fails.
 
-`roamwise/llm.py` implements Vertex AI and Ollama adapters. `roamwise/planner.py` contains prompts and validation. The prompt version is `rag-planner-v1`. There is no template fallback when a model fails.
+`roamwise/llm.py` implements Vertex AI and Ollama adapters. `roamwise/planner.py` contains prompts and validation. The prompt version is `rag-planner-v2`. There is no template fallback when a model fails.
 
 ## Two connected components
 

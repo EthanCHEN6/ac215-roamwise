@@ -1,0 +1,7 @@
+# Reuse a verified data/index image when dependencies and indexing code are unchanged.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+USER root
+COPY --chown=app:app roamwise /app/roamwise
+COPY --chown=app:app frontend /app/frontend
+USER app

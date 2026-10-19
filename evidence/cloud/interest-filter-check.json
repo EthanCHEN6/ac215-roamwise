@@ -1,0 +1,1308 @@
+{
+  "request": {
+    "city": "Cambridge",
+    "start_date": "2026-10-20",
+    "days": 2,
+    "interests": [
+      "History",
+      "Museums",
+      "Food",
+      "Nature"
+    ],
+    "notes": "Museums, historical sites, lunch and a park.",
+    "adults": 3,
+    "children": 0,
+    "budget": 100,
+    "transport": "transit",
+    "pace": "balanced"
+  },
+  "response": {
+    "status": "ok",
+    "message": "",
+    "results": [
+      {
+        "place_id": "0x89e37745a7478907:0xca426e8b350c9f57",
+        "name": "Cambridge Public Library",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Public library"
+        ],
+        "address": "Cambridge Public Library, 449 Broadway, Cambridge, MA 02138",
+        "latitude": 42.3741209,
+        "longitude": -71.1107166,
+        "rating": 4.7,
+        "review_count": 196,
+        "price": null,
+        "historical_hours": [
+          [
+            "Sunday",
+            "Closed"
+          ],
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "1\u20137PM"
+          ],
+          [
+            "Wednesday",
+            "1\u20137PM"
+          ],
+          [
+            "Thursday",
+            "10AM\u20134PM"
+          ],
+          [
+            "Friday",
+            "10AM\u20134PM"
+          ],
+          [
+            "Saturday",
+            "10AM\u20134PM"
+          ]
+        ],
+        "description": "",
+        "source_url": "https://www.google.com/maps?cid=14574332888293875543",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 89598,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.61347,
+        "evidence": [
+          {
+            "citation": "S1.1",
+            "chunk_id": "0e918255b3239aaed97039d2ae9d16b2",
+            "kind": "review",
+            "text": "My favorite ever library. Terrific workspace and lots of selection. Librarians are also super helpful if you're having trouble finding anything.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8801119,
+            "timestamp_ms": 1604436491478
+          },
+          {
+            "citation": "S1.2",
+            "chunk_id": "d9bc373f72aceff5bcd3286643645a79",
+            "kind": "review",
+            "text": "They are serious about books! And I've read great things there.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8801117,
+            "timestamp_ms": 1618598025004
+          }
+        ],
+        "reason": "Retrieved source material for Cambridge Public Library, a culture place in Cambridge.",
+        "matched_interests": [
+          "History"
+        ]
+      },
+      {
+        "place_id": "0x89e3776937c1f5f3:0x43c94658ba8a5a07",
+        "name": "Longfellow House-Washington's Headquarters National Historic Site",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Historical place museum",
+          "Historical place",
+          "History museum",
+          "National museum",
+          "Tourist attraction"
+        ],
+        "address": "Longfellow House-Washington's Headquarters National Historic Site, 105 Brattle St, Cambridge, MA 02138",
+        "latitude": 42.3769262,
+        "longitude": -71.1263814,
+        "rating": 4.8,
+        "review_count": 218,
+        "price": null,
+        "historical_hours": null,
+        "description": "Tours of the famed poet's former home, which served as Washington's HQ during the Siege of Boston.",
+        "source_url": "https://www.google.com/maps?cid=4884512617760709127",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 65649,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.57075,
+        "evidence": [
+          {
+            "citation": "S2.1",
+            "chunk_id": "7d95b3c1e0b0f721c9aaa0bcad0b6c84",
+            "kind": "review",
+            "text": "One of the most interesting destinations in my many years of travels around the world. Beautiful grounds and beautiful history!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 3072005,
+            "timestamp_ms": 1617376860230
+          },
+          {
+            "citation": "S2.2",
+            "chunk_id": "c5737d6ded0001bcf813ddea482bc3e4",
+            "kind": "metadata",
+            "text": "Longfellow House-Washington's Headquarters National Historic Site. Cambridge. Categories: Historical place museum, Historical place, History museum, National museum, Tourist attraction. Tours of the famed poet's former home, which served as Washington's HQ during the Siege of Boston.",
+            "source_file": "meta-Massachusetts.json.gz",
+            "source_line": 65649,
+            "timestamp_ms": null
+          }
+        ],
+        "reason": "Retrieved source material for Longfellow House-Washington's Headquarters National Historic Site, a culture place in Cambridge.",
+        "matched_interests": [
+          "History"
+        ]
+      },
+      {
+        "place_id": "0x89e377436d7628e5:0xd094748bb4eaa34a",
+        "name": "Widener Library",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "University library",
+          "Tourist attraction"
+        ],
+        "address": "Widener Library, 1 Harvard Yard, Cambridge, MA 02138",
+        "latitude": 42.373446699999995,
+        "longitude": -71.1165055,
+        "rating": 4.7,
+        "review_count": 127,
+        "price": null,
+        "historical_hours": [
+          [
+            "Thursday",
+            "9AM\u201312AM"
+          ],
+          [
+            "Friday",
+            "9AM\u20137PM"
+          ],
+          [
+            "Saturday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Sunday",
+            "12\u20138PM"
+          ],
+          [
+            "Monday",
+            "9AM\u201312AM"
+          ],
+          [
+            "Tuesday",
+            "9AM\u201312AM"
+          ],
+          [
+            "Wednesday",
+            "9AM\u201312AM"
+          ]
+        ],
+        "description": "Harvard's flagship library housing an enormous research trove of social sciences & humanities books.",
+        "source_url": "https://www.google.com/maps?cid=15029765999826740042",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 71583,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.56978,
+        "evidence": [
+          {
+            "citation": "S3.1",
+            "chunk_id": "cc07c255b85d0854b34b2325f242b39a",
+            "kind": "review",
+            "text": "Absolutely gorgeous. Worthy monument to knowledge. Great infrastructure, great atmosphere.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 3915959,
+            "timestamp_ms": 1537368634116
+          },
+          {
+            "citation": "S3.2",
+            "chunk_id": "21259259f0421d1dce2812b32962688c",
+            "kind": "review",
+            "text": "Really cool place. Very photo genic library. Extremely historical and modern significance. Think of the great minds of studying this library. The library is beautiful during the day as well as at night. Great destination for tourists as well. Just be sure to park the car in Harvard Yard.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 3915958,
+            "timestamp_ms": 1523454261290
+          }
+        ],
+        "reason": "Retrieved source material for Widener Library, a culture place in Cambridge.",
+        "matched_interests": [
+          "History"
+        ]
+      },
+      {
+        "place_id": "0x89e377412f2ed67b:0x613d8c4648bcba7b",
+        "name": "The Harvard Museum of Natural History",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Natural history museum"
+        ],
+        "address": "The Harvard Museum of Natural History, 26 Oxford St, Cambridge, MA 02138",
+        "latitude": 42.3784626,
+        "longitude": -71.1155576,
+        "rating": 4.7,
+        "review_count": 2903,
+        "price": null,
+        "historical_hours": [
+          [
+            "Sunday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Monday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Tuesday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Wednesday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Thursday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Friday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Saturday",
+            "9AM\u20135PM"
+          ]
+        ],
+        "description": "Extensive natural-science collections, including animals, minerals & the famous Glass Flowers.",
+        "source_url": "https://www.google.com/maps?cid=7006910828754287227",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92192,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.56915,
+        "evidence": [
+          {
+            "citation": "S4.1",
+            "chunk_id": "4c2d003fe6e8f624e7dc8fd7aac0f59b",
+            "kind": "review",
+            "text": "I went here many times, twice for a school field trip, and 5 times on my own, and I was always having a great time and learned new things",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10106074,
+            "timestamp_ms": 1614296731019
+          },
+          {
+            "citation": "S4.2",
+            "chunk_id": "3e837d0492f8a4b4633fc8be1d11cec5",
+            "kind": "review",
+            "text": "Best impromptu decision to visit this place. The place is not usually crowded so you can see the exhibits in peace. They have a fantastic collection of minerals, rocks and stones. The glass flowers are incredible to look at with impeccable detail. The dinosaur and animal section is vast. One can easily spend an entire day in here and not realise it. The gift shop has a good collection of",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10106070,
+            "timestamp_ms": 1562301083632
+          }
+        ],
+        "reason": "Retrieved source material for The Harvard Museum of Natural History, a culture place in Cambridge.",
+        "matched_interests": [
+          "History"
+        ]
+      },
+      {
+        "place_id": "0x89e377448897a76d:0xe34244cf7bf8f747",
+        "name": "Harvard Art Museums",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Art museum",
+          "Cafe",
+          "Gift shop",
+          "Tourist attraction"
+        ],
+        "address": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+        "latitude": 42.3740898,
+        "longitude": -71.1143582,
+        "rating": 4.7,
+        "review_count": 1177,
+        "price": null,
+        "historical_hours": null,
+        "description": "Harvard's oldest museum, featuring European & American art from the Middle Ages to the present day.",
+        "source_url": "https://www.google.com/maps?cid=16375726853001377607",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 89957,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.74922,
+        "evidence": [
+          {
+            "citation": "S5.1",
+            "chunk_id": "80cf01851eaf7516358748333c524ed6",
+            "kind": "review",
+            "text": "Such a peaceful and beautiful museum. Has a wide array of art on every floor and a really cool gift shop! Also, I don't recommend wearing heels since it's very quiet!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8946846,
+            "timestamp_ms": 1546791707152
+          },
+          {
+            "citation": "S5.2",
+            "chunk_id": "26da02ad429668abb3a29281ea9640bd",
+            "kind": "review",
+            "text": "As much as I am not an art critic myself, gotta say I really liked visiting this museum. Prices are low and the place looks amazing. Plus a lot of good art to see. Recommending.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8946845,
+            "timestamp_ms": 1603212432475
+          }
+        ],
+        "reason": "Retrieved source material for Harvard Art Museums, a culture place in Cambridge.",
+        "matched_interests": [
+          "Museums"
+        ]
+      },
+      {
+        "place_id": "0x89e37746d15ee397:0x120a9da97291d878",
+        "name": "Peabody Museum of Archaeology and Ethnology",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Museum",
+          "Tourist attraction"
+        ],
+        "address": "Peabody Museum of Archaeology and Ethnology, 11 Divinity Ave, Cambridge, MA 02138",
+        "latitude": 42.378195999999996,
+        "longitude": -71.11493,
+        "rating": 4.6,
+        "review_count": 435,
+        "price": null,
+        "historical_hours": [
+          [
+            "Saturday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Sunday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Monday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Tuesday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Wednesday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Thursday",
+            "9AM\u20135PM"
+          ],
+          [
+            "Friday",
+            "9AM\u20135PM"
+          ]
+        ],
+        "description": "Harvard museum with ancient cultures' artifacts & archeology, plus access to Natural History Museum.",
+        "source_url": "https://www.google.com/maps?cid=1300024793547004024",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 74943,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.72789,
+        "evidence": [
+          {
+            "citation": "S6.1",
+            "chunk_id": "65bd7fafeffc892aff87c25f18701ad1",
+            "kind": "review",
+            "text": "Amazing! They pack so much into a small museum. Loved every square inch of it. :) TIP: If you have a similar museum membership in another major city, they might offer free reciprocal admission. Double check the website and bring proof of membership.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 4486639,
+            "timestamp_ms": 1564177135983
+          },
+          {
+            "citation": "S6.2",
+            "chunk_id": "45ced757e31c6974cbde18f54b94eece",
+            "kind": "review",
+            "text": "This museum was one of my favorite places during our Boston vacation. The museum has many great things to see. We got there an hour before closing but we managed to see everything and enjoy them. If you're close by give it a try. Highly recommended.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 4486642,
+            "timestamp_ms": 1539926765163
+          }
+        ],
+        "reason": "Retrieved source material for Peabody Museum of Archaeology and Ethnology, a culture place in Cambridge.",
+        "matched_interests": [
+          "Museums"
+        ]
+      },
+      {
+        "place_id": "0x89e379fe564d3833:0xb088f5563275aca8",
+        "name": "MIT List Visual Arts Center",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Museum",
+          "Art gallery",
+          "Tourist attraction"
+        ],
+        "address": "MIT List Visual Arts Center, 20 Ames St, Cambridge, MA 02142",
+        "latitude": 42.3610052,
+        "longitude": -71.0878262,
+        "rating": 4.5,
+        "review_count": 126,
+        "price": null,
+        "historical_hours": [
+          [
+            "Friday",
+            "12\u20136PM"
+          ],
+          [
+            "Saturday",
+            "12\u20136PM"
+          ],
+          [
+            "Sunday",
+            "12\u20136PM"
+          ],
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday",
+            "12\u20136PM"
+          ],
+          [
+            "Wednesday",
+            "12\u20136PM"
+          ],
+          [
+            "Thursday",
+            "12\u20138PM"
+          ]
+        ],
+        "description": "MIT's contemporary-art collection & temporary exhibits in an I.M. Pei-designed building.",
+        "source_url": "https://www.google.com/maps?cid=12720686898070531240",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 90286,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.72331,
+        "evidence": [
+          {
+            "citation": "S7.1",
+            "chunk_id": "c31bc7cc981e7126b0279d4b7591e808",
+            "kind": "review",
+            "text": "The exhibits were unique, staff was friendly, and the price (free) can't be beat!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9121956,
+            "timestamp_ms": 1565459911839
+          },
+          {
+            "citation": "S7.2",
+            "chunk_id": "ef96f19269a9bbd3204cdad9be67c639",
+            "kind": "review",
+            "text": "Has interesting shows, many Quite thought provoking. A must see if you're on campus. Free to the public!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 9121952,
+            "timestamp_ms": 1563186438191
+          }
+        ],
+        "reason": "Retrieved source material for MIT List Visual Arts Center, a culture place in Cambridge.",
+        "matched_interests": [
+          "Museums"
+        ]
+      },
+      {
+        "place_id": "0x89e37754d18b40ef:0xcba82b413cc2736d",
+        "name": "MIT Museum",
+        "city": "Cambridge",
+        "category": "culture",
+        "categories": [
+          "Science museum",
+          "Museum",
+          "Technology museum",
+          "Tourist attraction"
+        ],
+        "address": "MIT Museum, 265 Massachusetts Ave, Cambridge, MA 02139",
+        "latitude": 42.3622611,
+        "longitude": -71.09754459999999,
+        "rating": 4.3,
+        "review_count": 2466,
+        "price": null,
+        "historical_hours": [
+          [
+            "Sunday",
+            "10AM\u20135PM"
+          ],
+          [
+            "Monday",
+            "10AM\u20135PM"
+          ],
+          [
+            "Tuesday",
+            "10AM\u20135PM"
+          ],
+          [
+            "Wednesday",
+            "10AM\u20135PM"
+          ],
+          [
+            "Thursday",
+            "10AM\u20135PM"
+          ],
+          [
+            "Friday",
+            "10AM\u20135PM"
+          ],
+          [
+            "Saturday",
+            "10AM\u20135PM"
+          ]
+        ],
+        "description": "Highlights of MIT's science & technology exhibits include kinetic sculptures, robots & holograms.",
+        "source_url": "https://www.google.com/maps?cid=14675026944979006317",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92043,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.70142,
+        "evidence": [
+          {
+            "citation": "S8.1",
+            "chunk_id": "d913c6050d60c6609e12a594c2779e79",
+            "kind": "review",
+            "text": "I love everything about this place. If you consider yourself a bit of a geek, this is a must go place! Highly recommend going here if you visit Boston",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10000650,
+            "timestamp_ms": 1576728536577
+          },
+          {
+            "citation": "S8.2",
+            "chunk_id": "17bd12ad6faca44b0c9ecc7649a82f2e",
+            "kind": "review",
+            "text": "Surely a good place to take kids to. Nice for adults as well. Be sure to interact with some the art work.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10000651,
+            "timestamp_ms": 1546733311941
+          }
+        ],
+        "reason": "Retrieved source material for MIT Museum, a culture place in Cambridge.",
+        "matched_interests": [
+          "Museums"
+        ]
+      },
+      {
+        "place_id": "0x89e37706236c9855:0x41687ba9cc98808b",
+        "name": "Summer Shack",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Seafood restaurant",
+          "American restaurant",
+          "Crab house",
+          "Event venue",
+          "Family restaurant",
+          "Takeout Restaurant",
+          "Oyster bar restaurant",
+          "Sushi restaurant",
+          "Sushi takeaway"
+        ],
+        "address": "Summer Shack, 149 Alewife Brook Pkwy, Cambridge, MA 02140",
+        "latitude": 42.3937391,
+        "longitude": -71.1411846,
+        "rating": 4.3,
+        "review_count": 1358,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Saturday",
+            "11:30AM\u201310PM"
+          ],
+          [
+            "Sunday",
+            "11:30AM\u20139PM"
+          ],
+          [
+            "Monday",
+            "11:30AM\u20139PM"
+          ],
+          [
+            "Tuesday",
+            "11:30AM\u20139PM"
+          ],
+          [
+            "Wednesday",
+            "11:30AM\u20139PM"
+          ],
+          [
+            "Thursday",
+            "11:30AM\u201310PM"
+          ],
+          [
+            "Friday",
+            "11:30AM\u201310PM"
+          ]
+        ],
+        "description": "Spacious, storied seafood eatery serving classic New England fish house staples.",
+        "source_url": "https://www.google.com/maps?cid=4713152979255459979",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 92372,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.61129,
+        "evidence": [
+          {
+            "citation": "S9.1",
+            "chunk_id": "6e143558c3d52c108fe7ddcd77fdad89",
+            "kind": "review",
+            "text": "wedge salad was huge and tasty but with average freshness. It could easily be shared between two people. Also got the lobster pot stickers which tasted better as leftovers and a maki roll which was dry and pretty gross.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10295273,
+            "timestamp_ms": 1610116291007
+          },
+          {
+            "citation": "S9.2",
+            "chunk_id": "2af3b622e8d51cbe89a5598f713c49b4",
+            "kind": "review",
+            "text": "Steamers were delicious. Sushi was amazing. I love the menu and the daily seasonal specials. G & T was weak, small, and too much ice so I switched to a beer.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 10295269,
+            "timestamp_ms": 1617197169546
+          }
+        ],
+        "reason": "Retrieved source material for Summer Shack, a food place in Cambridge.",
+        "matched_interests": [
+          "Food"
+        ]
+      },
+      {
+        "place_id": "0x89e3774339457a0d:0x3d269c89b22efb",
+        "name": "Tatte Bakery & Cafe",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Cafe",
+          "Bakery",
+          "Coffee shop",
+          "Restaurant"
+        ],
+        "address": "Tatte Bakery & Cafe, 1288 Massachusetts Ave, Cambridge, MA 02138",
+        "latitude": 42.3726822,
+        "longitude": -71.1169414,
+        "rating": 4.5,
+        "review_count": 1615,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Thursday",
+            "7AM\u20139PM"
+          ],
+          [
+            "Friday",
+            "7AM\u20139PM"
+          ],
+          [
+            "Saturday",
+            "7AM\u20139PM"
+          ],
+          [
+            "Sunday",
+            "7AM\u20139PM"
+          ],
+          [
+            "Monday",
+            "7AM\u20139PM"
+          ],
+          [
+            "Tuesday",
+            "7AM\u20139PM"
+          ],
+          [
+            "Wednesday",
+            "7AM\u20139PM"
+          ]
+        ],
+        "description": "",
+        "source_url": "https://www.google.com/maps?cid=17212427346259707",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 86525,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.60758,
+        "evidence": [
+          {
+            "citation": "S10.1",
+            "chunk_id": "1ae23c33cf48daa4b8dc6fc911a5fe0d",
+            "kind": "review",
+            "text": "I had the roasted cauliflower pita and it had so much flavour and it had the perfect amount of spice to where it made me crave more! We also had the chicken salad sandwich and avocado & sweet potato tartine and they both were incredible tasting!! I love the area it's located at and the patio scenery. I would definitely recommend this place!!!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7533875,
+            "timestamp_ms": 1618864971041
+          },
+          {
+            "citation": "S10.2",
+            "chunk_id": "7b8b74730fccb1c8e019e0cc5d2a19a8",
+            "kind": "review",
+            "text": "I love tatte sandwiches especially their chicken pita (pic not included). Who knew that roasted squash are wonderful in sandwiches. I loved the flavor and texture of that one. Their cookies and pie are worth a try if you stop by. Staff are always friendly at this location. I prefer to order ahead because they are usually busy.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7533874,
+            "timestamp_ms": 1617795322114
+          }
+        ],
+        "reason": "Retrieved source material for Tatte Bakery & Cafe, a food place in Cambridge.",
+        "matched_interests": [
+          "Food"
+        ]
+      },
+      {
+        "place_id": "0x89e3775d55ccd58d:0xa2c6ed67688dbd7c",
+        "name": "Shake Shack",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Hamburger restaurant",
+          "American restaurant",
+          "Fast food restaurant"
+        ],
+        "address": "Shake Shack, 92 Winthrop St, Cambridge, MA 02138",
+        "latitude": 42.37224,
+        "longitude": -71.120976,
+        "rating": 4.3,
+        "review_count": 1582,
+        "price": "$$",
+        "historical_hours": [
+          [
+            "Wednesday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Thursday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Friday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Saturday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Sunday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Monday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Tuesday",
+            "11AM\u201310PM"
+          ]
+        ],
+        "description": "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
+        "source_url": "https://www.google.com/maps?cid=11729323307924569468",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 86905,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.60205,
+        "evidence": [
+          {
+            "citation": "S11.1",
+            "chunk_id": "182eab6dbcff8bdff36a6d44f6b9b3cf",
+            "kind": "review",
+            "text": "I had ordered takeouts from this location several times - foods are always nicely prepared and on time. This has become one of my favorite locations for quick bites!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7674083,
+            "timestamp_ms": 1614390472030
+          },
+          {
+            "citation": "S11.2",
+            "chunk_id": "4308ab8fd22e0cc138d93aa9575fa48d",
+            "kind": "review",
+            "text": "Here's the best Shake Shack in Boston at least for me. They cooked the burgers and fries nicely and served very gently. And they keep the tables clean. I have visited here several times and never been disappointed. Good foods with pleasant memories.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 7674078,
+            "timestamp_ms": 1607300588471
+          }
+        ],
+        "reason": "Retrieved source material for Shake Shack, a food place in Cambridge.",
+        "matched_interests": [
+          "Food"
+        ]
+      },
+      {
+        "place_id": "0x89e37742b4115e45:0xba9875108380783e",
+        "name": "Tasty Burger",
+        "city": "Cambridge",
+        "category": "food",
+        "categories": [
+          "Hamburger restaurant",
+          "American restaurant",
+          "Fast food restaurant"
+        ],
+        "address": "Tasty Burger, 40 John F. Kennedy St, Cambridge, MA 02138",
+        "latitude": 42.3725934,
+        "longitude": -71.11991789999999,
+        "rating": 4.2,
+        "review_count": 1340,
+        "price": "$",
+        "historical_hours": [
+          [
+            "Sunday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Monday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Tuesday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Wednesday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Thursday",
+            "11AM\u201310PM"
+          ],
+          [
+            "Friday",
+            "11AM\u201312AM"
+          ],
+          [
+            "Saturday",
+            "11AM\u201312AM"
+          ]
+        ],
+        "description": "Relaxed venue serving creative burgers & a selection of craft beers until the wee hours.",
+        "source_url": "https://www.google.com/maps?cid=13445625401300777022",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 84823,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.58799,
+        "evidence": [
+          {
+            "citation": "S12.1",
+            "chunk_id": "b19a92e70d6b5a0cf521f751171b20e2",
+            "kind": "review",
+            "text": "The restaurant is great!!! I orderd the 50/50 Rings and Fries for $5 expecting a really small portion but it was actually very large! I would definitely recommend this place.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6989832,
+            "timestamp_ms": 1617388535163
+          },
+          {
+            "citation": "S12.2",
+            "chunk_id": "3779881fadc4aa4f391e21af37299906",
+            "kind": "review",
+            "text": "Best burgers around. Tastes nothing like any other burger chain burger. Fresh and delicious.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6989834,
+            "timestamp_ms": 1611352561352
+          }
+        ],
+        "reason": "Retrieved source material for Tasty Burger, a food place in Cambridge.",
+        "matched_interests": [
+          "Food"
+        ]
+      },
+      {
+        "place_id": "0x89e3774207b2970b:0xae74737420170722",
+        "name": "Cambridge Common",
+        "city": "Cambridge",
+        "category": "outdoors",
+        "categories": [
+          "Park",
+          "Tourist attraction"
+        ],
+        "address": "Cambridge Common, Waterhouse St & Massachusetts Ave, Cambridge, MA 02138, United States",
+        "latitude": 42.3767099,
+        "longitude": -71.1209014,
+        "rating": 4.6,
+        "review_count": 786,
+        "price": null,
+        "historical_hours": [
+          [
+            "Friday",
+            "Open 24 hours"
+          ],
+          [
+            "Saturday",
+            "Open 24 hours"
+          ],
+          [
+            "Sunday",
+            "Open 24 hours"
+          ],
+          [
+            "Monday",
+            "Open 24 hours"
+          ],
+          [
+            "Tuesday",
+            "Open 24 hours"
+          ],
+          [
+            "Wednesday",
+            "Open 24 hours"
+          ],
+          [
+            "Thursday",
+            "Open 24 hours"
+          ]
+        ],
+        "description": "A site of Revolutionary War history, this park now has fields, bike paths & a creative playground.",
+        "source_url": "https://www.google.com/maps?cid=12570799402489677602",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 37055,
+        "sampled_review_count": 6,
+        "rank": 1,
+        "score": 0.79065,
+        "evidence": [
+          {
+            "citation": "S13.1",
+            "chunk_id": "7bccef8978a2dd880bc9748b44c80a6e",
+            "kind": "review",
+            "text": "Was a new sight for me seems like a really nice park was cool to see the historical stuff",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 1025880,
+            "timestamp_ms": 1618948457058
+          },
+          {
+            "citation": "S13.2",
+            "chunk_id": "dea817db6bd4d2c11eb7a1d87798a857",
+            "kind": "review",
+            "text": "a thing to happen. But, there are still plenty of hungry people all over the world. We can do better. That is what this park always reminds me, and causes me to recommit to.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 1025881,
+            "timestamp_ms": 1621431637490
+          }
+        ],
+        "reason": "Retrieved source material for Cambridge Common, a outdoors place in Cambridge.",
+        "matched_interests": [
+          "Nature"
+        ]
+      },
+      {
+        "place_id": "0x89e3770c0d0fe659:0x3d5badfad5bd6e3f",
+        "name": "Danehy Park",
+        "city": "Cambridge",
+        "category": "outdoors",
+        "categories": [
+          "Park",
+          "Tourist attraction"
+        ],
+        "address": "Danehy Park, 99 Sherman St, Cambridge, MA 02138",
+        "latitude": 42.389004899999996,
+        "longitude": -71.13310299999999,
+        "rating": 4.6,
+        "review_count": 824,
+        "price": null,
+        "historical_hours": [
+          [
+            "Sunday",
+            "7AM\u20136PM"
+          ],
+          [
+            "Monday",
+            "7AM\u20136PM"
+          ],
+          [
+            "Tuesday",
+            "7AM\u20136PM"
+          ],
+          [
+            "Wednesday",
+            "7AM\u20136PM"
+          ],
+          [
+            "Thursday",
+            "7AM\u20136PM"
+          ],
+          [
+            "Friday",
+            "7AM\u20136PM"
+          ],
+          [
+            "Saturday",
+            "7AM\u20136PM"
+          ]
+        ],
+        "description": "50-acre green space with activities such as softball & soccer, plus paths for jogging & a dog park.",
+        "source_url": "https://www.google.com/maps?cid=4421318752033664575",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 89650,
+        "sampled_review_count": 6,
+        "rank": 2,
+        "score": 0.73591,
+        "evidence": [
+          {
+            "citation": "S14.1",
+            "chunk_id": "6aa2a428dff79b8a769ec1b192ba5dc8",
+            "kind": "review",
+            "text": "A large park with playgrounds, playing fields, dog park, a running track and licnic areas. Fun for the whole family!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8822890,
+            "timestamp_ms": 1616503780640
+          },
+          {
+            "citation": "S14.2",
+            "chunk_id": "6d1eb4adc390d3911d2c4bd61beffc7d",
+            "kind": "review",
+            "text": "A great park to relax with your friends and family. If you play sports this will be next to heaven. They got running tracks, baseball field, soccer ground and what not. Probably a good picnic spot in summers.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 8822891,
+            "timestamp_ms": 1618152277087
+          }
+        ],
+        "reason": "Retrieved source material for Danehy Park, a outdoors place in Cambridge.",
+        "matched_interests": [
+          "Nature"
+        ]
+      },
+      {
+        "place_id": "0x89e370941efafcfd:0xdce6ae09ee27ad73",
+        "name": "North Point Park",
+        "city": "Cambridge",
+        "category": "outdoors",
+        "categories": [
+          "Park",
+          "Tourist attraction"
+        ],
+        "address": "North Point Park, 6 Museum Way, Cambridge, MA 02141",
+        "latitude": 42.369015999999995,
+        "longitude": -71.0690224,
+        "rating": 4.7,
+        "review_count": 508,
+        "price": null,
+        "historical_hours": [
+          [
+            "Wednesday",
+            "Open 24 hours"
+          ],
+          [
+            "Thursday",
+            "Open 24 hours"
+          ],
+          [
+            "Friday",
+            "Open 24 hours"
+          ],
+          [
+            "Saturday",
+            "Open 24 hours"
+          ],
+          [
+            "Sunday",
+            "Open 24 hours"
+          ],
+          [
+            "Monday",
+            "Open 24 hours"
+          ],
+          [
+            "Tuesday",
+            "Open 24 hours"
+          ]
+        ],
+        "description": "Waterfront park featuring playgrounds, walking trails & scenic views of the river & skyline.",
+        "source_url": "https://www.google.com/maps?cid=15917601290661113203",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 83047,
+        "sampled_review_count": 6,
+        "rank": 3,
+        "score": 0.72895,
+        "evidence": [
+          {
+            "citation": "S15.1",
+            "chunk_id": "421ef50550bfafe04e9c4b6c6cc29cf6",
+            "kind": "review",
+            "text": "Great park for nice walks. Not too big. Clean. Lots of places for picnics. Average view. The road that is nearby is almost not noticeable. I would recommend.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6465358,
+            "timestamp_ms": 1619450763853
+          },
+          {
+            "citation": "S15.2",
+            "chunk_id": "eb9c71bee52543202e555668c8e1ead2",
+            "kind": "review",
+            "text": "An urban gem. Beautifully landscaped with playground, splash pond, and skateboarding rink. Walk over the pedestrian bridge to Charlestown or turn right after crossing the bridge and explore the North End.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6465363,
+            "timestamp_ms": 1611026711565
+          }
+        ],
+        "reason": "Retrieved source material for North Point Park, a outdoors place in Cambridge.",
+        "matched_interests": [
+          "Nature"
+        ]
+      },
+      {
+        "place_id": "0x89e379e439f4a481:0xe84b1ae6ed6b650d",
+        "name": "Magazine Beach",
+        "city": "Cambridge",
+        "category": "outdoors",
+        "categories": [
+          "Park",
+          "Baseball field",
+          "Public swimming pool",
+          "Soccer field",
+          "Tourist attraction"
+        ],
+        "address": "Magazine Beach, 668 Memorial Dr, Cambridge, MA 02139",
+        "latitude": 42.355278299999995,
+        "longitude": -71.1138805,
+        "rating": 4.4,
+        "review_count": 276,
+        "price": null,
+        "historical_hours": [
+          [
+            "Thursday",
+            "11AM\u20137PM"
+          ],
+          [
+            "Friday",
+            "11AM\u20137PM"
+          ],
+          [
+            "Saturday",
+            "11AM\u20137PM"
+          ],
+          [
+            "Sunday",
+            "11AM\u20137PM"
+          ],
+          [
+            "Monday",
+            "11AM\u20137PM"
+          ],
+          [
+            "Tuesday",
+            "11AM\u20137PM"
+          ],
+          [
+            "Wednesday",
+            "11AM\u20137PM"
+          ]
+        ],
+        "description": "This 17-acre park along the Charles River features a pool, historic buildings & an outdoor gym.",
+        "source_url": "https://www.google.com/maps?cid=16738502019180619021",
+        "source_snapshot": "Google Local 2021",
+        "metadata_source_line": 82240,
+        "sampled_review_count": 6,
+        "rank": 4,
+        "score": 0.70679,
+        "evidence": [
+          {
+            "citation": "S16.1",
+            "chunk_id": "a35f159b28f2ca7e0da31b0526ca7617",
+            "kind": "review",
+            "text": "A little run down but you can park off street and there is a walking path. Suspect in the warmer months it would look much prettier.",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6221073,
+            "timestamp_ms": 1610367529607
+          },
+          {
+            "citation": "S16.2",
+            "chunk_id": "a09b86a55873e475ba0886a01b765b5e",
+            "kind": "review",
+            "text": "A wonderful place which is right next to the water. Nice place to walk, cycle and picnic with friends right across the Charles River. Can see lot of goose during evening time! Just relax and enjoy sunset in spring, summer and fall season!",
+            "source_file": "review-Massachusetts.json.gz",
+            "source_line": 6221069,
+            "timestamp_ms": 1605024089402
+          }
+        ],
+        "reason": "Retrieved source material for Magazine Beach, a outdoors place in Cambridge.",
+        "matched_interests": [
+          "Nature"
+        ]
+      }
+    ],
+    "search_plan": {
+      "in_scope": true,
+      "clarification": "",
+      "searches": [
+        {
+          "query": "historical sites in Cambridge",
+          "interest": "History"
+        },
+        {
+          "query": "museums in Cambridge",
+          "interest": "Museums"
+        },
+        {
+          "query": "lunch spots in Cambridge",
+          "interest": "Food"
+        },
+        {
+          "query": "parks in Cambridge",
+          "interest": "Nature"
+        }
+      ]
+    },
+    "trace": [
+      {
+        "tool": "search_places",
+        "query": "historical sites in Cambridge",
+        "interest": "History",
+        "city": "Cambridge",
+        "category": "culture",
+        "query_source": "language_model",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 158.7
+      },
+      {
+        "tool": "search_places",
+        "query": "museums in Cambridge",
+        "interest": "Museums",
+        "city": "Cambridge",
+        "category": "culture",
+        "query_source": "language_model",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 208.63
+      },
+      {
+        "tool": "search_places",
+        "query": "lunch spots in Cambridge",
+        "interest": "Food",
+        "city": "Cambridge",
+        "category": "food",
+        "query_source": "language_model",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 274.33
+      },
+      {
+        "tool": "search_places",
+        "query": "parks in Cambridge",
+        "interest": "Nature",
+        "city": "Cambridge",
+        "category": "outdoors",
+        "query_source": "language_model",
+        "retrieved": 4,
+        "accepted": 4,
+        "elapsed_ms": 214.46
+      }
+    ],
+    "dataset_id": "boston-36bb6d7b74e39df3",
+    "index_id": "80e7efec48cc96a7",
+    "prompt_version": "rag-planner-v2",
+    "model": {
+      "provider": "vertex",
+      "model": "gemini-3.1-flash-lite",
+      "configured": true
+    },
+    "elapsed_ms": 2495
+  },
+  "checks": {
+    "labels": true,
+    "category_filters": true,
+    "unique_places": true,
+    "no_han_characters": true
+  },
+  "counts": {
+    "History": 4,
+    "Museums": 4,
+    "Food": 4,
+    "Nature": 4
+  }
+}

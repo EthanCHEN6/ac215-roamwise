@@ -31,4 +31,4 @@ Mount local test credentials read-only outside the image. Never copy ADC files, 
 
 A separately hosted frontend sets `frontend/config.js` to the Cloud Run URL. Add its exact origin to `CORS_ORIGINS`. Same-origin Cloud Run hosting uses an empty `apiBase`.
 
-For a frontend-only change, `deploy/cloudbuild-frontend.yaml` can reuse a verified base image by digest. This avoids rebuilding the same embeddings. `_BASE_IMAGE` must identify the tested data image; `_TAG` names the new release. Rebuild the full image when Python code, dependencies or data change.
+For a frontend-only change, `deploy/cloudbuild-frontend.yaml` can reuse a verified base image by digest. For application logic changes, `deploy/cloudbuild-runtime.yaml` also replaces the Python package. Use this only when dependencies, preprocessing and indexing code, model weights and data are unchanged. `_BASE_IMAGE` must identify the tested data image; `_TAG` names the new release. Rebuild the full image when any index input or dependency changes. Run container tests before either update and verify the deployed API afterward.

@@ -1,0 +1,48 @@
+{
+  "cloud_run_revision": "roamwise-rag-00003-2wz",
+  "image_digest": "sha256:61c5e03006b94e024c739fc2cf1f4c2a4ad775bba7b1820460a5fb4a32b04f06",
+  "build_ids": ["0265fd25-7dbe-4629-b4e0-3a02a0b87172", "6be66836-bec4-4d97-9d1b-50a0654dee24"],
+  "sites_version": 3,
+  "checks": [
+    {
+      "url": "https://roamwise-rag-74919420019.us-central1.run.app/planner-app.js",
+      "status": 200,
+      "matches_app_source": true,
+      "hosting_injected_script": false
+    },
+    {
+      "url": "https://roamwise-rag-74919420019.us-central1.run.app/recommendations.html",
+      "status": 200,
+      "matches_app_source": true,
+      "hosting_injected_script": false
+    },
+    {
+      "url": "https://ethan-roamwise-ms2.thomaslinnn.chatgpt.site/planner-app.js",
+      "status": 200,
+      "matches_app_source": true,
+      "hosting_injected_script": false
+    },
+    {
+      "url": "https://ethan-roamwise-ms2.thomaslinnn.chatgpt.site/recommendations",
+      "status": 200,
+      "matches_app_source": true,
+      "hosting_injected_script": true
+    },
+    {
+      "url": "https://ethan-roamwise-ms2.thomaslinnn.chatgpt.site/assets/RoamWise_MS2.pptx",
+      "status": 200,
+      "english_notes": true,
+      "matches_source": true
+    },
+    {
+      "url": "https://roamwise-rag-74919420019.us-central1.run.app/api/health",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/EthanCHEN6/ac215-roamwise",
+      "public": true,
+      "english_metadata": true
+    }
+  ],
+  "browser_qa": "not performed: browser tool runtime unavailable"
+}
